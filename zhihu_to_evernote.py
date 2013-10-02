@@ -73,6 +73,15 @@ def email_zhihu_content(url):
 
     """
     title_name_regex = r"(<title>)(.*)(\s-)(.*</title>)"
+    #从配置文件读取内容
+    cf = configparser.ConfigParser()
+    cf.read("config.ini")
+    url = cf.get("info","url")
+    mail_host = cf.get("info","mail_host")
+    mail_user = cf.get("info","mail_user")
+    mail_password = cf.get("info","mail_password")
+    evernote_mail = cf.get("info","evernote_mail")
+    notebook = "@" + cf.get("info","notebook")
     r = requests.get(url)
     if r.status_code == 200:
         html_txt = r.text
@@ -97,15 +106,6 @@ def email_zhihu_content(url):
 
 
 if __name__ == "__main__":
-    #从配置文件读取内容
-    cf = configparser.ConfigParser()
-    cf.read("config.ini")
-    url = cf.get("info","url")
-    mail_host = cf.get("info","mail_host")
-    mail_user = cf.get("info","mail_user")
-    mail_password = cf.get("info","mail_password")
-    evernote_mail = cf.get("info","evernote_mail")
-    notebook = "@" + cf.get("info","notebook")
     collect_url(url)
     for i in url_list:
         email_zhihu_content(i)
