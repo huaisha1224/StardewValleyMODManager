@@ -76,7 +76,6 @@ def email_zhihu_content(url):
     #从配置文件读取内容
     cf = configparser.ConfigParser()
     cf.read("config.ini")
-    url = cf.get("info","url")
     mail_host = cf.get("info","mail_host")
     mail_user = cf.get("info","mail_user")
     mail_password = cf.get("info","mail_password")
@@ -106,6 +105,9 @@ def email_zhihu_content(url):
 
 
 if __name__ == "__main__":
+    cf = configparser.ConfigParser()
+    cf.read("config.ini")
+    url = cf.get("info","url")
     collect_url(url)
     for i in url_list:
         email_zhihu_content(i)
