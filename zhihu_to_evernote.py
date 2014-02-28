@@ -26,7 +26,7 @@ url = http://www.zhihu.com/collection/20261977
 mail_host = smtp.126.com
 mail_user = *********@126.com
 mail_password = *******
-evernote_mail=sam_hxq.58b4d9b@m.yinxiang.com 
+evernote_mail=sam_hxq.58b4d9b@m.yinxiang.com
 notebook = 知乎收藏文章
 """
 import os
@@ -63,7 +63,7 @@ def Next_page(url):
         if r.status_code == 200:
             text_temp = r.text
         #用正则表达式去匹配是否有收藏内容，如果有则添加到列表中，否则循环中断
-            if re.search(url_list_regex, text_temp) != None: 
+            if re.search(url_list_regex, text_temp) != None:
                 page_url.append(url_temp)
             else:
                 print ("No Next Page")
@@ -80,7 +80,7 @@ def Collect_url(url):
     @url_list_regex         :提取URL规则、我们真正需要的是第二个()里面的内容
     @single_url_list        :用于存放从单个收藏页面提取出来的URL地址列表
 
-    """      
+    """
 
     url_list_regex = r"(<h2 class.*href=\")(/\w+/\d+)(\">)(.*)(</a></h2>)"
     global single_url_list
@@ -94,7 +94,7 @@ def Collect_url(url):
             list_temp = re.findall(url_list_regex,r_txt)
         else:
             pass
-    
+
     #用for循环吧列表里面的内容通过切片的时候提取出我们需要的，
     #并赋值给single_url_list
     for i in list_temp:
@@ -102,6 +102,53 @@ def Collect_url(url):
 
     for x in single_url_list:#将单页面url提取出来增加到url总表中
         url_list.append(x)
+
+
+#=============================================================================
+def Following_url(zhihu_user, zhihu_password):
+    session = requests.session()
+    login_res = session.post(
+        'http://www.zhihu.com/login',
+        data=dict(
+            email=zhihu_user,
+            password=zhihu_password
+        )
+    )
+    login_res.raise_for_status()
+    print('login done')
+    xsrf = login_res.cookies['_xsrf']
+
+    following_url_list = []
+    result = _get_following_url(session, xsrf, 0)
+
+    while len(result):
+        following_url_list.extend(result)
+        result = _get_following_url(session, xsrf, len(following_url_list))
+
+    return following_url_list
+
+
+def _get_following_url(session, xsrf, offset):
+    print('fetching +{0}'.format(offset))
+    res = session.post(
+        'http://www.zhihu.com/node/ProfileFollowedQuestionsV2',
+        data=dict(
+            method='next',
+            params='{"offset": %d}' % offset,
+            _xsrf=xsrf
+        )
+    )
+    try:
+        result = res.json()
+    except BaseException:
+        import pdb; pdb.set_trace()
+    if result['msg']:
+        return [
+            BeautifulSoup(msg).find(class_='question_link')['href']
+            for msg in result['msg']
+        ]
+    return []
+
 
 #=============================================================================
 def Email_zhihu_content(url):
@@ -129,16 +176,16 @@ def Email_zhihu_content(url):
         msg["Subject"] = Header(title_name + notebook,"utf-8")
         part = MIMEText(html_txt,"html") #设置以html格式发送内容
         msg.attach(part)
-        
+
         #发送邮件
         smtp = smtplib.SMTP()
-        smtp.connect(mail_host) 
-        smtp.login(mail_user,mail_password) 
-        smtp.sendmail(mail_user,evernote_mail,msg.as_string()) 
+        smtp.connect(mail_host)
+        smtp.login(mail_user,mail_password)
+        smtp.sendmail(mail_user,evernote_mail,msg.as_string())
         smtp.quit()
 
 
-#=============================================================================  
+#=============================================================================
 if __name__ == "__main__":
     global url_list
     url_list = []
