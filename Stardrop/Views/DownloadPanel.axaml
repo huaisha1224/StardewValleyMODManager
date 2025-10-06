@@ -1,0 +1,273 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:sys="using:System"
+             xmlns:scg="using:System.Collections.Generic"
+             xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+             xmlns:vm="using:Stardrop.ViewModels"
+             xmlns:conv="using:Stardrop.Converters"
+             xmlns:i18n="using:Stardrop.Utilities.Extension"
+             Width="400"
+             Height="300"
+             x:Class="Stardrop.Views.DownloadPanel"
+             x:DataType="vm:DownloadPanelViewModel">
+
+    <Design.DataContext>
+        <vm:DownloadPanelViewModel/>
+    </Design.DataContext>
+
+    <UserControl.Resources>
+        <conv:EnumEqualsConverter x:Key="EnumEqualsConverter"/>
+    </UserControl.Resources>
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.foreground">
+            <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+        </Style>
+        <Style Selector="TextBlock.header">
+            <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource HighlightBrush}"/>
+        </Style>
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="LightGray"/>
+        </Style>
+        <Style Selector="Button:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </UserControl.Styles>
+    
+    <ScrollViewer Padding="12 0 24 0">
+        <Grid>
+            <TextBlock x:Name="NoDownloadsHeader"
+                       Classes="header"
+                       Margin="0 12 0 12"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="{i18n:Translate ui.downloads_panel.no_downloads_label}"
+                       IsVisible="{Binding !Downloads.Count}"/>
+            <ItemsRepeater x:Name="DownloadItems" 
+                           Items="{Binding Downloads}"
+                           Margin="0 12 0 12"
+                           IsVisible="{Binding !!Downloads.Count}">
+                <ItemsRepeater.Layout>
+                    <StackLayout Spacing="24"/>
+                </ItemsRepeater.Layout>                
+                <ItemsRepeater.ItemTemplate>
+                    <DataTemplate DataType="vm:ModDownloadViewModel">
+                        <!--Each of the Classes.className variables is a boolean. The converter checks the current DownloadStatus and sets
+                        the appropriate Classes.className to 'True', which then causes the style to kick in and fill in the UI with one of the 
+                        styles defined below. This simulates a Visual State Manager like WPF or UWP uses.-->
+                        <ContentControl Classes.notStarted="{Binding DownloadStatus, Converter={StaticResource EnumEqualsConverter}, 
+                                            ConverterParameter={x:Static vm:ModDownloadStatus.NotStarted}}"
+                                        Classes.inProgress="{Binding DownloadStatus, Converter={StaticResource EnumEqualsConverter}, 
+                                            ConverterParameter={x:Static vm:ModDownloadStatus.InProgress}}"
+                                        Classes.successful="{Binding DownloadStatus, Converter={StaticResource EnumEqualsConverter}, 
+                                            ConverterParameter={x:Static vm:ModDownloadStatus.Successful}}"
+                                        Classes.canceled="{Binding DownloadStatus, Converter={StaticResource EnumEqualsConverter}, 
+                                            ConverterParameter={x:Static vm:ModDownloadStatus.Canceled}}"
+                                        Classes.failed="{Binding DownloadStatus, Converter={StaticResource EnumEqualsConverter}, 
+                                            ConverterParameter={x:Static vm:ModDownloadStatus.Failed}}"/>
+                    </DataTemplate>
+                </ItemsRepeater.ItemTemplate>
+                <ItemsRepeater.Styles>
+                    <!--UI for not-yet-started download-->
+                    <Style Selector="ContentControl.notStarted">
+                        <Setter Property="Content" Value="{x:Null}"/>
+                    </Style>
+                    <!--UI for in-progress download-->
+                    <Style Selector="ContentControl.inProgress" x:DataType="vm:ModDownloadViewModel">
+                        <Setter Property="Content">
+                            <Template>
+                                <Grid RowDefinitions="Auto, Auto, Auto">
+
+                                    <TextBlock Grid.Row="0" Classes="foreground" Text="{Binding Name}"/>
+
+                                    <Grid Grid.Row="1" ColumnDefinitions="8*, 2*, Auto">
+
+                                        <ProgressBar x:Name="ProgressBar"
+                                                     Grid.Column="0"
+                                                     Minimum="0" Maximum="100"
+                                                     IsIndeterminate="{Binding IsSizeUnknown}"
+                                                     Value="{Binding Completion}"/>
+                                        <TextBlock x:Name="PercentageText"
+                                                   Grid.Row="1" Grid.Column="1"
+                                                   Classes="foreground"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   TextAlignment="Right"
+                                                   Text="{Binding Completion, StringFormat='{}{0:0.##}%'}"/>
+                                        <Button x:Name="CancelButton"
+                                                Grid.Row="1" Grid.Column="2"
+                                                i:Attached.Icon="mdi-cancel"
+                                                Command="{Binding CancelCommand}"
+                                                ToolTip.Tip="{i18n:Translate ui.downloads_panel.tooltips.cancel_button}"/>
+                                    </Grid>
+
+                                    <TextBlock x:Name="SpeedText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               Text="{Binding DownloadSpeedLabel}"/>
+                                    <TextBlock x:Name="DownloadProgressText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               HorizontalAlignment="Right"
+                                               TextAlignment="Right"
+                                               Text="{Binding DownloadProgressLabel}"/>
+                                </Grid>
+                            </Template>
+                        </Setter>
+                    </Style>
+                    <!--UI for successful download-->
+                    <Style Selector="ContentControl.successful" x:DataType="vm:DownloadPanelViewModel">
+                        <Setter Property="Content">
+                            <Template>
+                                <Grid RowDefinitions="Auto, Auto, Auto">
+
+                                    <TextBlock Grid.Row="0" Classes="foreground" Text="{Binding Name}"/>
+
+                                    <Grid Grid.Row="1" ColumnDefinitions="8*, 2*, Auto">
+
+                                        <ProgressBar x:Name="ProgressBar"
+                                                     Grid.Column="0"
+                                                     Minimum="0" Maximum="100"
+                                                     IsIndeterminate="{Binding IsSizeUnknown}"
+                                                     Value="{Binding Completion}"/>
+                                        <TextBlock x:Name="PercentageText"
+                                                   Grid.Row="1" Grid.Column="1"
+                                                   Classes="foreground"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   TextAlignment="Right"
+                                                   Text="{Binding Completion, StringFormat='{}{0:0.##}%'}"/>
+                                        <Button x:Name="RemoveButton"
+                                                Grid.Row="1" Grid.Column="2"
+                                                i:Attached.Icon="mdi-close"
+                                                Command="{Binding RemoveCommand}"
+                                                ToolTip.Tip="{i18n:Translate ui.downloads_panel.tooltips.remove_button}"/>
+                                    </Grid>
+
+                                    <TextBlock x:Name="DownloadProgressText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               HorizontalAlignment="Right"
+                                               TextAlignment="Right"
+                                               Text="{Binding DownloadProgressLabel}"/>
+                                    <TextBlock x:Name="StatusText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               Text="{i18n:Translate ui_downloads_panel.download_success}"/>
+
+                                </Grid>
+                            </Template>
+                        </Setter>
+                    </Style>
+                    <!--UI for a canceled download-->
+                    <Style Selector="ContentControl.canceled" x:DataType="vm:DownloadPanelViewModel">
+                        <Setter Property="Content">
+                            <Template>
+                                <Grid RowDefinitions="Auto, Auto, Auto">
+
+                                    <TextBlock Grid.Row="0" Classes="foreground" Text="{Binding Name}"/>
+
+                                    <Grid Grid.Row="1" ColumnDefinitions="8*, 2*, Auto">
+
+                                        <Border x:Name="UnsuccessfulProgressBar"
+                                                Grid.Column="0"
+                                                CornerRadius="4"
+                                                Height="4"
+                                                Background="Red"/>
+                                        <TextBlock x:Name="PercentageText"
+                                                   Grid.Row="1" Grid.Column="1"
+                                                   Classes="foreground"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   TextAlignment="Right"
+                                                   Text="--"/>
+                                        <Button x:Name="RemoveButton"
+                                                Grid.Row="1" Grid.Column="2"
+                                                i:Attached.Icon="mdi-close"
+                                                Command="{Binding RemoveCommand}"
+                                                ToolTip.Tip="{i18n:Translate ui.downloads_panel.tooltips.remove_button}"/>
+                                    </Grid>
+
+                                    <TextBlock x:Name="DownloadProgressText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               HorizontalAlignment="Right"
+                                               TextAlignment="Right"
+                                               Text="{Binding DownloadProgressLabel}"/>
+                                    <TextBlock x:Name="StatusText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               Text="{i18n:Translate ui.downloads_panel.download_canceled}"/>
+
+                                </Grid>
+                            </Template>
+                        </Setter>
+                    </Style>
+                    <!--UI for a failed download-->
+                    <Style Selector="ContentControl.failed" x:DataType="vm:DownloadPanelViewModel">
+                        <Setter Property="Content">
+                            <Template>
+                                <Grid RowDefinitions="Auto, Auto, Auto">
+
+                                    <TextBlock Grid.Row="0" Classes="foreground" Text="{Binding Name}"/>
+
+                                    <Grid Grid.Row="1" ColumnDefinitions="8*, 2*, Auto">
+
+                                        <Border x:Name="UnsuccessfulProgressBar"
+                                                Grid.Column="0"
+                                                CornerRadius="4"
+                                                Height="4"
+                                                Background="Red"/>
+                                        <TextBlock x:Name="PercentageText"
+                                                   Grid.Row="1" Grid.Column="1"
+                                                   Classes="foreground"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center"
+                                                   TextAlignment="Right"
+                                                   Text="--"/>
+                                        <Button x:Name="RemoveButton"
+                                                Grid.Row="1" Grid.Column="2"
+                                                i:Attached.Icon="mdi-close"
+                                                Command="{Binding RemoveCommand}"
+                                                ToolTip.Tip="{i18n:Translate ui.downloads_panel.tooltips.remove_button}"/>
+                                    </Grid>
+
+                                    <TextBlock x:Name="DownloadProgressText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               HorizontalAlignment="Right"
+                                               TextAlignment="Right"
+                                               Text="{Binding DownloadProgressLabel}"/>
+                                    <TextBlock x:Name="StatusText"
+                                               Grid.Row="2"
+                                               Classes="foreground"
+                                               Margin="0 6 0 0"
+                                               Text="{i18n:Translate ui.downloads_panel.download_failed}"/>
+
+                                </Grid>
+                            </Template>
+                        </Setter>
+                    </Style>
+                </ItemsRepeater.Styles>
+            </ItemsRepeater>
+        </Grid>
+    </ScrollViewer>    
+    
+</UserControl>

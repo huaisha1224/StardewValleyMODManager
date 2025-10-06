@@ -1,0 +1,231 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Stardrop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+		xmlns:i18n="clr-namespace:Stardrop.Utilities.Extension"
+        mc:Ignorable="d" d:DesignWidth="430" d:DesignHeight="650"
+        x:Class="Stardrop.Views.SettingsWindow"
+        Title="{i18n:Translate ui.window.settings.name}"
+        MinWidth="430"
+        MinHeight="430"
+        Width="430"
+        Background="{DynamicResource ThemeBackgroundBrush}"
+        HasSystemDecorations="true"
+        ExtendClientAreaToDecorationsHint="true"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        CanResize="True"
+        Icon="/Assets/icon.ico">
+
+	<Window.Styles>
+		<Style Selector="Button:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="LightGray"/>
+		</Style>
+		<Style Selector="Button:pressed /template/ ContentPresenter">
+			<Setter Property="Background" Value="White"/>
+		</Style>
+		<Style Selector="Button[IsEnabled=False] /template/ ContentPresenter">
+			<Setter Property="Background" Value="Gray"/>
+		</Style>
+		<Style Selector="Button#exitButton:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="Red"/>
+		</Style>
+		<Style Selector="Button#exitButton:pressed /template/ ContentPresenter">
+			<Setter Property="Background" Value="Pink"/>
+		</Style>
+		<Style Selector="CheckBox:checked /template/ Border#NormalRectangle">
+			<Setter Property="BorderBrush" Value="{DynamicResource ThemeBackgroundBrush}" />
+			<Setter Property="Background" Value="{DynamicResource ThemeBackgroundBrush}" />
+		</Style>
+		<Style Selector="CheckBox:checked /template/ Path#CheckGlyph">
+			<Setter Property="Fill" Value="{DynamicResource ThemeForegroundBrush}"/>
+		</Style>
+		<Style Selector="CheckBox:unchecked /template/ Border#NormalRectangle">
+			<Setter Property="BorderBrush" Value="{DynamicResource HighlightForegroundBrush}" />
+		</Style>
+		<Style Selector="CheckBox:checked /template/ Border#NormalRectangle">
+			<Setter Property="BorderBrush" Value="{DynamicResource HighlightForegroundBrush}" />
+		</Style>
+		<Style Selector="CheckBox:pointerover /template/ ContentPresenter#ContentPresenter">
+			<Setter Property="TextBlock.Foreground" Value="{DynamicResource HighlightForegroundBrush}" />
+		</Style>
+		<Style Selector="ComboBoxItem">
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource ComboBoxItemBackgroundBrush}"/>
+		</Style>
+		<Style Selector="ComboBox">
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderBrush" Value="{DynamicResource ThemeBorderMidBrush}" />
+			<Setter Property="BorderThickness" Value="{DynamicResource ThemeBorderThickness}" />
+			<Setter Property="HorizontalContentAlignment" Value="Stretch" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<Setter Property="Padding" Value="4" />
+			<Setter Property="MinHeight" Value="20" />
+			<Setter Property="PlaceholderForeground" Value="{DynamicResource ThemeForegroundBrush}" />
+			<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+			<Setter Property="Template">
+				<ControlTemplate>
+					<Border Name="border"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}">
+						<Grid ColumnDefinitions="*,Auto">
+							<TextBlock Name="PlaceholderTextBlock"
+									   Grid.Column="0"
+									   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+									   VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+									   Margin="{TemplateBinding Padding}"
+									   Text="{TemplateBinding PlaceholderText}"
+									   Foreground="{TemplateBinding PlaceholderForeground}"
+									   IsVisible="{TemplateBinding SelectionBoxItem, Converter={x:Static ObjectConverters.IsNull}}" />
+							<ContentControl Content="{TemplateBinding SelectionBoxItem}"
+											ContentTemplate="{TemplateBinding ItemTemplate}"
+											Margin="{TemplateBinding Padding}"
+											VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+											HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" />
+							<ToggleButton Name="toggle"
+										  BorderThickness="0"
+										  Background="Transparent"
+										  ClickMode="Press"
+										  Focusable="False"
+										  IsChecked="{TemplateBinding IsDropDownOpen, Mode=TwoWay}"
+										  Grid.Column="1">
+								<Path Fill="{DynamicResource ThemeForegroundBrush}"
+									  Width="8"
+									  Height="4"
+									  Stretch="Uniform"
+									  HorizontalAlignment="Center"
+									  VerticalAlignment="Center"
+									  Data="F1 M 301.14,-189.041L 311.57,-189.041L 306.355,-182.942L 301.14,-189.041 Z" />
+							</ToggleButton>
+							<Popup Name="PART_Popup"
+								   IsOpen="{TemplateBinding IsDropDownOpen, Mode=TwoWay}"
+								   MinWidth="{Binding Bounds.Width, RelativeSource={RelativeSource TemplatedParent}}"
+								   MaxHeight="{TemplateBinding MaxDropDownHeight}"
+								   PlacementTarget="{TemplateBinding}"
+								   IsLightDismissEnabled="True">
+								<Border Background="{DynamicResource ThemeBackgroundBrush}"
+										BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+										BorderThickness="1">
+									<ScrollViewer HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
+												  VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
+										<ItemsPresenter Name="PART_ItemsPresenter"
+														Items="{TemplateBinding Items}"
+														ItemsPanel="{TemplateBinding ItemsPanel}"
+														ItemTemplate="{TemplateBinding ItemTemplate}"
+														VirtualizationMode="{TemplateBinding VirtualizationMode}" />
+									</ScrollViewer>
+								</Border>
+							</Popup>
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter>
+		</Style>
+		<Style Selector="ComboBoxItem:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="{DynamicResource HighlightBrush}" />
+		</Style>
+		<Style Selector="ComboBoxItem:selected /template/ ContentPresenter">
+			<Setter Property="Background" Value="{DynamicResource ComboBoxItemSelectedBackgroundBrush}"/>
+		</Style>
+		<Style Selector="ComboBox /template/ Path#DropDownGlyph">
+			<Setter Property="Fill" Value="{DynamicResource HighlightForegroundBrush}"/>
+		</Style>
+		<Style Selector="TextBox:pointerover /template/ Border">
+			<Setter Property="BorderBrush" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource ThemeBackgroundBrush}"/>
+		</Style>
+		<Style Selector="TextBox:focus">
+			<Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+		</Style>
+		<Style Selector="TextBox:focus /template/ Border">
+			<Setter Property="BorderBrush" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource ThemeBackgroundBrush}"/>
+		</Style>
+		<Style Selector="TextBox:not(:focus)">
+			<Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource ThemeBackgroundBrush}"/>
+		</Style>
+	</Window.Styles>
+
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+        
+		<Border Grid.Row="0" BorderBrush="{DynamicResource HighlightBrush}" BorderThickness="0 0 0 2" Grid.ColumnSpan="2">
+			<Menu Name="menuBar" KeyboardNavigation.TabNavigation="None">
+				<Image Source="/Assets/icon.ico" Stretch="None"/>
+				<TextBlock Text="{i18n:Translate ui.window.settings.name}" Margin="-10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+			</Menu>
+		</Border>
+		<Menu Name="windowMenu" Grid.Row="0" IsVisible="{Binding ShowMainMenu}" HorizontalAlignment="Right" KeyboardNavigation.TabNavigation="None" Grid.Column="1">
+			<Button Name="exitButton" i:Attached.Icon="mdi-close" Margin="0 0 -10 0" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent"/>
+		</Menu>
+
+		<ScrollViewer AllowAutoHide="True" Grid.Row="1" Grid.ColumnSpan="2">
+			<StackPanel>
+				<StackPanel Margin="10 10 0 0">
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.smapi_path}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<TextBox Name="smapiFolderPathBox" Text="{Binding SMAPIPath}" ToolTip.Tip="{Binding ToolTip_SMAPI}" Margin="10 10 0 0" Height="10" Width="350" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					<Button Name="smapiFolderButton" Margin="360 -32 0 0" i:Attached.Icon="mdi-folder" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent" HorizontalAlignment="Left" />
+
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.mod_path}" Margin="0 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<TextBox Name="modFolderPathBox" Text="{Binding ModFolderPath}" ToolTip.Tip="{Binding ToolTip_ModFolder}" Margin="10 10 0 0" Height="10" Width="350" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					<Button Name="modFolderButton" Margin="360 -32 0 0" i:Attached.Icon="mdi-folder" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent" HorizontalAlignment="Left" />
+
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.mod_install}" Margin="0 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<TextBox Name="modInstallPathBox" Text="{Binding ModInstallPath}" ToolTip.Tip="{Binding ToolTip_ModInstall}" Margin="10 10 0 0" Height="10" Width="350" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					<Button Name="modInstallButton" Margin="360 -32 0 0" i:Attached.Icon="mdi-folder" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent" HorizontalAlignment="Left" />
+				</StackPanel>
+
+				<StackPanel Margin="10 10 0 0">
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.themes}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<ComboBox Name="themeComboBox" ToolTip.Tip="{Binding ToolTip_Theme}" Margin="10 10 0 10" Width="150" Background="{DynamicResource ThemeBackgroundBrush}" Foreground="{DynamicResource ThemeForegroundBrush}" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.languages}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<ComboBox Name="languageComboBox" ToolTip.Tip="{Binding ToolTip_Language}" Margin="10 10 0 10" Width="150" Background="{DynamicResource ThemeBackgroundBrush}" Foreground="{DynamicResource ThemeForegroundBrush}" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.grouping}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<ComboBox Name="groupingComboBox" ToolTip.Tip="{Binding ToolTip_Grouping}" Margin="10 10 0 0" Width="150" Background="{DynamicResource ThemeBackgroundBrush}" Foreground="{DynamicResource ThemeForegroundBrush}" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+				</StackPanel>
+
+				<StackPanel Margin="10 25 0 0">
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.nexus}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<StackPanel Orientation="Horizontal" IsVisible="{Binding ShowNexusServers}">
+						<TextBlock Text="{i18n:Translate ui.settings_window.labels.preferred_server}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+						<ComboBox Name="preferredServerBox" ToolTip.Tip="{Binding ToolTip_PreferredServer}" Margin="10 10 0 10" Width="150" Background="{DynamicResource ThemeBackgroundBrush}" Foreground="{DynamicResource ThemeForegroundBrush}" BorderBrush="{DynamicResource HighlightBrush}" HorizontalAlignment="Left"/>
+					</StackPanel>
+					<Button Name="registerNXMButton" IsVisible="{Binding ShowNXMAssociationButton}" ToolTip.Tip="{Binding ToolTip_NXMAssociation}" Content="{i18n:Translate ui.settings_window.buttons.register_nxm_association}" Margin="0 5 0 10" BorderBrush="{DynamicResource HighlightBrush}" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent" HorizontalAlignment="Left"/>
+					<CheckBox Name="askBeforeNXMInstallCheckbox" IsChecked="{Binding IsAskingBeforeAcceptingNXM}" Content="{i18n:Translate ui.settings_window.buttons.always_ask_for_NXM_installs}" ToolTip.Tip="{Binding ToolTip_AlwaysAskNXMFiles}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+				</StackPanel>
+
+				<StackPanel Margin="10 25 0 0">
+					<TextBlock Text="{i18n:Translate ui.settings_window.labels.miscellaneous}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<CheckBox Name="ignoreHiddenFoldersCheckbox" IsChecked="{Binding IgnoreHiddenFolders}" Content="{i18n:Translate ui.settings_window.buttons.ignore_hidden_folders}" ToolTip.Tip="{Binding ToolTip_IgnoreHiddenFolders}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<CheckBox Name="enableProfileSpecificModConfigsCheckbox" IsChecked="{Binding EnableProfileSpecificModConfigs}" Content="{i18n:Translate ui.settings_window.buttons.enable_profile_specific_mod_configs}" ToolTip.Tip="{Binding ToolTip_EnableProfileSpecificModConfigs}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<CheckBox Name="enableModsOnAdd" IsChecked="{Binding EnableModsOnAdd}" Content="{i18n:Translate ui.settings_window.buttons.enable_mods_on_add}" ToolTip.Tip="{Binding ToolTip_EnableModsOnAdd}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<CheckBox Name="alwaysAskToDelete" IsChecked="{Binding AlwaysAskToDelete}" Content="{i18n:Translate ui.settings_window.buttons.always_ask_to_delete}" ToolTip.Tip="{Binding ToolTip_AlwaysAskToDelete}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+					<CheckBox Name="automaticallySaveProfileChanges" IsChecked="{Binding ShouldAutomaticallySaveProfileChanges}" Content="{i18n:Translate ui.settings_window.buttons.automatically_save_profile_changes}" ToolTip.Tip="{Binding ToolTip_ShouldAutomaticallySaveProfileChanges}" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+				</StackPanel>
+			</StackPanel>
+		</ScrollViewer>
+
+		<Border Grid.Row="2" Grid.ColumnSpan="2" BorderBrush="{DynamicResource HighlightBrush}" BorderThickness="0 0 0 2" Height="4"/>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto" HorizontalAlignment="Right" Margin="0 15 0 15">
+            <Button Name="applyButton" Grid.Row="1" Grid.Column="0" ToolTip.Tip="{Binding ToolTip_Save}" i:Attached.Icon="mdi-check" Margin="0 0 15 0" BorderBrush="{DynamicResource HighlightBrush}" Foreground="Green" Background="Transparent" HorizontalAlignment="Right"/>
+			<Button Name="cancelButton" Grid.Row="1" Grid.Column="1" IsCancel="True" ToolTip.Tip="{Binding ToolTip_Cancel}" i:Attached.Icon="mdi-cancel" Margin="0 0 15 0" BorderBrush="{DynamicResource HighlightBrush}" Foreground="Red" Background="Transparent" HorizontalAlignment="Right"/>
+        </Grid>
+	</Grid>
+</Window>

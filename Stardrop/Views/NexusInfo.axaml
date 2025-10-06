@@ -1,0 +1,87 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Stardrop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+		xmlns:i18n="clr-namespace:Stardrop.Utilities.Extension"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="150"
+        x:Class="Stardrop.Views.NexusInfo"
+        Title="{i18n:Translate ui.window.nexus_user.name}"
+        MinWidth="350"
+        MinHeight="235"
+        Width="350"
+        Height="235"
+        Background="{DynamicResource ThemeBackgroundBrush}"
+		ExtendClientAreaToDecorationsHint="true"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1"
+		CanResize="False"
+        Icon="/Assets/icon.ico">
+
+	<Window.Styles>
+		<Style Selector="Button:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="LightGray"/>
+		</Style>
+		<Style Selector="Button:pressed /template/ ContentPresenter">
+			<Setter Property="Background" Value="White"/>
+		</Style>
+		<Style Selector="Button#exitButton:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="Red"/>
+		</Style>
+		<Style Selector="Button#exitButton:pressed /template/ ContentPresenter">
+			<Setter Property="Background" Value="Pink"/>
+		</Style>
+		<Style Selector="TextBox:focus">
+			<Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource AlternativeDataGridRowBackground}"/>
+		</Style>
+		<Style Selector="TextBox:focus /template/ Border">
+			<Setter Property="BorderBrush" Value="{DynamicResource HighlightBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource AlternativeDataGridRowBackground}"/>
+		</Style>
+		<Style Selector="TextBox:not(:focus)">
+			<Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+			<Setter Property="Background" Value="{DynamicResource DataGridRowBackground}"/>
+		</Style>
+		<Style Selector="Button#exitButton:pointerover /template/ ContentPresenter">
+			<Setter Property="Background" Value="Red"/>
+		</Style>
+		<Style Selector="Button#exitButton:pressed /template/ ContentPresenter">
+			<Setter Property="Background" Value="Pink"/>
+		</Style>
+	</Window.Styles>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Border Grid.Row="0" BorderBrush="{DynamicResource HighlightBrush}" BorderThickness="0 0 0 2" Grid.ColumnSpan="2">
+			<Menu Name="menuBar" KeyboardNavigation.TabNavigation="None">
+				<Image Source="/Assets/icon.ico" Stretch="None"/>
+				<TextBlock Text="{i18n:Translate ui.window.nexus_user.name}" Margin="-10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource ThemeForegroundBrush}" />
+			</Menu>
+		</Border>
+		<Menu Name="windowMenu" IsVisible="{Binding ShowMainMenu}" HorizontalAlignment="Right" KeyboardNavigation.TabNavigation="None" Grid.Column="1">
+			<Button Name="exitButton" i:Attached.Icon="mdi-close" Margin="0 0 -10 0" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent"/>
+		</Menu>
+
+		<StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="0 15 0 0">
+			<TextBlock Text="{i18n:Translate ui.nexus_login.labels.nexus_details}" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource ThemeForegroundBrush}" Margin="0 0 0 0"/>
+			<TextBlock Name="nexusUserName" Text="{i18n:Translate ui.nexus_login.labels.username}" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource ThemeForegroundBrush}" Margin="0 25 0 0"/>
+			<TextBlock Name="nexusUserPremium" Text="{i18n:Translate ui.nexus_login.labels.is_premium}" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource ThemeForegroundBrush}" Margin="0 25 0 0"/>
+		</StackPanel>
+
+		<StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="0 35 0 0">
+			<Button Name="disconnectNexusButton" Content="{i18n:Translate ui.nexus_login.buttons.disconnect}" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0 0 0 0" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent" BorderBrush="{DynamicResource HighlightBrush}"/>
+		</StackPanel>
+	</Grid>
+</Window>
