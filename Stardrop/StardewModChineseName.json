@@ -728,5 +728,345 @@
         "ChineseName": "【功能】世界地图无处不在(24210)",
         "ChineseDesc": "这个模组允许您从任何地方打开所有世界地图。结合 NPC 地图位置，这样您就可以检查村民，无论他们身在何处。",
         "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/24210"
+    },
+    "[AT] DustBeauty's Industrial Furniture": {
+        "ChineseName": "【美化】工业风家具(17656)",
+        "ChineseDesc": "工业风家具。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/17656"
+    },
+    "[AT] Extendable Windows": {
+        "ChineseName": "【功能】可扩展窗口",
+        "ChineseDesc": "可扩展窗口",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "[AT] Nano's Retro Style Furniture": {
+        "ChineseName": "【美化】复古风格家具(16029)",
+        "ChineseDesc": "一套复古风格的家具，采用AT模式",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/16029"
+    },
+    "[AT] Shyzie's Rugs": {
+        "ChineseName": "【美化】女巫精灵风格地毯(16726)",
+        "ChineseDesc": "提供多种精美地毯纹理",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/16726"
+    },
+    "[AT] Shyzie's Witchy Goblincore Rugs": {
+        "ChineseName": "【美化】哥布林风格地毯(20640)",
+        "ChineseDesc": "哥布林风格地毯",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20640"
+    },
+    "[AT] West Elm Furniture by Atlas": {
+        "ChineseName": "【美化】西榆家具(14644)",
+        "ChineseDesc": "提供200+件现代风格家具及多种配色",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/14644"
+    },
+    "[CP] Crow Companion": {
+        "ChineseName": "【功能】乌鸦伙伴(22915)",
+        "ChineseDesc": "使用鹦鹉蛋饰品时，用乌鸦代替鹦鹉伴侣。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22915"
+    },
+    "[FS] Seasonal Hats": {
+        "ChineseName": "【功能】季节性帽子(13682)",
+        "ChineseDesc": "将季节性帽子（由 Beans 和 Maea 设计）添加到时尚感中，包括所有原装帽子，并添加可着色和棱镜版本。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13682"
+    },
+    "Aesthetic Secret Notes": {
+        "ChineseName": "【功能】美学秘密笔记(14955)",
+        "ChineseDesc": "更好的秘密笔记图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/14955"
+    },
+    "Aimon's Fancy Greenhouse": {
+        "ChineseName": "【功能】艾蒙的豪华温室(16405)",
+        "ChineseDesc": "让你的温室内部更显华丽。灵感主要源自格温的 “中世纪建筑温室重绘纹理” 模组。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/16405"
+    },
+    "Aimon's Fancy Shed": {
+        "ChineseName": "【功能】艾蒙的精致棚屋(15250)",
+        "ChineseDesc": "让你的棚屋地图焕然一新，布局更贴近现实风格",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/15250"
+    },
+    "Aimon's Tidy Cozy Cellar": {
+        "ChineseName": "【功能】艾蒙的温馨地窖(17814)",
+        "ChineseDesc": "让你的地窖地图焕然一新，布局更贴近现实风格。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/17814"
+    },
+    "Animated Bird Tappers": {
+        "ChineseName": "【美化】动画鸟类采集器",
+        "ChineseDesc": "将树液采集器替换为鸟类造型",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Animated Ducky Crab Pot": {
+        "ChineseName": "【美化】动画鸭子捕蟹笼(21810)",
+        "ChineseDesc": "将捕蟹笼替换为带动画效果的鸭子造型。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21810"
+    },
+    "Animated Frog Pots": {
+        "ChineseName": "【美化】动画青蛙捕蟹笼(21810)",
+        "ChineseDesc": "将捕蟹笼替换为青蛙造型的捕蟹笼",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21810"
+    },
+    "AT_Gwen_Paths": {
+        "ChineseName": "【美化】格温的纹理路径(8683)",
+        "ChineseDesc": "为 “替代纹理” 模组制作的路径与地板纹理重绘。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/8683"
+    },
+    "AT_GwenCraft_DNER": {
+        "ChineseName": "【美化】格温的手工艺品(13897)",
+        "ChineseDesc": "为 “替代纹理” 模组制作的手工艺品纹理重绘。适配黛西尼科的 “自然色系重绘” 版本",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13897"
+    },
+    "AT_Medieval_Buildings": {
+        "ChineseName": "【美化】中世纪建筑(10567)",
+        "ChineseDesc": "为 “替代纹理” 模组制作的部分建筑纹理重绘。适配游戏原版色调版本",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10567"
+    },
+    "Bathhouse Hot Spring": {
+        "ChineseName": "【美化】温泉浴场(22565)",
+        "ChineseDesc": "将浴场改造为温泉",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22565"
+    },
+    "Brushed Bronze Iridium Sprinkler": {
+        "ChineseName": "【美化】最高级洒水器(4902)",
+        "ChineseDesc": "铱洒水器的青铜色重绘版本",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/4902"
+    },
+    "Chest Deco : animal products": {
+        "ChineseName": "【美化】储物箱装饰：动物产品系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Chest Deco : artisan goods": {
+        "ChineseName": "【美化】储物箱装饰：手工制品系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Chest Deco : fishes": {
+        "ChineseName": "【美化】储物箱装饰：鱼类系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Chest Deco : misc": {
+        "ChineseName": "【美化】储物箱装饰：杂物系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Chest Deco : resources": {
+        "ChineseName": "【美化】储物箱装饰：资源系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Chest Deco : veggies": {
+        "ChineseName": "【美化】储物箱装饰：蔬菜系列(20384)",
+        "ChineseDesc": "储物箱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20384"
+    },
+    "Cottagecore_Fences": {
+        "ChineseName": "【美化】田园风栅栏(8558)",
+        "ChineseDesc": "栅栏的季节性纹理重绘",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/8558"
+    },
+    "Cute and Tidy Coops and Barns": {
+        "ChineseName": "【美化】可爱整洁的鸡舍与谷仓(8558)",
+        "ChineseDesc": "装饰并整理鸡舍与谷仓内部，不改变其原有尺寸。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/8558"
+    },
+    "DNER All in one map fix": {
+        "ChineseName": "【补丁】地图异常整合修复(29941)",
+        "ChineseDesc": "此模组用于修复其他模组导致的世界地图背景显示异常问题。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/29941"
+    },
+    "Earthy Icons for Worldmaps Everywhere": {
+        "ChineseName": "【美化】全域地图自然风格图标(24478)",
+        "ChineseDesc": "适配全域地图的黛西尼科自然风格图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/24478"
+    },
+    "Earthy Interface": {
+        "ChineseName": "【美化】自然风格界面(13658)",
+        "ChineseDesc": "温暖、大地色调的用户界面重新着色",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13658"
+    },
+    "Earthy Recolour": {
+        "ChineseName": "【美化】自然色系重绘(5255)",
+        "ChineseDesc": "温暖的大地色调重新着色，赏心悦目",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/5255"
+    },
+    "Earthy Recolour Fix for SVE": {
+        "ChineseName": "【补丁】SVE适配的自然色系重绘修复(7613)",
+        "ChineseDesc": "针对黛西尼科的自然色系重绘模组与星露谷扩展模组（SVE）的瀑布颜色显示问题的修复工具。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7613"
+    },
+    "Earthy Ridgeside CP Conversion": {
+        "ChineseName": "【美化】自然风格山脊村(17980)",
+        "ChineseDesc": "DeonDF 的 Earthy Ridgeside Village 重新着色的内容补丁延续。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/17980"
+    },
+    "Earthy Short Grass": {
+        "ChineseName": "【美化】自然风格短草(30067)",
+        "ChineseDesc": "适配黛西尼科自然色系重绘模组的短草纹理",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/30067"
+    },
+    "Firefly Torch": {
+        "ChineseName": "【美化】萤火虫火把(20333)",
+        "ChineseDesc": "将火把更改为萤火虫群（动画）",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20333"
+    },
+    "FS - Lighter Oversized Sleeves": {
+        "ChineseName": "【美化】超大浅色宽松袖(13393)",
+        "ChineseDesc": "2 种超大袖子可供选择，符合时尚感，素色和袖口（有黑色/白色条纹选项）。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13393"
+    },
+    "Grandpa's Farm": {
+        "ChineseName": "【美化】爷爷的农场(3753)",
+        "ChineseDesc": "为《星露谷扩展》（SVE）设计的中型农场地图",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/3753"
+    },
+    "Grandpa's Farm Forage Locations": {
+        "ChineseName": "【美化】爷爷的农场可觅食地点",
+        "ChineseDesc": "为《星露谷扩展》（SVE）设计的中型农场地图，标注了可觅食地点的农场地图",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Guxelbit's Furniture : additional": {
+        "ChineseName": "【美化】家具扩展包(20268)",
+        "ChineseDesc": "使用替代纹理的香草家具包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20268"
+    },
+    "Guxelbit's Furniture : normal": {
+        "ChineseName": "【美化】常规家具扩展包(20268)",
+        "ChineseDesc": "使用替代纹理的香草家具包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20268"
+    },
+    "Gwens_Doghouses": {
+        "ChineseName": "【美化】格温的狗屋(21248)",
+        "ChineseDesc": "为《星露谷物语》1.6 版本新增的家具狗屋进行纹理重绘",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21248"
+    },
+    "Gwens_paths": {
+        "ChineseName": "【美化】格温的路径(8683)",
+        "ChineseDesc": "路径与地板的重新着色 / 纹理重绘",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/8683"
+    },
+    "Happy Home Designer": {
+        "ChineseName": "【美化】快乐家居设计师(19675)",
+        "ChineseDesc": "通过全面改造家具与墙纸目录，提升装饰体验的模组",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/19675"
+    },
+    "Kkunma Hairstyle Bundle": {
+        "ChineseName": "【美化】发型合集",
+        "ChineseDesc": "通过全面改造家具与墙纸目录，提升装饰体验的模组",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Luny's Farm Dresses": {
+        "ChineseName": "【美化】露妮的连衣裙(23925)",
+        "ChineseDesc": "为 “时尚感” 模组添加田园风格主题服装",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23925"
+    },
+    "Luny's Plushies": {
+        "ChineseName": "【美化】露妮的毛绒玩具(23925)",
+        "ChineseDesc": "添加源自 “苦乐参半的港湾” 的毛绒玩具",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23925"
+    },
+    "Luny's Salon": {
+        "ChineseName": "【美化】露妮的美发沙龙(24746)",
+        "ChineseDesc": "为 “时尚感”（FS）模组添加多款自定义发型",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/24746"
+    },
+    "Magical Furniture for Alternative Textures": {
+        "ChineseName": "【美化】替换纹理的魔法家具",
+        "ChineseDesc": "巫师风家具的替换纹理包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Medieval_buildings": {
+        "ChineseName": "【美化】中世纪建筑(4542)",
+        "ChineseDesc": "受 Eemie 和花谷启发的中世纪建筑套装",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/4542"
+    },
+    "Medieval_Craftables": {
+        "ChineseName": "【美化】中世纪可制作物品(5513)",
+        "ChineseDesc": "可制作物品的纹理重绘",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/5513"
+    },
+    "Medieval_DNT": {
+        "ChineseName": "【美化】中世纪风格DNT纹理(10908)",
+        "ChineseDesc": "为黛西尼科的 tilesheet 文件制作的中世纪风格纹理重绘，已在 1.9.1 版本测试通过",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10908"
+    },
+    "MSVE": {
+        "ChineseName": "【美化】中世纪风格SVE资产重置模组(6086)",
+        "ChineseDesc": "将 SVE 资产重新设计为中世纪风格",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6086"
+    },
+    "Nyang Cat Scarecrows for AT": {
+        "ChineseName": "【美化】喵星人稻草人",
+        "ChineseDesc": "将hushsmile的喵星人稻草人转换为 AT 格式",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Plain Slime Hutch": {
+        "ChineseName": "【美化】简约风格史莱姆小屋(13154)",
+        "ChineseDesc": "让史莱姆小屋内部看起来像普通建筑。可选择将史莱姆相关的可制作物品或水碗重新着色，使其不再是紫色。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13154"
+    },
+    "Precise Furniture": {
+        "ChineseName": "【美化】精准摆家具(23488)",
+        "ChineseDesc": "允许您使用热键逐像素（或更快）移动家具。还允许您锁定家具,家具调整的延续。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23488"
+    },
+    "Seasonal Hedge Fence": {
+        "ChineseName": "【美化】季节性树篱围栏(21813)",
+        "ChineseDesc": "为你的树篱围栏添加精美的季节性变体，使其外观全年随季节变化.",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21813"
+    },
+    "Simple Foliage": {
+        "ChineseName": "【美化】简约植物群(20972)",
+        "ChineseDesc": "用于替换树木和灌木的装饰性内容包.",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20972"
+    },
+    "SVE Trees Recolored": {
+        "ChineseName": "【美化】SVE树木重绘版(28798)",
+        "ChineseDesc": "为热门重绘模组提供的 SVE 新增树木颜色调整选项",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28798"
+    },
+    "Too Many Swatches - a Furniture Recolor": {
+        "ChineseName": "【美化】超多款式——家具重绘(17031)",
+        "ChineseDesc": "为多款家具、墙纸和地板添加多种配套的木质色调与布料纹理，另对部分装饰件做了少量微调",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/17031"
+    },
+    "Universal Recolors": {
+        "ChineseName": "【功能】通用色调重绘(20749)",
+        "ChineseDesc": "统一降低饱和度并调整色调的瓦片集，为那些迫切想要摆脱原版色调的玩家提供一个基础样式",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20749"
+    },
+    "Way Back PT": {
+        "ChineseName": "【功能】往昔鹈鹕镇(7332)",
+        "ChineseDesc": "所有城镇建筑/构筑物/装饰的季节性纹理。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7332"
+    },
+    "Witchy Decorations for Content Patcher": {
+        "ChineseName": "【内容补丁】巫术装饰品(23106)",
+        "ChineseDesc": "玛娜基雷尔的巫术装饰品的转换。将 24 种巫术/奇幻/魔法主题的草药、蘑菇、石头和水晶作为可制作品添加到您的游戏中。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23106"
+    },
+    "Witchy Rustic Looks": {
+        "ChineseName": "【美化】女巫质风格外观(15140)",
+        "ChineseDesc": "在星露谷物语中为时尚感购买一些维多利亚时代和质朴的女巫服装。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/15140"
+    },
+    "WorldMap for East Scarp": {
+        "ChineseName": "【美化】东斯卡普土色地图(21963)",
+        "ChineseDesc": "为东斯卡普制作的自然风地图",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21963"
+    },
+    "WorldMap for Ginger Island": {
+        "ChineseName": "【美化】姜岛大地地图(21969)",
+        "ChineseDesc": "为姜岛制作的自然风世界地图",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21969"
+    },
+    "WorldMap for Ridgeside Village": {
+        "ChineseName": "【美化】赛德村世界地图(21792)",
+        "ChineseDesc": "为里奇赛德村制作的自然风世界地图",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21792"
+    },
+    "Yomi's Golden Princess Hairstyle": {
+        "ChineseName": "【美化】金色公主发型",
+        "ChineseDesc": "将金色公主发型移植到 “时尚感” 模组中",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
     }
 }
