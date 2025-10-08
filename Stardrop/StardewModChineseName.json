@@ -1138,5 +1138,275 @@
         "ChineseName": "【功能】经验条(509)",
         "ChineseDesc": "在左上角显示经验条",
         "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/509"
+    },
+    "(CP) Birds Didn't Invent Poi": {
+        "ChineseName": "【功能】鸟儿没有Poi(21965)",
+        "ChineseDesc": "微小的对话修正，防止 Leo 暗示某些文化菜肴是姜岛上的鸟类发明的。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21965"
+    },
+    "[BBM] Blueberries On Bushes": {
+        "ChineseName": "【功能】灌木上的蓝莓(17772)",
+        "ChineseDesc": "在灌木上添加蓝莓",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/17772"
+    },
+    "[CP] Alex's Ice Cream Stand Sells A Few More Items": {
+        "ChineseName": "【功能】亚历克斯的冰淇淋摊增加更多商品(29350)",
+        "ChineseDesc": "亚历克斯的冰淇淋摊在原有冰淇淋之外，增加了一些其他商品。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/29350"
+    },
+    "[CP] Atelier Cauldron English Translation Pack": {
+        "ChineseName": "【功能】炼金工坊大锅英文翻译包()",
+        "ChineseDesc": "添加 “炼金工坊大锅” 的英文翻译",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "[CP] Beach Additional Storage Space Area": {
+        "ChineseName": "【功能】海滩额外储物区(14244)",
+        "ChineseDesc": "添加 [CP] 海滩额外储物区",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/14244"
+    },
+    "[CP] Beach Extension For Crab Pod": {
+        "ChineseName": "【功能】蟹笼海滩扩展(11594)",
+        "ChineseDesc": "添加针对蟹笼的海滩扩展内容",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/11594"
+    },
+    "[CP] Better Honey Mead": {
+        "ChineseName": "【功能】更好的蜂蜜蜜酒(22848)",
+        "ChineseDesc": "允许调味蜂蜜酿造出调味蜜酒",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22848"
+    },
+    "[CP] Blue Eggs and Golden Mayo": {
+        "ChineseName": "【功能】黄金蛋黄酱(20266)",
+        "ChineseDesc": "添加可制作成蓝色蛋黄酱的特殊蓝蛋。同时新增黄金蛋黄酱和鸵鸟蛋黄酱",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20266"
+    },
+    "[CP] Button's Extra Books": {
+        "ChineseName": "【功能】巴顿的额外书籍(21526)",
+        "ChineseDesc": "新增更多可从书商及其他各处获取的书籍和能力",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21526"
+    },
+    "[CP] Camping tent with tarp": {
+        "ChineseName": "【功能】带防水布的露营帐篷(23578)",
+        "ChineseDesc": "添加 [CP] 带防水布的露营帐篷",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23578"
+    },
+    "[CP] Full beard for Philip - RSV (seasonal)": {
+        "ChineseName": "【美化】菲利普的胡须造型-RSV季节性(23691)",
+        "ChineseDesc": "为山脊村的菲利普提供替换肖像",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23691"
+    },
+    "[CP] Pixie's MCM Bedroom Furniture": {
+        "ChineseName": "【美化】小精灵的中世纪现代风格卧室家具(36809)",
+        "ChineseDesc": "一组中世纪现代风格的卧室家具",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36809"
+    },
+    "[CP] Pixie's MCM Rug Collection": {
+        "ChineseName": "【美化】小精灵的中世纪现代风格地毯(36256)",
+        "ChineseDesc": "一组中世纪现代风格的地毯",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36256"
+    },
+    "[CP] Staffy dog": {
+        "ChineseName": "【美化】斯塔福郡斗牛㹴(25783)",
+        "ChineseDesc": "适用于 Content Patcher 的斯塔福郡斗牛㹴皮肤",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25783"
+    },
+    "[FTM] Berry Woods": {
+        "ChineseName": "【美化】浆果森林(25541)",
+        "ChineseDesc": "浆果森林的 FTM 框架组件",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25541"
+    },
+    "[STF] Clint Shop Artifacts": {
+        "ChineseName": "【美化】克林特商店的古物(10529)",
+        "ChineseDesc": "克林特出售古物",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10529"
+    },
+    "[STF] Clint Shop Bars": {
+        "ChineseName": "【美化】克林特商店的金属锭(10529)",
+        "ChineseDesc": "克林特出售金属锭",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10529"
+    },
+    "[STF] Clint Shop Geodes": {
+        "ChineseName": "【美化】克林特商店的晶球(10529)",
+        "ChineseDesc": "克林特出售晶球",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10529"
+    },
+    "[STF] Clint Shop Overhaul": {
+        "ChineseName": "【美化】克林特商店改造(10529)",
+        "ChineseDesc": "克林特会出售更多商品",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10529"
+    },
+    "6480's Giant Crops": {
+        "ChineseName": "【美化】巨型农作物(5221)",
+        "ChineseDesc": "添加许多香草作物的巨型版本。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/5221"
+    },
+    "8bit's Hairstyles": {
+        "ChineseName": "【美化】8bit的发型(19141)",
+        "ChineseDesc": "8bit的发型。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/19141"
+    },
+    "A Secret Forest Walk": {
+        "ChineseName": "【美化】秘密森林漫步(18929)",
+        "ChineseDesc": "漫步在秘密树林中，看看你能发现什么！添加了一个独特的可重复选择你自己的冒险事件，其中包含数十种互动和分支路径。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/18929"
+    },
+    "A Warm Welcome": {
+        "ChineseName": "【美化】热烈欢迎(29400)",
+        "ChineseDesc": "在一个陌生的小镇开始新的生活可能会令人生畏，但在鹈鹕镇却不是！通过“热烈欢迎”，您将收到每位村民的个性化欢迎，以及一份小礼物来帮助您安顿下来",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/29400"
+    },
+    "Additional Hairstyles": {
+        "ChineseName": "【美化】附加42种发型(36243)",
+        "ChineseDesc": "为游戏添加了 42 种新发型，旨在与原版发型融为一体！需要内容修补程序。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36243"
+    },
+    "Adventurer's Guild Expanded for 1.6": {
+        "ChineseName": "【功能】冒险家公会扩展(22591)",
+        "ChineseDesc": "冒险家公会的故事扩展，包括新任务、30+ 故事事件、新的浪漫 NPC，以及与友好怪物交朋友并招募住在你的农场的能力！与 SVE 兼容！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22591"
+    },
+    "Aimon's Additional Bus Interior Map": {
+        "ChineseName": "【功能】巴士内部地图(20289)",
+        "ChineseDesc": "添加额外的自定义巴士内部地图，供玩家访问和探索",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20289"
+    },
+    "Alecto the Witch": {
+        "ChineseName": "【功能】女巫亚历克托(10671)",
+        "ChineseDesc": "我版本的巫师前妻。完整的 NPC，包含事件、对话和小屋外时间表！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10671"
+    },
+    "Alvadeas Tilesheet": {
+        "ChineseName": "【功能】阿尔瓦迪亚的图块(13743)",
+        "ChineseDesc": "一个包含自定义精灵图的瓦片集",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13743"
+    },
+    "Always Hay": {
+        "ChineseName": "【功能】随时获得干草(20808)",
+        "ChineseDesc": "无需青贮窖，通过割草即可获得干草",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20808"
+    },
+    "Always Raining in the Valley": {
+        "ChineseName": "【功能】山谷中总是下雨(9999)",
+        "ChineseDesc": "一个关于三个人在世间打拼的暖心扩展故事",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/9999"
+    },
+    "Ancient Seeds in Garden Pots Allowed": {
+        "ChineseName": "【功能】允许古种子种植在花盆中(21603)",
+        "ChineseDesc": "只需让古种子可以种植在普通花盆中",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21603"
+    },
+    "Animals Don't Remove Grass": {
+        "ChineseName": "【功能】动物不啃草地(21028)",
+        "ChineseDesc": "动物在户外进食时会吃草，但不会啃除草地",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21028"
+    },
+    "Archie's Tilesheets of Miscellaneous Stuff": {
+        "ChineseName": "【美化】各类贴图素材(28480)",
+        "ChineseDesc": "一组图块表，可供其他模组在构建地图时使用。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28480"
+    },
+    "Artisan Goods Keep Quality": {
+        "ChineseName": "【美化】更精美的手工艺品(21278)",
+        "ChineseDesc": "用质量更高、细节更丰富的版本替换手工艺品的图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21278"
+    },
+    "ARV- Maximum": {
+        "ChineseName": "【美化】马克西姆",
+        "ChineseDesc": "亨利的忠诚小狗！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/"
+    },
+    "Auto-Stack Bait & Ammo": {
+        "ChineseName": "【功能】自动堆叠鱼饵与弹药(23423)",
+        "ChineseDesc": "会自动将新获得的同类鱼饵添加到已装有该类鱼饵的鱼竿上",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23423"
+    },
+    "AutoAnimalDoors": {
+        "ChineseName": "【功能】动物门自动开关(1019)",
+        "ChineseDesc": "为你的动物自动开关门。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/1019"
+    },
+    "AutoGate": {
+        "ChineseName": "【功能】自动门(820)",
+        "ChineseDesc": "使通过栅栏门的过程自动化",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/820"
+    },
+    "Battery Pack From Joja": {
+        "ChineseName": "【功能】乔家超市购买电池组(27674)",
+        "ChineseDesc": "可从乔家超市购买电池组",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/27674"
+    },
+    "Beach Farm Redone": {
+        "ChineseName": "【功能】海滩农场重制版(24235)",
+        "ChineseDesc": "一个草地更茂盛、空间更开阔的海滩农场",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/24235"
+    },
+    "Beach Sounds for Content Patcher": {
+        "ChineseName": "【功能】适用于CP的海滩音效(32469)",
+        "ChineseDesc": "替换在海滩行走时播放的部分音效",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/32469"
+    },
+    "Bees Plus": {
+        "ChineseName": "【功能】蜜蜂增强版(30597)",
+        "ChineseDesc": "新增蜂蜡制品",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/30597"
+    },
+    "Berry Season Reminder": {
+        "ChineseName": "【功能】浆果季节提醒(9315)",
+        "ChineseDesc": "在日历上添加图标即可提醒您浆果季节",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/9315"
+    },
+    "Berry Woods": {
+        "ChineseName": "【功能】浆果森林(25541)",
+        "ChineseDesc": "向游戏中新增浆果森林",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25541"
+    },
+    "Better Beehouses": {
+        "ChineseName": "【功能】更优质的蜂箱(10996)",
+        "ChineseDesc": "对蜂箱进行改进",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10996"
+    },
+    "Better Clinic Beds": {
+        "ChineseName": "【功能】更好的诊所床位(13608)",
+        "ChineseDesc": "为诊所配备一些合适的医院病床",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/13608"
+    },
+    "Better Festival Notifications": {
+        "ChineseName": "【功能】更好的节日通知(14170)",
+        "ChineseDesc": "可自定义节日开始和结束时的通知。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/14170"
+    },
+    "Better Friendship": {
+        "ChineseName": "【功能】更完善的好感度系统(10287)",
+        "ChineseDesc": "在村民头顶添加思想泡泡，显示他们喜欢玩家背包中的哪些礼物，以及他们何时愿意交谈。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10287"
+    },
+    "Better Honey Mead": {
+        "ChineseName": "【功能】更好的蜂蜜酒(22848)",
+        "ChineseDesc": "调味蜂蜜现在生产调味蜂蜜酒。还可以根据蜂蜜风味将蜂蜜和蜂蜜酒转化为有色物品",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22848"
+    },
+    "Better Introduction for Content Patcher": {
+        "ChineseName": "【功能】优化开场动画(6590)",
+        "ChineseDesc": "替换开场动画中爷爷的病床以及乔家超市的巨型显像管显示器。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6590"
+    },
+    "Better Meowmere": {
+        "ChineseName": "【功能】优化喵星人之剑(20374)",
+        "ChineseDesc": "喵星人之剑现在可以发射投射物了！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20374"
+    },
+    "Better Moss Soup": {
+        "ChineseName": "【功能】更好的苔藓汤(25075)",
+        "ChineseDesc": "制作苔藓汤从未如此有用！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25075"
+    },
+    "Better Ranching": {
+        "ChineseName": "【功能】更完善的畜牧业(859)",
+        "ChineseDesc": "避免挤奶 / 剪毛操作失败，并显示动物何时可以被挤奶、剪毛和抚摸。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/859"
+    },
+    "Better Shipping Bin": {
+        "ChineseName": "【功能】更完善的出货箱(10487)",
+        "ChineseDesc": "可从出货箱中取回物品",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10487"
     }
 }
