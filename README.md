@@ -14,6 +14,13 @@ Stadrop 利用 SMAPI[SMAPI (星露谷物语模组API)](https://smapi.io/)来简�
 # 开始
 有关如何安装、更新和使用 Stardrop 的详细文档，请参阅[GitBook pages](https://floogen.gitbook.io/stardrop/)
 
+# 汉化进度
+目前的汉化规划是按照N网的MOD整合包一个一个汉化下去；
+https://www.nexusmods.com/games/stardewvalley/collections
+
+- [2025-10-06] Stardew Valley VERY Expanded
+- [2025-10-08] Aesthetic Valley | Witchcore
+
 ## 下载 Stardrop 中文版
 1. 
 
