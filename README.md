@@ -21,6 +21,7 @@ https://www.nexusmods.com/games/stardewvalley/collections
 - 【2025-10-06】 Stardew Valley VERY Expanded-87
 - 【2025-10-06】 Aesthetic Valley | Witchcore-86
 - 【2025-10-08】SVE + Grandpa's Farm-25
+- 【2025-10-08】SVE + Immersive Farm 2 Remastered-25
 
 ## 下载 Stardrop 中文版
 1. 
