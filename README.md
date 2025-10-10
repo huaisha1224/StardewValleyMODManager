@@ -1,4 +1,4 @@
-# 星露谷物语MOD安装器(Stardrop中文版)
+# 星露谷MOD安装器(Stardrop中文版)
 
 这是Stardrop 星露谷物语(Stardew Valley)模组管理器的中文版
 

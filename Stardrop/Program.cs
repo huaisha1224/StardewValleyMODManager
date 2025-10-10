@@ -30,7 +30,7 @@ namespace Stardrop
 
         internal static bool onBootStartSMAPI = false;
         internal static string? nxmLink = null;
-        internal static readonly string defaultProfileName = "Default";
+        internal static readonly string defaultProfileName = "Default"; //默认配置文件名称
         internal static readonly string executablePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Stardrop.exe");
         internal static readonly Regex gameDetailsPattern = new Regex(@"SMAPI (?<smapiVersion>.+) with Stardew Valley (?<gameVersion>.+) on (?<system>.+)");
 
@@ -104,7 +104,7 @@ namespace Stardrop
                     }
                 }
 
-                // Set the default paths
+                // 设置默认路径
                 if (!String.IsNullOrEmpty(settings.ModFolderPath))
                 {
                     Pathing.SetSmapiPath(settings.SMAPIFolderPath);
@@ -139,12 +139,16 @@ namespace Stardrop
                     dir.Delete(true);
                 }
 
-                // Load the translations
+                // 加载本地化
                 if (String.IsNullOrEmpty(settings.Language))
                 {
                     settings.Language = translation.GetLanguageFromAbbreviation(CultureInfo.CurrentCulture.TwoLetterISOLanguageName);
                 }
                 translation.LoadTranslations(translation.GetLanguage(settings.Language));
+
+                //默认加载中文
+                settings.Language = "Chinese";
+                translation.SetLanguage("Chinese");
 
                 BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
             }

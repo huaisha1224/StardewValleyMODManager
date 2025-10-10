@@ -1,0 +1,98 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Stardrop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:Projektanker.Icons.Avalonia;assembly=Projektanker.Icons.Avalonia"
+        xmlns:i18n="clr-namespace:Stardrop.Utilities.Extension"
+        mc:Ignorable="d"
+        x:Class="Stardrop.Views.AboutWindow"
+        Title="{i18n:Translate ui.about_window.title}"
+        Width="600"
+        Height="400"
+        Background="{DynamicResource ThemeBackgroundBrush}"
+        HasSystemDecorations="True"
+        WindowStartupLocation="CenterScreen"
+        Icon="/Assets/icon.ico"
+        CanResize="False">
+    
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ThemeForegroundBrush}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border x:Name="Background"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="{TemplateBinding CornerRadius}">
+                        <Border x:Name="Border"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding CornerRadius}">
+                            <ContentPresenter Name="PART_ContentPresenter"
+                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                                              Content="{TemplateBinding Content}"
+                                              Padding="{TemplateBinding Padding}"
+                                              RecognizesAccessKey="True"
+                                              HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+        
+        <Style Selector="Button:pointerover">
+            <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+        
+        <Style Selector="Button:pressed">
+            <Setter Property="Background" Value="{DynamicResource ThemeControlMidBrush}"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+    </Window.Styles>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" 
+                   Text="{i18n:Translate ui.about_window.title}" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,20,0,10"
+                   Foreground="{DynamicResource ThemeForegroundBrush}" />
+
+        <ScrollViewer Grid.Row="1" Margin="20,0,20,20">
+            <TextBlock Name="descriptionTextBlock"
+                       TextWrapping="Wrap"
+                       Foreground="{DynamicResource ThemeForegroundBrush}" />
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center"
+                    Margin="0,0,0,20">
+            <Button Name="tutorialButton"
+                    Content="使用教程"
+                    Margin="0,0,10,0"
+                    Padding="20,5"
+                    Click="TutorialButton_Click" />
+            <Button Name="githubButton"
+                    Content="GitHub源码"
+                    Margin="0,0,10,0"
+                    Padding="20,5"
+                    Click="GitHubButton_Click" />
+            <Button Name="stardropButton"
+                    Content="Stardrop源码"
+                    Padding="20,5"
+                    Click="StardropButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
