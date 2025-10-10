@@ -1,8 +1,8 @@
-# Stardrop 中文版
+# 星露谷物语MOD安装器(Stardrop中文版)
 
 这是Stardrop 星露谷物语(Stardew Valley)模组管理器的中文版
 
-和原版Stardrop的唯一区别就是在MOD名称后面添加了一列MOD的中文名称，方便中文用户使用。
+和原版Stardrop的唯一区别就是在MOD名称后面添加了MOD的中文名称，方便中文用户使用。
 
 Stardrop 是游戏 [星露谷物语](https://www.stardewvalley.net/)的开源、跨平台模组管理器。它是使用 Avalonia UI 框架构建的。
 
@@ -22,7 +22,6 @@ https://www.nexusmods.com/games/stardewvalley/collections
 - 【2025-10-06】 Aesthetic Valley | Witchcore-86
 - 【2025-10-08】SVE + Grandpa's Farm-25
 - 【2025-10-08】SVE + Immersive Farm 2 Remastered-25
-- 【2025-10-09】Mega Expanded Stardew(100)
 
 ## 下载 Stardrop 中文版
 1. 
