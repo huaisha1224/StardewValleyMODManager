@@ -1653,5 +1653,340 @@
         "ChineseName": "【美化】壁挂式架子(28122)",
         "ChineseDesc": "添加功能性壁挂式搁板，以展示 1-3 个使用家具框架制作的物品。",
         "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28122"
+    },
+    "(CP) Demetrius's Tomato Aesthetics": {
+        "ChineseName": "【美化】德米特里厄斯的番茄主题美化(23097)",
+        "ChineseDesc": "让农场主在 “番茄” 和 “硬木床” 事件中，帮助德米特里厄斯与罗宾实现婚姻和睦。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23097"
+    },
+    "(DDF) Compatibility Patches": {
+        "ChineseName": "【补丁】对话显示框补丁(22678)",
+        "ChineseDesc": "框架自定义了几乎所有关于对话框的内容。允许您添加友谊之心、自定义文本和图像等等",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22678"
+    },
+    "[AT] Crop Variety": {
+        "ChineseName": "【功能】作物多样性(9930)",
+        "ChineseDesc": "为星露谷物语的各种农作物和花卉添加纹理变化。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/9930"
+    },
+    "[CP] Craftable Hardwood": {
+        "ChineseName": "【功能】可制作硬木(15863)",
+        "ChineseDesc": "添加一个制作硬木的配方",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/15863"
+    },
+    "[CP] Cuter Mushroom Log": {
+        "ChineseName": "【美化】可爱的蘑菇原木(33667)",
+        "ChineseDesc": "重新纹理蘑菇原木，可制作更朴实的颜色和更坚固的设计。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/33667"
+    },
+    "[CP] Molamole's Farm Kitchen - Colorful": {
+        "ChineseName": "【美化】莫拉莫尔的农场厨房(27617)",
+        "ChineseDesc": "一些农场厨房的纹理重绘！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/27617"
+    },
+    "[CP] Molamole's Floorings ": {
+        "ChineseName": "【美化】莫拉莫尔的婴儿床重新贴图(28380)",
+        "ChineseDesc": "一些地板纹理重绘！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Molamole's Floorings": {
+        "ChineseName": "【美化】莫拉莫尔的婴儿床重新贴图(28380)",
+        "ChineseDesc": "一些地板纹理重绘！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Molamole's Furniture Catalogue": {
+        "ChineseName": "【美化】莫拉莫尔的家具目录(35213)",
+        "ChineseDesc": "一些精美的家具，由莫拉莫拉带着爱与咖啡因制作而成。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/35213"
+    },
+    "[CP] Molamole's MailBox": {
+        "ChineseName": "【美化】莫拉莫尔的邮箱(20517)",
+        "ChineseDesc": "有 15 种款式、5 种颜色和季节性变体。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20517"
+    },
+    "[CP] Molamole's Mini-ShippingBin": {
+        "ChineseName": "【美化】莫拉莫尔的迷你出货箱(31970)",
+        "ChineseDesc": "一些迷你出货箱的纹理，用于搭配 [AT x CP] 莫拉莫拉的出货箱！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/31970"
+    },
+    "[CP] Molamole's Nursery ": {
+        "ChineseName": "【美化】莫拉莫尔的育儿室(28380)",
+        "ChineseDesc": "每间客房均配有 10 张木质样本和 10 张床单。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Molamole's Nursery": {
+        "ChineseName": "【美化】莫拉莫尔的育儿室(28380)",
+        "ChineseDesc": "每间客房均配有 10 张木质样本和 10 张床单。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Molamole's ShippingBin": {
+        "ChineseName": "【美化】莫拉莫尔的出货箱(23117)",
+        "ChineseDesc": "有 6 种款式、5 种颜色和季节性变体。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23117"
+    },
+    "[CP] Molamole's Tree Of The Winter Star": {
+        "ChineseName": "【美化】莫拉莫尔的冬星之树重贴图(28667)",
+        "ChineseDesc": "附带 15 个样本、装饰品、一些家具等。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28667"
+    },
+    "[CP] Molamole's Wallpaper - Night": {
+        "ChineseName": "【美化】莫拉莫尔的墙纸-夜景款(28380)",
+        "ChineseDesc": "一些墙纸的纹理重绘！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Molamole's Wallpapers": {
+        "ChineseName": "【美化】莫拉莫尔的墙纸系列(28380)",
+        "ChineseDesc": "一些墙纸的纹理重绘！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/28380"
+    },
+    "[CP] Roosters!": {
+        "ChineseName": "【补丁】添加公鸡1.6(21729)",
+        "ChineseDesc": "添加公鸡，它们会挖虫肉和诱饵。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21729"
+    },
+    "AimonsWitchSwampOverhaulPatches": {
+        "ChineseName": "【补丁】女巫沼泽大修补丁(18109)",
+        "ChineseDesc": "向女巫沼泽中添加萤火虫。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/18109"
+    },
+    "Alternate Dusty Portraits": {
+        "ChineseName": "【美化】Furby的另类尘土肖像(20496)",
+        "ChineseDesc": "来自《星露谷物语》扩展版的达斯蒂的不同肖像",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20946"
+    },
+    "Coii's Hair Sets Pack": {
+        "ChineseName": "【美化】发型套装包(2869)",
+        "ChineseDesc": "替换农场主的发型。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/2869"
+    },
+    "Colorful Fish Ponds": {
+        "ChineseName": "【美化】五颜六色的鱼塘(23615)",
+        "ChineseDesc": "您还可以使用内容包来更改您想要的任何鱼的颜色覆盖。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23615"
+    },
+    "Combat Controls Redux": {
+        "ChineseName": "【功能】战斗控制优化(10496)",
+        "ChineseDesc": "针对战斗进行的游戏控制调整。使角色面向鼠标点击方向，实现武器自动挥舞和流畅动作。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10496"
+    },
+    "Community Center Helper": {
+        "ChineseName": "【功能】社区中心助手(6893)",
+        "ChineseDesc": "当鼠标悬停在收集包所需物品上时，会显示该物品的获取提示。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6893"
+    },
+    "Community Center Icons Redone": {
+        "ChineseName": "【功能】社区中心图标重制(7641)",
+        "ChineseDesc": "一款通过 Content Patcher 工具改进社区中心收集包图标的模组。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7641"
+    },
+    "Compatibility Content Pack": {
+        "ChineseName": "【功能】兼容性内容包(22678)",
+        "ChineseDesc": "包含其他受支持模组所使用的所有颜色覆盖设置的内容包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22678"
+    },
+    "Context-Sensitive Gift Cursor for Stardew Valley": {
+        "ChineseName": "【功能】简化送礼流程(6564)",
+        "ChineseDesc": "通过在光标旁边添加上下文相关图标来指示 NPC 的喜好、不喜欢和其他重要信息，从而简化送礼流程。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6564"
+    },
+    "Cornucopia - Artisan Machines": {
+        "ChineseName": "【功能】更多工匠机器和商品(24842)",
+        "ChineseDesc": "为游戏添加更多工匠机器和商品。完全可配置和编写，主要依赖于 Content Patcher。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/24842"
+    },
+    "Cornucopia - More Crops": {
+        "ChineseName": "【功能】提供额外水果和蔬菜(19508)",
+        "ChineseDesc": "提供额外水果和蔬菜，主要依赖于 Content Patcher。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/19508"
+    },
+    "Cornucopia - More Flowers": {
+        "ChineseName": "【功能】提供额外更多花卉(20290)",
+        "ChineseDesc": "提供额外更多花卉，主要依赖于 Content Patcher。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20290"
+    },
+    "Cornucopia Flower Trees Retextured": {
+        "ChineseName": "【美化】花卉树外观的优化(23988)",
+        "ChineseDesc": "花卉树外观的优化",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23988"
+    },
+    "Cornucopia Fruit Trees Retextured": {
+        "ChineseName": "【美化】果树外观的优化(23988)",
+        "ChineseDesc": "花果树外观的优化",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23988"
+    },
+    "Cozy Chocolate Furniture": {
+        "ChineseName": "【美化】温馨巧克力家具(20011)",
+        "ChineseDesc": "添加一套新的家具，包含专属的家具目录",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20011"
+    },
+    "CropGrowthAdjustments": {
+        "ChineseName": "【功能】作物生长调整(18914)",
+        "ChineseDesc": "允许通过内容包调整作物生长参数",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/18914"
+    },
+    "Custom Cask Mod": {
+        "ChineseName": "【功能】自定义酒桶模组(2642)",
+        "ChineseDesc": "增加了自定义酒桶的方式。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/2642"
+    },
+    "Custom Community Center Bundles": {
+        "ChineseName": "【功能】自定义社区中心收集包(21340)",
+        "ChineseDesc": "社区中心自定义收集包 - 主文件",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21340"
+    },
+    "Custom Community Center Bundles - Cornucopia RSV SVE Bundle Pack": {
+        "ChineseName": "【功能】自定义社区中心收集包-RSV、SVE定制(21340)",
+        "ChineseDesc": "社区中心自定义收集包 - 主文件",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21340"
+    },
+    "Custom Community Center Bundles - Pure Vanilla Bundle Pack": {
+        "ChineseName": "【功能】自定义社区中心收集包-纯原版(21340)",
+        "ChineseDesc": "纯原版社区中心的自定义收集包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21340"
+    },
+    "Custom Fixed Dialogue": {
+        "ChineseName": "【补丁】自定义修正对话(20938)",
+        "ChineseDesc": "允许内容修补程序模组创建自定义版本的 ExtraDialogue 和一些 StringsFromCSFiles 字符串更新",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20938"
+    },
+    "Custom NPC Exclusions": {
+        "ChineseName": "【功能】自定义NPC排除(7089)",
+        "ChineseDesc": "允许其他模组将 NPC 排除在某些任务和事件之外，尤其是那些随机选择 NPC 的任务和事件。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7089"
+    },
+    "Custom Tokens": {
+        "ChineseName": "【功能】自定义令牌(7517)",
+        "ChineseDesc": "创建一些自定义令牌以在内容补丁程序中使用，以扩展可以执行的作。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7517"
+    },
+    "Customize Dresser": {
+        "ChineseName": "【功能】自定义梳妆台(23359)",
+        "ChineseDesc": "允许自定义梳妆台。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/23359"
+    },
+    "Date Night Redux": {
+        "ChineseName": "【功能】允新增随机事件-约会之夜(22714)",
+        "ChineseDesc": "允新增随机事件，让你可以与配偶外出共度约会时光",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22714"
+    },
+    "Deluxe Grabber Redux 1.6": {
+        "ChineseName": "【功能】豪华自动收集器重制版(20799)",
+        "ChineseDesc": "允许使用自动收集器收获作物、史莱姆球、果树、灌木、可觅食物品和古物点",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20799"
+    },
+    "Deluxe Journal": {
+        "ChineseName": "【功能】增强日志功能(20799)",
+        "ChineseDesc": "为日志添加新功能，对其进行升级",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/20799"
+    },
+    "Desert Festival Foods": {
+        "ChineseName": "【功能】沙漠节日美食(21303)",
+        "ChineseDesc": "为你带来沙漠节日的特色美食！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/21303"
+    },
+    "Destroyable Bushes": {
+        "ChineseName": "【功能】可砍伐灌木(6304)",
+        "ChineseDesc": "允许玩家使用斧头砍伐灌木",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6304"
+    },
+    "Dialogue Display Framework Continued": {
+        "ChineseName": "【前置】对话显示框架(22678)",
+        "ChineseDesc": "允许玩家使用斧头砍伐灌木",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22678"
+    },
+    "Dialogue to reflect town growing.": {
+        "ChineseName": "【功能】体现小镇发展的对话(29789)",
+        "ChineseDesc": "允许玩家使用斧头砍伐灌木",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/29789"
+    },
+    "Distant Lands - Witch Swamp Overhaul": {
+        "ChineseName": "【功能】一个小型女巫沼泽扩展包(18109)",
+        "ChineseDesc": "一个小型女巫沼泽扩展包",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/18109"
+    },
+    "Distant Lands - Witch Swamp Overhaul FTM": {
+        "ChineseName": "【功能】一个小型女巫沼泽扩展包 FTM(18109)",
+        "ChineseDesc": "远方之地 - 女巫沼泽重制 FTM",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/18109"
+    },
+    "Don't Enable Pam": {
+        "ChineseName": "【功能】帕姆口渴了任务需要果汁(6721)",
+        "ChineseDesc": "修改 “帕姆口渴了” 任务，要求提交果汁果汁而非麦酒。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/6721"
+    },
+    "Dwarf Portrait Replacement": {
+        "ChineseName": "【功能】矮人肖像替换(14916)",
+        "ChineseDesc": "替换矮人的肖像。提供两种选项：静态肖像和带表情的肖像。新增冬季服装。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/14916"
+    },
+    "Dynamic Shane and Sterling": {
+        "ChineseName": "【功能】动态肖恩和斯特林(10675)",
+        "ChineseDesc": "替换矮人的肖像。提供两种选项：静态肖像和带表情的肖像。新增冬季服装。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10675"
+    },
+    "DynamicNightTime": {
+        "ChineseName": "【功能】让夜间时间动态变化(2072)",
+        "ChineseDesc": "让夜间时间动态变化",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/2072"
+    },
+    "Elle's New Coop Animals": {
+        "ChineseName": "【功能】新的鸡舍动物(3168)",
+        "ChineseDesc": "鸡舍动物替代品。还包括 Adopt n' Skin 的皮肤。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/3168"
+    },
+    "Elliott's Extensive Marriage Dialogue": {
+        "ChineseName": "【功能】新增了大量婚后对话(27619)",
+        "ChineseDesc": "新增了大量婚后对话",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/27619"
+    },
+    "Em's Bears": {
+        "ChineseName": "【功能】四种颜色的小熊(36100)",
+        "ChineseDesc": "四种 SVE 熊选项，包括玛妮商店的图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36100"
+    },
+    "Em's Camels": {
+        "ChineseName": "【功能】四种颜色的骆驼(36181)",
+        "ChineseDesc": "四种 SVE 骆驼选项，包括玛妮商店的图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36181"
+    },
+    "Em's Geese": {
+        "ChineseName": "【功能】四种颜色的鹅(36534)",
+        "ChineseDesc": "四种 SVE 鹅选项，包括玛妮商店的图标",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/36534"
+    },
+    "Expanded Storage": {
+        "ChineseName": "【前置】集镇箱子拓展(7431)",
+        "ChineseDesc": "为游戏添加新型箱子的框架。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/7431"
+    },
+    "ExtraAnimalConfig": {
+        "ChineseName": "【功能】为动物设定添加额外功能(25328)",
+        "ChineseDesc": "为动物设定添加额外功能",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25328"
+    },
+    "ExtraMachineConfig": {
+        "ChineseName": "【功能】额外的机器配置(22256)",
+        "ChineseDesc": "为机器的工匠配方：工匠配方及其他杂项数据结构添加额外功能。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/22256"
+    },
+    "Farmer Helper": {
+        "ChineseName": "【功能】农场主助手(10179)",
+        "ChineseDesc": "农场主助手",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/10179"
+    },
+    "farmerjack's Dialogue Expansions": {
+        "ChineseName": "【功能】单身男女对话扩展包(9972)",
+        "ChineseDesc": "我的旧单身汉和单身女郎对话扩展的一体化、可配置组合！",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/9972"
+    },
+    "Farmhouse Fixes": {
+        "ChineseName": "【前置】农舍修复(16507)",
+        "ChineseDesc": "针对农舍 / 小屋的多项修复及便利性改进",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/16507"
+    },
+    "Fashinable Hairstyles - Gentlemen Edition": {
+        "ChineseName": "【功能】时尚发型-提供更多发型选择(25056)",
+        "ChineseDesc": "为农场主提供更多发型选择。",
+        "DownloadUrl": "https://www.nexusmods.com/stardewvalley/mods/25056"
     }
 }
