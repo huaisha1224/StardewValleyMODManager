@@ -409,7 +409,7 @@
             </Menu>
         </Border>
 		<!-- 修改主程序标题名称-->
-        <TextBlock Text="☆星露谷MOD安装器(Stardrop中文版)☆" IsVisible="{Binding ShowTitle}" IsHitTestVisible="False" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="{DynamicResource ThemeForegroundBrush}" />
+        <TextBlock Text="☆星露谷MOD安装器(B站：怀沙2049)☆" IsVisible="{Binding ShowTitle}" IsHitTestVisible="False" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="{DynamicResource ThemeForegroundBrush}" />
         <Menu Name="windowMenu" IsVisible="{Binding ShowWindowMenu}" HorizontalAlignment="Right" KeyboardNavigation.TabNavigation="None" Grid.Column="1">
             <Button Name="minimizeButton" i:Attached.Icon="mdi-window-minimize" Margin="0 0 -10 0" Foreground="{DynamicResource ThemeForegroundBrush}"  Background="Transparent"/>
             <Button Name="maximizeButton" i:Attached.Icon="mdi-window-maximize" Margin="0 0 -10 0" Foreground="{DynamicResource ThemeForegroundBrush}" Background="Transparent"/>

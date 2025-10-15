@@ -1,1448 +1,540 @@
 {
-    "PyTK Lite": {
-        "ChineseName": "【前置】PyTK工具包 (1726)"
-    },
-    "Alternative Textures": {
-        "ChineseName": "【前置】替代纹理 (9246)"
-    },
-    "Shop Tile Framework": {
-        "ChineseName": "【前置】商店地砖框架(5005)"
-    },
-    "Fashion Sense": {
-        "ChineseName": "【前置】时尚外观 (9969)"
-    },
-    "SpaceCore": {
-        "ChineseName": "【前置】Space专用前置(1348)"
-    },
-    "Content Patcher": {
-        "ChineseName": "【前置】内容补丁(1915)"
-    },
-    "Custom Bush": {
-        "ChineseName": "【前置】定制衬套(20619)"
-    },
-    "Calcifer": {
-        "ChineseName": "【前置】钙化器 Calcifer(20628)"
-    },
-    "Expanded Preconditions Utility": {
-        "ChineseName": "【前置】扩展前置条件工具(6529)"
-    },
-    "Cross-Mod Compatibility Tokens": {
-        "ChineseName": "【前置】跨模组兼容令牌(28284)"
-    },
-    "Item extensions": {
-        "ChineseName": "【前置】物品扩展框架(20357)"
-    },
-    "Unlockable Bundles": {
-        "ChineseName": "【前置】可解锁捆绑包(17265)"
-    },
-    "Furniture Framework": {
-        "ChineseName": "【前置】家具框架(23458)"
-    },
-    "Happy Birthday": {
-        "ChineseName": "【前置】生日快乐(520)"
-    },
-    "StardustCore": {
-        "ChineseName": "【前置】星尘核心(2341)"
-    },
-    "SlimeHutchWaterSpots1.6": {
-        "ChineseName": "【前置】史莱姆小屋水斑(32684)"
-    },
-    "[CP] Pixie's Mid-Century Modern Catalogue": {
-        "ChineseName": "【前置】Pixie的家具目录(36735)"
-    },
-    "[CP] ValleyTalk Base": {
-        "ChineseName": "【功能】AI对话模组(30319)"
-    },
-    "ValleyTalk Content Pack": {
-        "ChineseName": "【功能】AI对话模组(30319)"
-    },
-    "ValleyTalk": {
-        "ChineseName": "【功能】AI对话模组(30319)"
-    },
-    "Elle's New Barn Animals": {
-        "ChineseName": "【功能】新谷仓动物(3167)"
-    },
-    "(AT) DustBeauty's Recolor Pack": {
-        "ChineseName": "【美化】DustBeauty的重新着色包(26023)"
-    },
-    "[AT] H&W Outdoor Furniture - Muski Recolor": {
-        "ChineseName": "【美化】HxW 户外家具中世纪着色(24402)"
-    },
-    "(AT) H&W Outdoor Furniture - Muski Recolor": {
-        "ChineseName": "【美化】HxW 户外家具中世纪着色(24402)"
-    },
-    "(AT) Pet Bowl - Pets need to eat as well": {
-        "ChineseName": "【美化】宠物碗-宠物也需要吃东西(23387)"
-    },
-    "(AT)Elfflower Furniture (Wizard Furniture redraw)": {
-        "ChineseName": "【美化】法师家具美化"
-    },
-    "(AT)Elfflower Furniture(Wizard Furniture redraw)": {
-        "ChineseName": "【美化】法师家具美化"
-    },
-    "(FS) Kkunma's 48 Hairstyle": {
-        "ChineseName": "【美化】Kkunma的48种新发型(21758)"
-    },
-    "[AT] Bear Shipping Bin": {
-        "ChineseName": "【美化】小熊运输箱 (1303)"
-    },
-    "Duck Crab Pot for AT": {
-        "ChineseName": "【功能】鸭蟹煲(6346)"
-    },
-    "[AT] Medieval Themed Sheds - Earthy": {
-        "ChineseName": "【美化】中世纪主题小屋(20429)"
-    },
-    "[AT] Rosy Picket Fences": {
-        "ChineseName": "【美化】玫瑰装饰木围栏+大门 (10961)"
-    },
-    "[AT] Snowcrows": {
-        "ChineseName": "【美化】雪人替换豪华稻草人(9250)"
-    },
-    "[AT] Sprog's Animated Butterfly Hutches FAST": {
-        "ChineseName": "【美化】动画蝴蝶小屋 (22048)"
-    },
-    "[AT] Sweetheart Furniture": {
-        "ChineseName": "【美化】甜心家具套装 (11509)"
-    },
-    "[AT] Tree of the Winter Star Retexture by MolaMole": {
-        "ChineseName": "【美化】冬日星树美化 (19779)"
-    },
-    "[CP] Animated Fish": {
-        "ChineseName": "【美化】动画鱼(5735)"
-    },
-    "[CP] Buildable Large Tree Pack": {
-        "ChineseName": "【美化】可建造的大树建筑包(22520)"
-    },
-    "[CP] Cartoon Decoration": {
-        "ChineseName": "【美化】卡通装饰(22759)"
-    },
-    "[CP] Cornucopia More Flowers": {
-        "ChineseName": "【美化】聚宝盆(20290)"
-    },
-    "[CP] crystalinerose Tilesheets": {
-        "ChineseName": "【前置】Kisaa的地图素材(28434)"
-    },
-    "[CP] Custom Menu Background": {
-        "ChineseName": "【美化】自定义菜单背景(7416)"
-    },
-    "[CP] DaisyNiko's Tilesheets": {
-        "ChineseName": "【前置】DaisyNiko的地图素材(4736)"
-    },
-    "[CP] Daphne's Ice Cream Truck": {
-        "ChineseName": "【其他】达芙妮的冰激凌车(12430)"
-    },
-    "Everia's Dragons": {
-        "ChineseName": "【功能】Everia的龙(20672)"
-    },
-    "[CP] Fish Ponds by Gweniaczek": {
-        "ChineseName": "【美化】鱼塘美化(5301)"
-    },
-    "[CP] Flower Valley": {
-        "ChineseName": "【美化】小镇建筑外部美化(2064)"
-    },
-    "[CP] GH's Peach Body type (female)": {
-        "ChineseName": "【美化】女性体型修改"
-    },
-    "[CP] GH's Peach Body type (male)": {
-        "ChineseName": "【美化】男性体型修改"
-    },
-    "[CP] Gwen's Medieval Craftables": {
-        "ChineseName": "【美化】中世纪风格制作物(5513)"
-    },
-    "[CP] H&W Outdoor Furniture": {
-        "ChineseName": "【美化】HxW 户外家具(16693)"
-    },
-    "[CP] H&W Romantic Furniture": {
-        "ChineseName": "【美化】HXW浪漫户外家具(17577)"
-    },
-    "[CP] HxW Tilesheets": {
-        "ChineseName": "【前置】HxW资产(20139)"
-    },
-    "[CP] Ilucies Singing Sunflower": {
-        "ChineseName": "【美化】会唱歌的向日葵(29179)"
-    },
-    "[CP] Italian Countryside Buildings": {
-        "ChineseName": "【美化】意大利乡村建筑(27579)"
-    },
-    "[CP] Italian Countryside Farmhouse (Seasonal)": {
-        "ChineseName": "【美化】意大利乡村农舍(27005)"
-    },
-    "[CP] IzerFull's Rubber Duck": {
-        "ChineseName": "【美化】IzerFull 的橡皮鸭"
-    },
-    "Japanese decorative buildings": {
-        "ChineseName": "【美化】日本装饰建筑(6314)"
-    },
-    "[CP] Jonbow's Animals": {
-        "ChineseName": "【美化】新增17种动物(28303)"
-    },
-    "[CP] Keep Christmas Well": {
-        "ChineseName": "【美化】好好庆祝圣诞节(27219)"
-    },
-    "[CP] Lumisteria Tilesheets - Indoor": {
-        "ChineseName": "【前置】Lumisteria的地图室内素材 (9599)"
-    },
-    "[CP] Lumisteria Tilesheets - Outdoor": {
-        "ChineseName": "【前置】Lumisteria的地图室外素材 (10448)"
-    },
-    "Medieval Daphne's Ice Cream Truck": {
-        "ChineseName": "【功能】中世纪风格达芙妮冰淇淋车(16466)"
-    },
-    "Milk Of Myth Expanded": {
-        "ChineseName": "【绅士】兽娘牧场(30663)"
-    },
-    "(CP) Monster Girl Pets": {
-        "ChineseName": "【绅士】宠物女孩(22603)"
-    },
-    "(CP) I Fixed Him - Shane Dialogue Consistency": {
-        "ChineseName": "【补丁】我修正了他 —— 谢恩对话一致性(21660)"
-    },
-    "(CP) Seasonal Vanilla UI": {
-        "ChineseName": "【美化】赛季原版用户界面(17272)"
-    },
-    "[CP] Additional Farm Cave": {
-        "ChineseName": "【美化】额外的农场洞穴(14109)"
-    },
-    "[CP] Clint Reforged": {
-        "ChineseName": "【功能】克林特重铸(18345)"
-    },
-    "[CP] Marnie Deserves Better": {
-        "ChineseName": "【功能】玛妮值得更好的(7686)"
-    },
-    "[CP] Yagisan - Custom NPCs for NPC Map Locations": {
-        "ChineseName": "【功能】用于NPC地图位置的自定义NPC(8174)"
-    },
-    "[FTM] Additional Farm Cave": {
-        "ChineseName": "【功能】额外农场洞穴"
-    },
-    "[NPC] Rodney O'Brien": {
-        "ChineseName": "【功能】罗德尼·奥布赖恩"
-    },
-    "Add Berry Seasons to Calendar": {
-        "ChineseName": "【功能】将浆果季节添加到日历(10477)"
-    },
-    "Animated Clothes": {
-        "ChineseName": "【美化】动画衣服(6117)"
-    },
-    "Animated East Scarp Fish": {
-        "ChineseName": "【美化】为鱼增加动画效果(10913)"
-    },
-    "Animated Fish SVE": {
-        "ChineseName": "【美化】鱼类动画效果SVE版(6089)"
-    },
-    "Animated Food and Drinks": {
-        "ChineseName": "【美化】动画食品和饮料(5607)"
-    },
-    "Animated Furniture and Stuff": {
-        "ChineseName": "【美化】为家居添加动态效果(5662)"
-    },
-    "Animated Ridgeside Village Fish": {
-        "ChineseName": "【美化】山脊村鱼类动画效果(7353)"
-    },
-    "Animated Slime Eggs and Loot": {
-        "ChineseName": "【美化】史莱姆蛋和战利品添加动画效果(5642)"
-    },
-    "AnimatedGemstones": {
-        "ChineseName": "【美化】为宝石添加动画效果(4986)"
-    },
-    "Automate": {
-        "ChineseName": "【美化】自动化操作模块(1063)"
-    },
-    "Better Crafting": {
-        "ChineseName": "【美化】更好的制作(11115)"
-    },
-    "Better Signs": {
-        "ChineseName": "【美化】优化标牌(7482)"
-    },
-    "Buildable Ginger Island Farm": {
-        "ChineseName": "【美化】可建造姜岛农场(20600)"
-    },
-    "Chests Anywhere": {
-        "ChineseName": "【功能】随地存取箱子(518)"
-    },
-    "Colored Seeds": {
-        "ChineseName": "【美化】季节彩色种子(3774)"
-    },
-    "Community Center": {
-        "ChineseName": "【美化】重构社区中心(6966)"
-    },
-    "Content Patcher Animations": {
-        "ChineseName": "【美化】内容补丁动画(3853)"
-    },
-    "Convenient Inventory": {
-        "ChineseName": "【功能】便捷背包(10384)"
-    },
-    "Custom Companions": {
-        "ChineseName": "【功能】自定义伙伴(8626)"
-    },
-    "Cuter Slimes": {
-        "ChineseName": "【美化】更萌史莱姆(21889)"
-    },
-    "Dynamic Reflections": {
-        "ChineseName": "【美化】水面反射倒影(12831)"
-    },
-    "[CP] East Scarp": {
-        "ChineseName": "【大型扩展包】东斯卡普"
-    },
-    "East Scarp C#": {
-        "ChineseName": "【大型扩展包】东斯卡普 C#版本(5787)"
-    },
-    "East Scarp NPCs": {
-        "ChineseName": "【大型扩展包】东斯卡普 NPCS(5787)"
-    },
-    "Forage Settings East Scarp": {
-        "ChineseName": "【功能】东斯卡普觅食设置"
-    },
-    "Eli & Dylan": {
-        "ChineseName": "【功能】伊莱与迪伦(13883)"
-    },
-    "Eli & Dylan- Soot": {
-        "ChineseName": "【功能】伊莱与迪伦 - soot"
-    },
-    "Eli and Dylan Code": {
-        "ChineseName": "【功能】伊莱与迪伦 - Code"
-    },
-    "Elle's Cuter Barn Animals": {
-        "ChineseName": "【美化】谷仓动物外观(20044)"
-    },
-    "Elle's Cuter Cats": {
-        "ChineseName": "【美化】艾尔的可爱猫咪(20041)"
-    },
-    "Elle's Cuter Coop Animals": {
-        "ChineseName": "【美化】艾尔的可爱鸡舍动物(20043)"
-    },
-    "Elle's Cuter Dogs": {
-        "ChineseName": "【美化】艾尔的可爱狗狗(20040)"
-    },
-    "Elle's Cuter Horses": {
-        "ChineseName": "【美化】艾尔的可爱马匹(20042)"
-    },
-    "Event Limiter": {
-        "ChineseName": "【功能】事件限制器(10735)"
-    },
-    "Event Lookup": {
-        "ChineseName": "【功能】事件查找(8505)"
-    },
-    "Farm Type Manager (FTM)": {
-        "ChineseName": "【功能】农场类型管理器（FTM）(3231)"
-    },
-    "Faster Path Speed": {
-        "ChineseName": "【功能】在路径上移动更快(9344)"
-    },
-    "Friends Forever": {
-        "ChineseName": "【功能】友谊长存(20702)"
-    },
-    "Generic Mod Config Menu": {
-        "ChineseName": "【功能】通用模组配置菜单(5098)"
-    },
-    "Grampleton Fields": {
-        "ChineseName": "【功能】格兰普顿原野"
-    },
-    "Grandpas Tools": {
-        "ChineseName": "【美化】爷爷的工具(8835)"
-    },
-    "Immersive Farm 2 Remastered": {
-        "ChineseName": "【功能】沉浸式农场 2 重制版(3753)"
-    },
-    "Integrated Minecarts (CP Component)": {
-        "ChineseName": "【功能】整合矿车(11881)"
-    },
-    "Integrated Minecarts (SMAPI Component)": {
-        "ChineseName": "【功能】整合矿车（SMAPI版本）(11881)"
-    },
-    "ItsStardewTime": {
-        "ChineseName": "【功能】时间大师(20847)"
-    },
-    "Leilani": {
-        "ChineseName": "【功能】莱拉妮(9375)"
-    },
-    "Lookup Anything": {
-        "ChineseName": "【功能】查找任何内容(541)"
-    },
-    "Lurking in the Dark": {
-        "ChineseName": "【功能】潜伏在黑暗中(10770)"
-    },
-    "Mail Framework Mod": {
-        "ChineseName": "【功能】邮件框架模组(1536)"
-    },
-    "Mapping Extensions and Extra Properties (MEEP)": {
-        "ChineseName": "【前置】地图扩展与额外属性MEEP(14493)"
-    },
-    "Mini Bars": {
-        "ChineseName": "【功能】迷你状态栏(8329)"
-    },
-    "MultiSave - Continued": {
-        "ChineseName": "【功能】多存档扩展版(22953)"
-    },
-    "No Pam Enabling": {
-        "ChineseName": "【功能】不让帕姆酗酒(23080)"
-    },
-    "Nora The Herpetologist": {
-        "ChineseName": "【功能】爬虫学家诺拉(18176)"
-    },
-    "NPC Map Locations": {
-        "ChineseName": "【功能】NPC 地图位置(239)"
-    },
-    "Part of the Community": {
-        "ChineseName": "【功能】融入社区(923)"
-    },
-    "PortraitsForAll": {
-        "ChineseName": "【功能】全员头像"
-    },
-    "Redesigned Spouse Rooms": {
-        "ChineseName": "【补丁】重新设计配偶房间(2169)"
-    },
-    "Relocate Buildings And Farm Animals": {
-        "ChineseName": "【功能】建筑物和农场搬迁(20606)"
-    },
-    "Ridgeside Village [Content Patcher component]": {
-        "ChineseName": "【大型拓展包】里奇赛德村(7286)"
-    },
-    "Ridgeside Village [Custom Companions component]": {
-        "ChineseName": "【大型拓展包】里奇赛德村自定义伙伴(7286)"
-    },
-    "Ridgeside Village [Farm Type Manager component]": {
-        "ChineseName": "【大型拓展包】里奇赛德村农场管理器组件(7286)"
-    },
-    "Ridgeside Village [SMAPI component]": {
-        "ChineseName": "【大型拓展包】里奇赛德村SMAPI组件(7286)"
-    },
-    "Ridgeside Village Seasonal Outfits": {
-        "ChineseName": "【美化】里奇赛德村季节性服装(18202)"
-    },
-    "Seasonal Cute Characters": {
-        "ChineseName": "【美化】季节性可爱角色(5450)"
-    },
-    "Seasonal Cute Characters ES": {
-        "ChineseName": "【美化】东斯卡普的季节性可爱角色(16045)"
-    },
-    "Seasonal Cute Characters SVE": {
-        "ChineseName": "【美化】季节性服装-SVE的美感略显可爱(5969)"
-    },
-    "Seasonal Mariner to Mermaid": {
-        "ChineseName": "【美化】季节性水手变美人鱼(22799)"
-    },
-    "Show Item Quality (1.6 Unofficial)": {
-        "ChineseName": "【功能】显示物品质量(22275)"
-    },
-    "Sit For Stamina": {
-        "ChineseName": "【功能】坐下来增强耐力(7334)"
-    },
-    "Social Page Order Redux": {
-        "ChineseName": "【功能】社交页面排序优化(23374)"
-    },
-    "Solarium Spa - Continued": {
-        "ChineseName": "【功能】日光浴场温泉(22997)"
-    },
-    "Spouses React To Player Death": {
-        "ChineseName": "【功能】配偶对玩家死亡的反应(7493)"
-    },
-    "Stardew Valley Expanded": {
-        "ChineseName": "【大型扩展包】星露谷SVE扩展整合包"
-    },
-    "Stardew Valley Expanded Farm Type Manager": {
-        "ChineseName": "【功能】SVE扩展版农场类型管理器"
-    },
-    "Stardew Valley Expanded Forage Locations - Immersive Farm 2": {
-        "ChineseName": "【功能】SVE扩展版可采集资源点"
-    },
-    "TDIT - Portraits for Extras": {
-        "ChineseName": "【功能】临时演员的肖像(35358)"
-    },
-    "TDIT - Portraits for Vendors": {
-        "ChineseName": "【功能】商贩肖像包(20414)"
-    },
-    "Tidy Pam": {
-        "ChineseName": "【内容修补程序】整洁的帕姆(2306)"
-    },
-    "Tiny Totem Statue Obelisks": {
-        "ChineseName": "【美化】小图腾雕像方尖碑(23118)"
-    },
-    "To-Dew": {
-        "ChineseName": "【功能】待办清单(7409)"
-    },
-    "mushymato.TrinketTinker": {
-        "ChineseName": "【功能】饰品修补工匠(29073)"
-    },
-    "UI Info Suite 2": {
-        "ChineseName": "【功能】UI信息套件2(7098)"
-    },
-    "World Maps": {
-        "ChineseName": "【功能】世界地图无处不在(24210)"
-    },
-    "[AT] DustBeauty's Industrial Furniture": {
-        "ChineseName": "【美化】工业风家具(17656)"
-    },
-    "Industrial Furniture Set for CP": {
-        "ChineseName": "【美化】自定义工业风家具套装(17656)"
-    },
-    "[AT] Extendable Windows": {
-        "ChineseName": "【功能】可扩展窗口"
-    },
-    "[AT] Nano's Retro Style Furniture": {
-        "ChineseName": "【美化】复古风格家具(16029)"
-    },
-    "[AT] Shyzie's Rugs": {
-        "ChineseName": "【美化】女巫精灵风格地毯(16726)"
-    },
-    "[AT] Shyzie's Witchy Goblincore Rugs": {
-        "ChineseName": "【美化】哥布林风格地毯(20640)"
-    },
-    "[AT] West Elm Furniture by Atlas": {
-        "ChineseName": "【美化】西榆家具(14644)"
-    },
-    "[CP] Crow Companion": {
-        "ChineseName": "【功能】乌鸦伙伴(22915)"
-    },
-    "[FS] Seasonal Hats": {
-        "ChineseName": "【功能】季节性帽子(13682)"
-    },
-    "Aesthetic Secret Notes": {
-        "ChineseName": "【功能】美学秘密笔记(14955)"
-    },
-    "Aimon's Fancy Greenhouse": {
-        "ChineseName": "【功能】艾蒙的豪华温室(16405)"
-    },
-    "Aimon's Fancy Shed": {
-        "ChineseName": "【功能】艾蒙的精致棚屋(15250)"
-    },
-    "Aimon's Tidy Cozy Cellar": {
-        "ChineseName": "【功能】艾蒙的温馨地窖(17814)"
-    },
-    "Animated Bird Tappers": {
-        "ChineseName": "【美化】动画鸟类采集器"
-    },
-    "Animated Ducky Crab Pot": {
-        "ChineseName": "【美化】动画鸭子捕蟹笼(21810)"
-    },
-    "Animated Frog Pots": {
-        "ChineseName": "【美化】动画青蛙捕蟹笼(21810)"
-    },
-    "AT_Gwen_Paths": {
-        "ChineseName": "【美化】格温的纹理路径(8683)"
-    },
-    "AT_GwenCraft_DNER": {
-        "ChineseName": "【美化】格温的手工艺品(13897)"
-    },
-    "AT_Medieval_Buildings": {
-        "ChineseName": "【美化】中世纪建筑(10567)"
-    },
-    "Bathhouse Hot Spring": {
-        "ChineseName": "【美化】温泉浴场(22565)"
-    },
-    "Brushed Bronze Iridium Sprinkler": {
-        "ChineseName": "【美化】最高级洒水器(4902)"
-    },
-    "Chest Deco : animal products": {
-        "ChineseName": "【美化】储物箱装饰：动物产品系列(20384)"
-    },
-    "Chest Deco : artisan goods": {
-        "ChineseName": "【美化】储物箱装饰：手工制品系列(20384)"
-    },
-    "Chest Deco : fishes": {
-        "ChineseName": "【美化】储物箱装饰：鱼类系列(20384)"
-    },
-    "Chest Deco : misc": {
-        "ChineseName": "【美化】储物箱装饰：杂物系列(20384)"
-    },
-    "Chest Deco : resources": {
-        "ChineseName": "【美化】储物箱装饰：资源系列(20384)"
-    },
-    "Chest Deco : veggies": {
-        "ChineseName": "【美化】储物箱装饰：蔬菜系列(20384)"
-    },
-    "Cottagecore_Fences": {
-        "ChineseName": "【美化】田园风栅栏(8558)"
-    },
-    "Cute and Tidy Coops and Barns": {
-        "ChineseName": "【美化】可爱整洁的鸡舍与谷仓(8558)"
-    },
-    "DNER All in one map fix": {
-        "ChineseName": "【补丁】地图异常整合修复(29941)"
-    },
-    "Earthy Icons for Worldmaps Everywhere": {
-        "ChineseName": "【美化】全域地图自然风格图标(24478)"
-    },
-    "Earthy Interface": {
-        "ChineseName": "【美化】自然风格界面(13658)"
-    },
-    "Earthy Recolour": {
-        "ChineseName": "【美化】自然色系重绘(5255)"
-    },
-    "Earthy Recolour Fix for SVE": {
-        "ChineseName": "【补丁】SVE适配的自然色系重绘修复(7613)"
-    },
-    "Earthy Ridgeside CP Conversion": {
-        "ChineseName": "【美化】自然风格山脊村(17980)"
-    },
-    "Earthy Short Grass": {
-        "ChineseName": "【美化】自然风格短草(30067)"
-    },
-    "Firefly Torch": {
-        "ChineseName": "【美化】萤火虫火把(20333)"
-    },
-    "FS - Lighter Oversized Sleeves": {
-        "ChineseName": "【美化】超大浅色宽松袖(13393)"
-    },
-    "Grandpa's Farm": {
-        "ChineseName": "【美化】爷爷的农场(3753)"
-    },
-    "Grandpa's Farm Forage Locations": {
-        "ChineseName": "【美化】爷爷的农场可觅食地点"
-    },
-    "Guxelbit's Furniture : additional": {
-        "ChineseName": "【美化】家具扩展包(20268)"
-    },
-    "Guxelbit's Furniture : normal": {
-        "ChineseName": "【美化】常规家具扩展包(20268)"
-    },
-    "Gwens_Doghouses": {
-        "ChineseName": "【美化】格温的狗屋(21248)"
-    },
-    "Gwens_paths": {
-        "ChineseName": "【美化】格温的路径(8683)"
-    },
-    "Happy Home Designer": {
-        "ChineseName": "【美化】快乐家居设计师(19675)"
-    },
-    "Kkunma Hairstyle Bundle": {
-        "ChineseName": "【美化】发型合集"
-    },
-    "Luny's Farm Dresses": {
-        "ChineseName": "【美化】露妮的连衣裙(23925)"
-    },
-    "Luny's Plushies": {
-        "ChineseName": "【美化】露妮的毛绒玩具(23925)"
-    },
-    "Luny's Salon": {
-        "ChineseName": "【美化】露妮的美发沙龙(24746)"
-    },
-    "Magical Furniture for Alternative Textures": {
-        "ChineseName": "【美化】替换纹理的魔法家具"
-    },
-    "Medieval_buildings": {
-        "ChineseName": "【美化】中世纪建筑(4542)"
-    },
-    "Medieval_Craftables": {
-        "ChineseName": "【美化】中世纪可制作物品(5513)"
-    },
-    "Medieval_DNT": {
-        "ChineseName": "【美化】中世纪风格DNT纹理(10908)"
-    },
-    "MSVE": {
-        "ChineseName": "【美化】中世纪风格SVE资产重置模组(6086)"
-    },
-    "Nyang Cat Scarecrows for AT": {
-        "ChineseName": "【美化】喵星人稻草人"
-    },
-    "Plain Slime Hutch": {
-        "ChineseName": "【美化】简约风格史莱姆小屋(13154)"
-    },
-    "Precise Furniture": {
-        "ChineseName": "【美化】精准摆家具(23488)"
-    },
-    "Seasonal Hedge Fence": {
-        "ChineseName": "【美化】季节性树篱围栏(21813)"
-    },
-    "Simple Foliage": {
-        "ChineseName": "【美化】简约植物群(20972)"
-    },
-    "SVE Trees Recolored": {
-        "ChineseName": "【美化】SVE树木重绘版(28798)"
-    },
-    "Too Many Swatches - a Furniture Recolor": {
-        "ChineseName": "【美化】超多款式——家具重绘(17031)"
-    },
-    "Universal Recolors": {
-        "ChineseName": "【功能】画面饱和度调整(20749)"
-    },
-    "Way Back PT": {
-        "ChineseName": "【功能】往昔鹈鹕镇(7332)"
-    },
-    "Witchy Decorations for Content Patcher": {
-        "ChineseName": "【补丁】巫术装饰品(23106)"
-    },
-    "Witchy Rustic Looks": {
-        "ChineseName": "【美化】女巫质风格外观(15140)"
-    },
-    "WorldMap for East Scarp": {
-        "ChineseName": "【美化】东斯卡普土色地图(21963)"
-    },
-    "WorldMap for Ginger Island": {
-        "ChineseName": "【美化】姜岛大地地图(21969)"
-    },
-    "WorldMap for Ridgeside Village": {
-        "ChineseName": "【美化】赛德村世界地图(21792)"
-    },
-    "Yomi's Golden Princess Hairstyle": {
-        "ChineseName": "【美化】金色公主发型"
-    },
-    "[CP] Yet Another Cooking Skill": {
-        "ChineseName": "【功能】又一个烹饪技能CP版(22681)"
-    },
-    "AutomaticGates": {
-        "ChineseName": "【功能】自动大门(3109)"
-    },
-    "BirbCore": {
-        "ChineseName": "【功能】Birb 核心(19140)"
-    },
-    "Elle's Seasonal Vanilla Buildings": {
-        "ChineseName": "【功能】Elle 的季节性香草建筑(6330)"
-    },
-    "Experience Updates": {
-        "ChineseName": "【功能】经验提示(7581)"
-    },
-    "Farm Type Manager": {
-        "ChineseName": "【功能】农场类型管理器(3231)"
-    },
-    "Help Wanted Redux For 1.6": {
-        "ChineseName": "【功能】求助任务重制版(21766)"
-    },
-    "Horse Overhaul": {
-        "ChineseName": "【功能】马匹大修(7911)"
-    },
-    "Seasonal Cute Swimwear": {
-        "ChineseName": "【美化】季节性可爱可爱泳衣"
-    },
-    "Skip Intro": {
-        "ChineseName": "【功能】跳过开场动画(533)"
-    },
-    "Stardew Valley Expanded Code": {
-        "ChineseName": "【功能】星露谷物语扩展代码"
-    },
-    "Yet Another Cooking Skill": {
-        "ChineseName": "【功能】又一个烹饪技能(22681)"
-    },
-    "Experience Bars": {
-        "ChineseName": "【功能】经验条(509)"
-    },
-    "(CP) Birds Didn't Invent Poi": {
-        "ChineseName": "【功能】鸟儿没有Poi(21965)"
-    },
-    "[BBM] Blueberries On Bushes": {
-        "ChineseName": "【功能】灌木上的蓝莓(17772)"
-    },
-    "[CP] Alex's Ice Cream Stand Sells A Few More Items": {
-        "ChineseName": "【功能】亚历克斯的冰淇淋摊增加更多商品(29350)"
-    },
-    "[CP] Atelier Cauldron English Translation Pack": {
-        "ChineseName": "【功能】炼金工坊大锅英文翻译包()"
-    },
-    "[CP] Beach Additional Storage Space Area": {
-        "ChineseName": "【功能】海滩额外储物区(14244)"
-    },
-    "[CP] Beach Extension For Crab Pod": {
-        "ChineseName": "【功能】蟹笼海滩扩展(11594)"
-    },
-    "[CP] Better Honey Mead": {
-        "ChineseName": "【功能】更好的蜂蜜蜜酒(22848)"
-    },
-    "[CP] Blue Eggs and Golden Mayo": {
-        "ChineseName": "【功能】黄金蛋黄酱(20266)"
-    },
-    "[CP] Button's Extra Books": {
-        "ChineseName": "【功能】巴顿的额外书籍(21526)"
-    },
-    "[CP] Camping tent with tarp": {
-        "ChineseName": "【功能】带防水布的露营帐篷(23578)"
-    },
-    "[CP] Full beard for Philip - RSV (seasonal)": {
-        "ChineseName": "【美化】菲利普的胡须造型-RSV季节性(23691)"
-    },
-    "[CP] Pixie's MCM Bedroom Furniture": {
-        "ChineseName": "【美化】小精灵的中世纪现代风格卧室家具(36809)"
-    },
-    "[CP] Pixie's MCM Rug Collection": {
-        "ChineseName": "【美化】小精灵的中世纪现代风格地毯(36256)"
-    },
-    "[CP] Staffy dog": {
-        "ChineseName": "【美化】斯塔福郡斗牛㹴(25783)"
-    },
-    "[FTM] Berry Woods": {
-        "ChineseName": "【美化】浆果森林(25541)"
-    },
-    "[STF] Clint Shop Artifacts": {
-        "ChineseName": "【美化】克林特商店的古物(10529)"
-    },
-    "[STF] Clint Shop Bars": {
-        "ChineseName": "【美化】克林特商店的金属锭(10529)"
-    },
-    "[STF] Clint Shop Geodes": {
-        "ChineseName": "【美化】克林特商店的晶球(10529)"
-    },
-    "[STF] Clint Shop Overhaul": {
-        "ChineseName": "【美化】克林特商店改造(10529)"
-    },
-    "6480's Giant Crops": {
-        "ChineseName": "【美化】巨型农作物(5221)"
-    },
-    "8bit's Hairstyles": {
-        "ChineseName": "【美化】8bit的发型(19141)"
-    },
-    "A Secret Forest Walk": {
-        "ChineseName": "【美化】秘密森林漫步(18929)"
-    },
-    "A Warm Welcome": {
-        "ChineseName": "【美化】热烈欢迎(29400)"
-    },
-    "Additional Hairstyles": {
-        "ChineseName": "【美化】附加42种发型(36243)"
-    },
-    "Adventurer's Guild Expanded for 1.6": {
-        "ChineseName": "【功能】冒险家公会扩展(22591)"
-    },
-    "Aimon's Additional Bus Interior Map": {
-        "ChineseName": "【功能】巴士内部地图(20289)"
-    },
-    "Alecto the Witch": {
-        "ChineseName": "【功能】女巫亚历克托(10671)"
-    },
-    "Alvadeas Tilesheet": {
-        "ChineseName": "【功能】阿尔瓦迪亚的图块(13743)"
-    },
-    "Always Hay": {
-        "ChineseName": "【功能】随时获得干草(20808)"
-    },
-    "Always Raining in the Valley": {
-        "ChineseName": "【功能】山谷中总是下雨(9999)"
-    },
-    "Ancient Seeds in Garden Pots Allowed": {
-        "ChineseName": "【功能】允许古种子种植在花盆中(21603)"
-    },
-    "Animals Don't Remove Grass": {
-        "ChineseName": "【功能】动物不啃草地(21028)"
-    },
-    "Archie's Tilesheets of Miscellaneous Stuff": {
-        "ChineseName": "【美化】各类贴图素材(28480)"
-    },
-    "Artisan Goods Keep Quality": {
-        "ChineseName": "【美化】更精美的手工艺品(21278)"
-    },
-    "ARV- Maximum": {
-        "ChineseName": "【美化】马克西姆"
-    },
-    "Auto-Stack Bait & Ammo": {
-        "ChineseName": "【功能】自动堆叠鱼饵与弹药(23423)"
-    },
-    "AutoAnimalDoors": {
-        "ChineseName": "【功能】动物门自动开关(1019)"
-    },
-    "AutoGate": {
-        "ChineseName": "【功能】自动门(820)"
-    },
-    "Battery Pack From Joja": {
-        "ChineseName": "【功能】乔家超市购买电池组(27674)"
-    },
-    "Beach Farm Redone": {
-        "ChineseName": "【功能】海滩农场重制版(24235)"
-    },
-    "Beach Sounds for Content Patcher": {
-        "ChineseName": "【功能】适用于CP的海滩音效(32469)"
-    },
-    "Bees Plus": {
-        "ChineseName": "【功能】蜜蜂增强版(30597)"
-    },
-    "Berry Season Reminder": {
-        "ChineseName": "【功能】浆果季节提醒(9315)"
-    },
-    "Berry Woods": {
-        "ChineseName": "【功能】浆果森林(25541)"
-    },
-    "Better Beehouses": {
-        "ChineseName": "【功能】更优质的蜂箱(10996)"
-    },
-    "Better Clinic Beds": {
-        "ChineseName": "【功能】更好的诊所床位(13608)"
-    },
-    "Better Festival Notifications": {
-        "ChineseName": "【功能】更好的节日通知(14170)"
-    },
-    "Better Friendship": {
-        "ChineseName": "【功能】更完善的好感度系统(10287)"
-    },
-    "Better Honey Mead": {
-        "ChineseName": "【功能】更好的蜂蜜酒(22848)"
-    },
-    "Better Introduction for Content Patcher": {
-        "ChineseName": "【功能】优化开场动画(6590)"
-    },
-    "Better Meowmere": {
-        "ChineseName": "【功能】优化喵星人之剑(20374)"
-    },
-    "Better Moss Soup": {
-        "ChineseName": "【功能】更好的苔藓汤(25075)"
-    },
-    "Better Ranching": {
-        "ChineseName": "【功能】更完善的畜牧业(859)"
-    },
-    "Better Shipping Bin": {
-        "ChineseName": "【功能】更完善的出货箱(10487)"
-    },
-    "Better Slime Hutch by glymr": {
-        "ChineseName": "【功能】优化版史莱姆屋(19304)"
-    },
-    "Better Special Orders": {
-        "ChineseName": "【功能】更完善的特殊订单(24125)"
-    },
-    "Better Trains": {
-        "ChineseName": "【功能】优化火车掉落物(26439)"
-    },
-    "Better Truffles": {
-        "ChineseName": "【功能】更优质的松露(23228)"
-    },
-    "Better Water": {
-        "ChineseName": "【功能】更真实的水体(15079)"
-    },
-    "Big Crop Bonus": {
-        "ChineseName": "【功能】大丰收奖励(22337)"
-    },
-    "Bigger Fridges": {
-        "ChineseName": "【功能】更大的冰箱(21678)"
-    },
-    "Bigger Silo Size": {
-        "ChineseName": "【功能】更大的筒仓尺寸(21021)"
-    },
-    "Birdie Hut Interior": {
-        "ChineseName": "【美化】伯蒂小屋内饰(11731)"
-    },
-    "BlinkFix": {
-        "ChineseName": "【补丁】眨眼修复(32081)"
-    },
-    "Bush Bloom Mod": {
-        "ChineseName": "【功能】灌自定义木开花时间(15792)"
-    },
-    "But There Were Emergencies": {
-        "ChineseName": "【功能】修改哈维在冬季星节的对话(33213)"
-    },
-    "Button's Extra Trigger Action Stuff": {
-        "ChineseName": "【功能】巴顿的额外触发动作工具集(27100)"
-    },
-    "CakeyBunz Gabriel Retexture": {
-        "ChineseName": "【功能】加布里埃尔重绘(25050)"
-    },
-    "CakeyBunz Zinnia Retexture": {
-        "ChineseName": "【功能】对“zinni” 的纹理重绘(24075)"
-    },
-    "Calling from afar": {
-        "ChineseName": "【功能】远方来电(31011)"
-    },
-    "Canon-Friendly Dialogue Expansion": {
-        "ChineseName": "【功能】贴合原作的对话扩展(2544)"
-    },
-    "Carry Chests": {
-        "ChineseName": "【功能】搬运箱子(30321)"
-    },
-    "Cauldron": {
-        "ChineseName": "【功能】锅(22926)"
-    },
-    "Central Station": {
-        "ChineseName": "【功能】中央车站(8000)"
-    },
-    "Central Station content": {
-        "ChineseName": "【功能】中央车站内容包(8000)"
-    },
-    "Cheaper Saloon Menu": {
-        "ChineseName": "【功能】穷鬼酒馆菜单(20626)"
-    },
-    "CJB Cheats Menu": {
-        "ChineseName": "【功能】简易的游戏内作弊菜单(4)"
-    },
-    "CJB Item Spawner": {
-        "ChineseName": "【功能】CJB物品生成器(93)"
-    },
-    "CJB Show Item Sell Price": {
-        "ChineseName": "【功能】物品售价显示(5)"
-    },
-    "Clint Rewritten": {
-        "ChineseName": "【功能】克林特重塑(15830)"
-    },
-    "Cloudy Skies": {
-        "ChineseName": "【功能】多云的天空(23135)"
-    },
-    "Coin Icon Replacer": {
-        "ChineseName": "【功能】金币图标替换器(19487)"
-    },
-    "Cold Pets": {
-        "ChineseName": "【功能】寒冷天气宠物(14379)"
-    },
-    "Collapse On Farm Fix - CP Component": {
-        "ChineseName": "【补丁】崩溃农场修复(18086)"
-    },
-    "Collapsing On The Farm Fix (Beta)": {
-        "ChineseName": "【补丁】崩溃农场修复-测试版(18086)"
-    },
-    "Go To Work Clint": {
-        "ChineseName": "【补丁】去上班的克林特(4010)"
-    },
-    "Golden Hour Window Light": {
-        "ChineseName": "【美化】黄金时刻窗光(26426)"
-    },
-    "Greenhouse Set": {
-        "ChineseName": "【美化】温室套装(20329)"
-    },
-    "Happy Birthday Content Pack- SVE": {
-        "ChineseName": "【美化】生日快乐 SVE 内容包(19255)"
-    },
-    "Shardust's Hairstyles for Content Patcher": {
-        "ChineseName": "【美化】适配CP的 Shardust 发型包(8138)"
-    },
-    "Spouse Portraits Reworked": {
-        "ChineseName": "【美化】配偶头像重制(22912)"
-    },
-    "Wall-Mounted Shelves": {
-        "ChineseName": "【美化】壁挂式架子(28122)"
-    },
-    "(CP) Demetrius's Tomato Aesthetics": {
-        "ChineseName": "【美化】德米特里厄斯的番茄主题美化(23097)"
-    },
-    "(DDF) Compatibility Patches": {
-        "ChineseName": "【补丁】对话显示框补丁(22678)"
-    },
-    "[AT] Crop Variety": {
-        "ChineseName": "【功能】作物多样性(9930)"
-    },
-    "[CP] Craftable Hardwood": {
-        "ChineseName": "【功能】可制作硬木(15863)"
-    },
-    "[CP] Cuter Mushroom Log": {
-        "ChineseName": "【美化】可爱的蘑菇原木(33667)"
-    },
-    "[CP] Molamole's Farm Kitchen - Colorful": {
-        "ChineseName": "【美化】莫拉莫尔的农场厨房(27617)"
-    },
-    "[CP] Molamole's Floorings ": {
-        "ChineseName": "【美化】莫拉莫尔的婴儿床重新贴图(28380)"
-    },
-    "[CP] Molamole's Floorings": {
-        "ChineseName": "【美化】莫拉莫尔的婴儿床重新贴图(28380)"
-    },
-    "[CP] Molamole's Furniture Catalogue": {
-        "ChineseName": "【美化】莫拉莫尔的家具目录(35213)"
-    },
-    "[CP] Molamole's MailBox": {
-        "ChineseName": "【美化】莫拉莫尔的邮箱(20517)"
-    },
-    "[CP] Molamole's Mini-ShippingBin": {
-        "ChineseName": "【美化】莫拉莫尔的迷你出货箱(31970)"
-    },
-    "[CP] Molamole's Nursery ": {
-        "ChineseName": "【美化】莫拉莫尔的育儿室(28380)"
-    },
-    "[CP] Molamole's Nursery": {
-        "ChineseName": "【美化】莫拉莫尔的育儿室(28380)"
-    },
-    "[CP] Molamole's ShippingBin": {
-        "ChineseName": "【美化】莫拉莫尔的出货箱(23117)"
-    },
-    "[CP] Molamole's Tree Of The Winter Star": {
-        "ChineseName": "【美化】莫拉莫尔的冬星之树重贴图(28667)"
-    },
-    "[CP] Molamole's Wallpaper - Night": {
-        "ChineseName": "【美化】莫拉莫尔的墙纸-夜景款(28380)"
-    },
-    "[CP] Molamole's Wallpapers": {
-        "ChineseName": "【美化】莫拉莫尔的墙纸系列(28380)"
-    },
-    "[CP] Roosters!": {
-        "ChineseName": "【补丁】添加公鸡1.6(21729)"
-    },
-    "AimonsWitchSwampOverhaulPatches": {
-        "ChineseName": "【补丁】女巫沼泽大修补丁(18109)"
-    },
-    "Alternate Dusty Portraits": {
-        "ChineseName": "【美化】Furby的另类尘土肖像(20496)"
-    },
-    "Coii's Hair Sets Pack": {
-        "ChineseName": "【美化】发型套装包(2869)"
-    },
-    "Colorful Fish Ponds": {
-        "ChineseName": "【美化】五颜六色的鱼塘(23615)"
-    },
-    "Combat Controls Redux": {
-        "ChineseName": "【功能】战斗控制优化(10496)"
-    },
-    "Community Center Helper": {
-        "ChineseName": "【功能】社区中心助手(6893)"
-    },
-    "Community Center Icons Redone": {
-        "ChineseName": "【功能】社区中心图标重制(7641)"
-    },
-    "Compatibility Content Pack": {
-        "ChineseName": "【功能】兼容性内容包(22678)"
-    },
-    "Context-Sensitive Gift Cursor for Stardew Valley": {
-        "ChineseName": "【功能】简化送礼流程(6564)"
-    },
-    "Cornucopia - Artisan Machines": {
-        "ChineseName": "【功能】更多工匠机器和商品(24842)"
-    },
-    "Cornucopia - More Crops": {
-        "ChineseName": "【功能】提供额外水果和蔬菜(19508)"
-    },
-    "Cornucopia - More Flowers": {
-        "ChineseName": "【功能】提供额外更多花卉(20290)"
-    },
-    "Cornucopia Flower Trees Retextured": {
-        "ChineseName": "【美化】花卉树外观的优化(23988)"
-    },
-    "Cornucopia Fruit Trees Retextured": {
-        "ChineseName": "【美化】果树外观的优化(23988)"
-    },
-    "Cozy Chocolate Furniture": {
-        "ChineseName": "【美化】温馨巧克力家具(20011)"
-    },
-    "CropGrowthAdjustments": {
-        "ChineseName": "【功能】作物生长调整(18914)"
-    },
-    "Custom Cask Mod": {
-        "ChineseName": "【功能】自定义酒桶模组(2642)"
-    },
-    "Custom Community Center Bundles": {
-        "ChineseName": "【功能】自定义社区中心收集包(21340)"
-    },
-    "Custom Community Center Bundles - Cornucopia RSV SVE Bundle Pack": {
-        "ChineseName": "【功能】自定义社区中心收集包-RSV、SVE定制(21340)"
-    },
-    "Custom Community Center Bundles - Pure Vanilla Bundle Pack": {
-        "ChineseName": "【功能】自定义社区中心收集包-纯原版(21340)"
-    },
-    "Custom Fixed Dialogue": {
-        "ChineseName": "【补丁】自定义修正对话(20938)"
-    },
-    "Custom NPC Exclusions": {
-        "ChineseName": "【功能】自定义NPC排除(7089)"
-    },
-    "Custom Tokens": {
-        "ChineseName": "【功能】自定义令牌(7517)"
-    },
-    "Customize Dresser": {
-        "ChineseName": "【功能】自定义梳妆台(23359)"
-    },
-    "Date Night Redux": {
-        "ChineseName": "【功能】允新增随机事件-约会之夜(22714)"
-    },
-    "Deluxe Grabber Redux 1.6": {
-        "ChineseName": "【功能】豪华自动收集器重制版(20799)"
-    },
-    "Deluxe Journal": {
-        "ChineseName": "【功能】增强日志功能(20799)"
-    },
-    "Desert Festival Foods": {
-        "ChineseName": "【功能】沙漠节日美食(21303)"
-    },
-    "Destroyable Bushes": {
-        "ChineseName": "【功能】可砍伐灌木(6304)"
-    },
-    "Dialogue Display Framework Continued": {
-        "ChineseName": "【前置】对话显示框架(22678)"
-    },
-    "Dialogue to reflect town growing.": {
-        "ChineseName": "【功能】体现小镇发展的对话(29789)"
-    },
-    "Distant Lands - Witch Swamp Overhaul": {
-        "ChineseName": "【功能】一个小型女巫沼泽扩展包(18109)"
-    },
-    "Distant Lands - Witch Swamp Overhaul FTM": {
-        "ChineseName": "【功能】一个小型女巫沼泽扩展包 FTM(18109)"
-    },
-    "Don't Enable Pam": {
-        "ChineseName": "【功能】帕姆口渴了任务需要果汁(6721)"
-    },
-    "Dwarf Portrait Replacement": {
-        "ChineseName": "【功能】矮人肖像替换(14916)"
-    },
-    "Dynamic Shane and Sterling": {
-        "ChineseName": "【功能】动态肖恩和斯特林(10675)"
-    },
-    "DynamicNightTime": {
-        "ChineseName": "【功能】让夜间时间动态变化(2072)"
-    },
-    "Elle's New Coop Animals": {
-        "ChineseName": "【功能】新的鸡舍动物(3168)"
-    },
-    "Elliott's Extensive Marriage Dialogue": {
-        "ChineseName": "【功能】新增了大量婚后对话(27619)"
-    },
-    "Em's Bears": {
-        "ChineseName": "【功能】四种颜色的小熊(36100)"
-    },
-    "Em's Camels": {
-        "ChineseName": "【功能】四种颜色的骆驼(36181)"
-    },
-    "Em's Geese": {
-        "ChineseName": "【功能】四种颜色的鹅(36534)"
-    },
-    "Expanded Storage": {
-        "ChineseName": "【前置】集镇箱子拓展(7431)"
-    },
-    "ExtraAnimalConfig": {
-        "ChineseName": "【功能】为动物设定添加额外功能(25328)"
-    },
-    "ExtraMachineConfig": {
-        "ChineseName": "【功能】额外的机器配置(22256)"
-    },
-    "Farmer Helper": {
-        "ChineseName": "【功能】农场主助手(10179)"
-    },
-    "farmerjack's Dialogue Expansions": {
-        "ChineseName": "【功能】单身男女对话扩展包(9972)"
-    },
-    "Farmhouse Fixes": {
-        "ChineseName": "【前置】农舍修复(16507)"
-    },
-    "Fashinable Hairstyles - Gentlemen Edition": {
-        "ChineseName": "【功能】时尚发型-提供更多发型选择(25056)"
-    },
-    "Fast Animations": {
-        "ChineseName": "【功能】加快游戏中的许多动画(1089)"
-    },
-    "Fern Isle Arch Science Authority Alt": {
-        "ChineseName": "【功能】一个迷你扩展包(33880)"
-    },
-    "Fertilizer Level Up": {
-        "ChineseName": "【功能】肥料升级(31820)"
-    },
-    "Festival Feedback": {
-        "ChineseName": "【功能】为节日活动添加互动内容(31686)"
-    },
-    "Fish Helper UI": {
-        "ChineseName": "【功能】钓鱼助手界面(31686)"
-    },
-    "Fish Info": {
-        "ChineseName": "【功能】提供鱼类相关信息(5452)"
-    },
-    "Fish Pond Aquaponics": {
-        "ChineseName": "【功能】鱼塘鱼菜共生系统(32527)"
-    },
-    "Fishing Made Easy Suite": {
-        "ChineseName": "【功能】简化钓鱼体验的综合工具(3623)"
-    },
-    "Fishing Trawler - Map Patches (New Horizons)": {
-        "ChineseName": "【功能】拖网渔船(15941)"
-    },
-    "Fishing Trawler - New Horizons": {
-        "ChineseName": "【功能】拖网渔船 - 新视野(15941)"
-    },
-    "Fixed Luau Bridge": {
-        "ChineseName": "【功能】宴会上的海滩桥不消失(19264)"
-    },
-    "Flower Dance Shop": {
-        "ChineseName": "【功能】花舞店(25557)"
-    },
-    "Forecaster Text": {
-        "ChineseName": "【功能】天气预报文本(7541)"
-    },
-    "Found Ladder Notification Sound": {
-        "ChineseName": "【功能】发现梯子的提示音(30546)"
-    },
-    "Fresh and Bit": {
-        "ChineseName": "【功能】12种使用香草和聚宝盆的新食谱(25574)"
-    },
-    "Friendship Bars": {
-        "ChineseName": "【功能】显示友谊进度条(34774)"
-    },
-    "Harvey Cares": {
-        "ChineseName": "【功能】增强哈维婚姻对话的模组(35038)"
-    },
-    "Jorts & Jean - SVE Patch": {
-        "ChineseName": "【补丁】SVE节日地点修正(23596)"
-    },
-    "kobaltbleu's Giant Crops for CMC": {
-        "ChineseName": "【功能】为CMC添加更多巨型作物(22927)"
-    },
-    "kobaltbleu's Giant Vanilla Crops": {
-        "ChineseName": "【功能】原版巨型作物(22927)"
-    },
-    "Sunberry NPC - Dao": {
-        "ChineseName": "【功能】太阳莓村添加的Dao(33615)"
-    },
-    "AntiSocial NPCs": {
-        "ChineseName": "【前置】允许创建NPC(5371)"
-    },
-    "Better Butterfly Hutch": {
-        "ChineseName": "【美化】更好的蝴蝶笼子(11166)"
-    },
-    "Bigger Backpack": {
-        "ChineseName": "【功能】更大的背包(1845)"
-    },
-    "Buildings Included": {
-        "ChineseName": "【前置】包括建筑物(27359)"
-    },
-    "Bus Locations (1.6 fix by Sean)": {
-        "ChineseName": "【前置】公交车站台位置(21264)"
-    },
-    "Crops Anytime Anywhere": {
-        "ChineseName": "【前置】随时随地种植(3000)"
-    },
-    "Crops Survive Season Change": {
-        "ChineseName": "【功能】农作物在季节变化中可以成活(18030)"
-    },
-    "Custom Farm Loader": {
-        "ChineseName": "【功能】农作物在季节变化中可以成活(13804)"
-    },
-    "Custom Kissing Mod": {
-        "ChineseName": "【功能】自定义接吻(4664)"
-    },
-    "[BL] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-BL(8587)"
-    },
-    "[CC] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-CC(8587)"
-    },
-    "[CP] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城(8587)"
-    },
-    "[DLL] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-DLL(8587)"
-    },
-    "[FTM] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-FTM(8587)"
-    },
-    "[MFM] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-MFM(8587)"
-    },
-    "[TS] Downtown Zuzu": {
-        "ChineseName": "【大型拓展包】祖祖城-TS(8587)"
-    },
-    "Easy Farm Switcher": {
-        "ChineseName": "【功能】切换农场(16873)"
-    },
-    "Esca's Modding Plugins": {
-        "ChineseName": "【功能】Esca 的模组插件(9296)"
-    },
-    "Fast Forward": {
-        "ChineseName": "【功能】按~键即可加快游戏速度(28198)"
-    },
-    "Fishing Assistant 2": {
-        "ChineseName": "【功能】钓鱼助手2(5815)"
-    },
-    "Hybrid Crop Engine": {
-        "ChineseName": "【前置】混合剪裁引擎(6577)"
-    },
-    "输入法修复（Input Method Fix）": {
-        "ChineseName": "【功能】游戏内输入法修复(35313)"
-    },
-    "KK_UniformsPack": {
-        "ChineseName": "【功能】JK套装包(9859)"
-    },
-    "Json Assets": {
-        "ChineseName": "【功能】允许内容包向游戏添加自定义内容(1720)"
-    },
-    "*Jumping*": {
-        "ChineseName": "【功能】消耗耐力来跳过某些地形(29794)"
-    },
-    "Let's Move It": {
-        "ChineseName": "【功能】可以移动各种物品(20943)"
-    },
-    "Lumisteria Serene Meadow": {
-        "ChineseName": "【功能】Lumisteria宁静草地(20598)"
-    },
-    "Lumisteria Serene Meadow Spawn": {
-        "ChineseName": "【功能】Lumisteria花卉和农作物(7110)"
-    },
-    "Mobile Phone Continued": {
-        "ChineseName": "【功能】多功能手机(21017)"
-    },
-    "More Grass": {
-        "ChineseName": "【前置】更多土地(5398)"
-    },
-    "Polyamory Sweet Bed": {
-        "ChineseName": "【功能】允许多个配偶或室友(20599)"
-    },
-    "PolyamorySweet Kiss": {
-        "ChineseName": "【功能】多角恋温馨之吻(20599)"
-    },
-    "Polyamory Sweet Love": {
-        "ChineseName": "【功能】多角恋温馨爱恋(20599)"
-    },
-    "PolyamorySweet Rooms": {
-        "ChineseName": "【功能】多角恋温馨房间(20599)"
-    },
-    "Polyamory Sweet Wedding": {
-        "ChineseName": "【功能】多角恋温馨婚礼(20599)"
-    },
-    "[CP] Polyamory Sweet!": {
-        "ChineseName": "【补丁】多角恋相关内容！(20599)"
-    },
-    "Unique Response Core": {
-        "ChineseName": "【功能】科里尔小姐独特的求爱反应(8284)"
-    },
-    "Self Serve": {
-        "ChineseName": "【功能】商店随时可以买东西(20985)"
-    },
-    "SkullCavernElevator": {
-        "ChineseName": "【功能】沙漠电梯(963)"
-    },
-    "Smart Building": {
-        "ChineseName": "【功能】智能建筑(11158)"
-    },
-    "Solid Foundations": {
-        "ChineseName": "【前置】坚实的基础(12311)"
-    },
-    "*SorryLabCore*": {
-        "ChineseName": "【前置】(29793)"
-    },
-    "Yet another dog mod (standalone)": {
-        "ChineseName": "【功能】新增16种宠物狗(1853)"
-    },
-    "SpritesInDetail": {
-        "ChineseName": "【功能】更高分辨率的精灵(14487)"
-    },
-    "StardewDruid": {
-        "ChineseName": "【功能】星露德鲁伊(18465)"
-    },
-    "StardewHack": {
-        "ChineseName": "【功能】星露黑客(3213)"
-    },
-    "[C#] Sunberry Village": {
-        "ChineseName": "【功能】阳莓村的代码部分(3213)"
-    },
-    "Sunberry Village - Custom Companions": {
-        "ChineseName": "【功能】阳莓村 - 自定义伙伴(3213)"
-    },
-    "Sunberry Village - Content Patcher": {
-        "ChineseName": "【功能】阳莓村 - 添加一个新区域(11111)"
-    },
-    "Sunberry Village - Farm Type Manager": {
-        "ChineseName": "【功能】阳莓村 - 农场类型管理器(11111)"
-    },
-    "Swim Mod": {
-        "ChineseName": "【功能】游泳模组(23169)"
-    },
-    "Swim Items": {
-        "ChineseName": "【功能】游泳装备(23169)"
-    },
-    "Swim Mod Dive Maps": {
-        "ChineseName": "【功能】游泳模组潜水地图(23169)"
-    },
-    "The Stardew Squad": {
-        "ChineseName": "【功能】星露小队-招募NPC协助完成任务(35341)"
-    },
-    "Content Addons for The Stardew Squad": {
-        "ChineseName": "【功能】星露小队-添加成员对话(35341)"
-    },
-    "TimeSpeed": {
-        "ChineseName": "【功能】控制游戏时间流速(169)"
-    },
-    "TimeWatch": {
-        "ChineseName": "【功能】时间怀表(23725)"
-    },
-    "[CP] Timsanity's Floral Megamix Redux": {
-        "ChineseName": "【功能】花卉大混合重制版(28133)"
-    },
-    "[FTM] Timsanity Forage": {
-        "ChineseName": "【功能】添加可采集植物(28133)"
-    },
-    "[HCE] Timidori Flower Breeding": {
-        "ChineseName": "【功能】180+花卉作物(13327)"
-    },
-    "Ghibli Companions": {
-        "ChineseName": "【功能】添加龙猫作为您的伴侣(30241)"
-    },
-    "Tractor Mod": {
-        "ChineseName": "【功能】拖拉机模组(1401)"
-    },
-    "Train Station": {
-        "ChineseName": "【功能】火车站模组-允许模组制作者添加更多车站(6183)"
-    }
+    "PyTK Lite": {"ChineseName":"【前置】PyTK工具包 (1726)"},
+    "Alternative Textures": {"ChineseName":"【前置】替代纹理 (9246)"},
+    "Shop Tile Framework": {"ChineseName":"【前置】商店地砖框架(5005)"},
+    "Fashion Sense": {"ChineseName":"【前置】时尚外观 (9969)"},
+    "SpaceCore": {"ChineseName":"【前置】Space专用前置(1348)"},
+    "Content Patcher": {"ChineseName":"【前置】内容补丁(1915)"},
+    "Custom Bush": {"ChineseName":"【前置】定制衬套(20619)"},
+    "Calcifer": {"ChineseName":"【前置】钙化器 Calcifer(20628)"},
+    "Expanded Preconditions Utility": {"ChineseName":"【前置】扩展前置条件工具(6529)"},
+    "Cross-Mod Compatibility Tokens": {"ChineseName":"【前置】跨模组兼容令牌(28284)"},
+    "Item extensions": {"ChineseName":"【前置】物品扩展框架(20357)"},
+    "Unlockable Bundles": {"ChineseName":"【前置】可解锁捆绑包(17265)"},
+    "Furniture Framework": {"ChineseName":"【前置】家具框架(23458)"},
+    "Happy Birthday": {"ChineseName":"【前置】生日快乐(520)"},
+    "StardustCore": {"ChineseName":"【前置】星尘核心(2341)"},
+    "SlimeHutchWaterSpots1.6": {"ChineseName":"【前置】史莱姆小屋水斑(32684)"},
+    "[CP] Pixie's Mid-Century Modern Catalogue": {"ChineseName":"【前置】Pixie的家具目录(36735)"},
+    "[CP] ValleyTalk Base": {"ChineseName":"【功能】AI对话模组(30319)"},
+    "ValleyTalk Content Pack": {"ChineseName":"【功能】AI对话模组(30319)"},
+    "ValleyTalk": {"ChineseName":"【功能】AI对话模组(30319)"},
+    "Elle's New Barn Animals": {"ChineseName":"【功能】新谷仓动物(3167)"},
+    "(AT) DustBeauty's Recolor Pack": {"ChineseName":"【美化】DustBeauty的重新着色包(26023)"},
+    "[AT] H&W Outdoor Furniture - Muski Recolor": {"ChineseName":"【美化】HxW 户外家具中世纪着色(24402)"},
+    "(AT) H&W Outdoor Furniture - Muski Recolor": {"ChineseName":"【美化】HxW 户外家具中世纪着色(24402)"},
+    "(AT) Pet Bowl - Pets need to eat as well": {"ChineseName":"【美化】宠物碗-宠物也需要吃东西(23387)"},
+    "(AT)Elfflower Furniture (Wizard Furniture redraw)": {"ChineseName":"【美化】法师家具美化"},
+    "(AT)Elfflower Furniture(Wizard Furniture redraw)": {"ChineseName":"【美化】法师家具美化"},
+    "(FS) Kkunma's 48 Hairstyle": {"ChineseName":"【美化】Kkunma的48种新发型(21758)"},
+    "[FS] Kkunma's 48 Hairstyles ": {"ChineseName":"【美化】Kkunma的48种新发型(21758)"},
+    "[AT] Bear Shipping Bin": {"ChineseName":"【美化】小熊运输箱 (1303)"},
+    "Duck Crab Pot for AT": {"ChineseName":"【功能】鸭蟹煲(6346)"},
+    "[AT] Medieval Themed Sheds - Earthy": {"ChineseName":"【美化】中世纪主题小屋(20429)"},
+    "[AT] Rosy Picket Fences": {"ChineseName":"【美化】玫瑰装饰木围栏+大门 (10961)"},
+    "[AT] Snowcrows": {"ChineseName":"【美化】雪人替换豪华稻草人(9250)"},
+    "[AT] Sprog's Animated Butterfly Hutches FAST": {"ChineseName":"【美化】动画蝴蝶小屋 (22048)"},
+    "[AT] Sweetheart Furniture": {"ChineseName":"【美化】甜心家具套装 (11509)"},
+    "[AT] Tree of the Winter Star Retexture by MolaMole": {"ChineseName":"【美化】冬日星树美化 (19779)"},
+    "Tree of the Winter Star Retexture by MolaMole (AT Version)": {"ChineseName":"【美化】冬日星树美化 (19779)"},
+    "[CP] Animated Fish": {"ChineseName":"【美化】动画鱼(5735)"},
+    "[CP] Buildable Large Tree Pack": {"ChineseName":"【美化】可建造的大树建筑包(22520)"},
+    "[CP] Cartoon Decoration": {"ChineseName":"【美化】卡通装饰(22759)"},
+    "[CP] Cornucopia More Flowers": {"ChineseName":"【美化】聚宝盆(20290)"},
+    "[CP] crystalinerose Tilesheets": {"ChineseName":"【前置】Kisaa的地图素材(28434)"},
+    "[CP] Custom Menu Background": {"ChineseName":"【美化】自定义菜单背景(7416)"},
+    "[CP] DaisyNiko's Tilesheets": {"ChineseName":"【前置】DaisyNiko的地图素材(4736)"},
+    "[CP] Daphne's Ice Cream Truck": {"ChineseName":"【其他】达芙妮的冰激凌车(12430)"},
+    "Everia's Dragons": {"ChineseName":"【功能】Everia的龙(20672)"},
+    "[CP] Fish Ponds by Gweniaczek": {"ChineseName":"【美化】鱼塘美化(5301)"},
+    "[CP] Flower Valley": {"ChineseName":"【美化】小镇建筑外部美化(2064)"},
+    "[CP] GH's Peach Body type (female)": {"ChineseName":"【美化】女性体型修改"},
+    "[CP] GH's Peach Body type (male)": {"ChineseName":"【美化】男性体型修改"},
+    "[CP] Gwen's Medieval Craftables": {"ChineseName":"【美化】中世纪风格制作物(5513)"},
+    "[CP] H&W Outdoor Furniture": {"ChineseName":"【美化】HxW 户外家具(16693)"},
+    "[CP] H&W Romantic Furniture": {"ChineseName":"【美化】HXW浪漫户外家具(17577)"},
+    "[CP] HxW Tilesheets": {"ChineseName":"【前置】HxW资产(20139)"},
+    "[CP] Ilucies Singing Sunflower": {"ChineseName":"【美化】会唱歌的向日葵(29179)"},
+    "[CP] Italian Countryside Buildings": {"ChineseName":"【美化】意大利乡村建筑(27579)"},
+    "[CP] Italian Countryside Farmhouse (Seasonal)": {"ChineseName":"【美化】意大利乡村农舍(27005)"},
+    "[CP] IzerFull's Rubber Duck": {"ChineseName":"【美化】IzerFull 的橡皮鸭"},
+    "Japanese decorative buildings": {"ChineseName":"【美化】日本装饰建筑(6314)"},
+    "[CP] Jonbow's Animals": {"ChineseName":"【美化】新增17种动物(28303)"},
+    "[CP] Keep Christmas Well": {"ChineseName":"【美化】好好庆祝圣诞节(27219)"},
+    "[CP] Lumisteria Tilesheets - Indoor": {"ChineseName":"【前置】Lumisteria的地图室内素材 (9599)"},
+    "[CP] Lumisteria Tilesheets - Outdoor": {"ChineseName":"【前置】Lumisteria的地图室外素材 (10448)"},
+    "Medieval Daphne's Ice Cream Truck": {"ChineseName":"【功能】中世纪风格达芙妮冰淇淋车(16466)"},
+    "Milk Of Myth Expanded": {"ChineseName":"【绅士】兽娘牧场(30663)"},
+    "(CP) Monster Girl Pets": {"ChineseName":"【绅士】宠物女孩(22603)"},
+    "(CP) I Fixed Him - Shane Dialogue Consistency": {"ChineseName":"【补丁】我修正了他 —— 谢恩对话一致性(21660)"},
+    "(CP) Seasonal Vanilla UI": {"ChineseName":"【美化】赛季原版用户界面(17272)"},
+    "[CP] Additional Farm Cave": {"ChineseName":"【美化】额外的农场洞穴(14109)"},
+    "[CP] Clint Reforged": {"ChineseName":"【功能】克林特重铸(18345)"},
+    "[CP] Marnie Deserves Better": {"ChineseName":"【功能】玛妮值得更好的(7686)"},
+    "[CP] Yagisan - Custom NPCs for NPC Map Locations": {"ChineseName":"【功能】用于NPC地图位置的自定义NPC(8174)"},
+    "[FTM] Additional Farm Cave": {"ChineseName":"【功能】额外农场洞穴"},
+    "[NPC] Rodney O'Brien": {"ChineseName":"【功能】罗德尼·奥布赖恩"},
+    "Add Berry Seasons to Calendar": {"ChineseName":"【功能】将浆果季节添加到日历(10477)"},
+    "Animated Clothes": {"ChineseName":"【美化】带动画的原版服装(6117)"},
+    "Animated East Scarp Fish": {"ChineseName":"【美化】为鱼增加动画效果(10913)"},
+    "Animated Fish SVE": {"ChineseName":"【美化】鱼类动画效果SVE版(6089)"},
+    "Animated Food and Drinks": {"ChineseName":"【美化】动画食品和饮料(5607)"},
+    "Animated Furniture and Stuff": {"ChineseName":"【美化】为家居添加动态效果(5662)"},
+    "Animated Ridgeside Village Fish": {"ChineseName":"【美化】山脊村鱼类动画效果(7353)"},
+    "Animated Slime Eggs and Loot": {"ChineseName":"【美化】史莱姆蛋和战利品添加动画效果(5642)"},
+    "AnimatedGemstones": {"ChineseName":"【美化】为宝石添加动画效果(4986)"},
+    "Automate": {"ChineseName":"【美化】自动化操作模块(1063)"},
+    "Better Crafting": {"ChineseName":"【美化】更好的制作(11115)"},
+    "Better Signs": {"ChineseName":"【美化】优化标牌(7482)"},
+    "Buildable Ginger Island Farm": {"ChineseName":"【美化】可建造姜岛农场(20600)"},
+    "Chests Anywhere": {"ChineseName":"【功能】随地存取箱子(518)"},
+    "Colored Seeds": {"ChineseName":"【美化】季节彩色种子(3774)"},
+    "Community Center": {"ChineseName":"【美化】重构社区中心(6966)"},
+    "Content Patcher Animations": {"ChineseName":"【美化】内容补丁动画(3853)"},
+    "Convenient Inventory": {"ChineseName":"【功能】便捷背包(10384)"},
+    "Custom Companions": {"ChineseName":"【功能】自定义伙伴(8626)"},
+    "Cuter Slimes": {"ChineseName":"【美化】更萌史莱姆(21889)"},
+    "Dynamic Reflections": {"ChineseName":"【美化】水面反射倒影(12831)"},
+    "[CP] East Scarp": {"ChineseName":"【大型扩展包】东斯卡普"},
+    "East Scarp C#": {"ChineseName":"【大型扩展包】东斯卡普 C#版本(5787)"},
+    "East Scarp NPCs": {"ChineseName":"【大型扩展包】东斯卡普 NPCS(5787)"},
+    "Forage Settings East Scarp": {"ChineseName":"【功能】东斯卡普觅食设置"},
+    "Eli & Dylan": {"ChineseName":"【功能】伊莱与迪伦(13883)"},
+    "Eli & Dylan- Soot": {"ChineseName":"【功能】伊莱与迪伦 - soot"},
+    "Eli and Dylan Code": {"ChineseName":"【功能】伊莱与迪伦 - Code"},
+    "Elle's Cuter Barn Animals": {"ChineseName":"【美化】谷仓动物外观(20044)"},
+    "Elle's Cuter Cats": {"ChineseName":"【美化】艾尔的可爱猫咪(20041)"},
+    "Elle's Cuter Coop Animals": {"ChineseName":"【美化】艾尔的可爱鸡舍动物(20043)"},
+    "Elle's Cuter Dogs": {"ChineseName":"【美化】艾尔的可爱狗狗(20040)"},
+    "Elle's Cuter Horses": {"ChineseName":"【美化】艾尔的可爱马匹(20042)"},
+    "Event Limiter": {"ChineseName":"【功能】事件限制器(10735)"},
+    "Event Lookup": {"ChineseName":"【功能】事件查找(8505)"},
+    "Farm Type Manager (FTM)": {"ChineseName":"【功能】农场类型管理器（FTM）(3231)"},
+    "Faster Path Speed": {"ChineseName":"【功能】在路径上移动更快(9344)"},
+    "Friends Forever": {"ChineseName":"【功能】友谊长存(20702)"},
+    "Generic Mod Config Menu": {"ChineseName":"【功能】通用模组配置菜单(5098)"},
+    "Grampleton Fields": {"ChineseName":"【功能】格兰普顿原野"},
+    "Grandpas Tools": {"ChineseName":"【美化】爷爷的工具(8835)"},
+    "Immersive Farm 2 Remastered": {"ChineseName":"【功能】沉浸式农场 2 重制版(3753)"},
+    "Integrated Minecarts (CP Component)": {"ChineseName":"【功能】整合矿车(11881)"},
+    "Integrated Minecarts (SMAPI Component)": {"ChineseName":"【功能】整合矿车（SMAPI版本）(11881)"},
+    "ItsStardewTime": {"ChineseName":"【功能】时间大师(20847)"},
+    "Leilani": {"ChineseName":"【功能】莱拉妮(9375)"},
+    "Lookup Anything": {"ChineseName":"【功能】查找任何内容(541)"},
+    "Lurking in the Dark": {"ChineseName":"【功能】潜伏在黑暗中(10770)"},
+    "Mail Framework Mod": {"ChineseName":"【功能】邮件框架模组(1536)"},
+    "Mapping Extensions and Extra Properties (MEEP)": {"ChineseName":"【前置】地图扩展与额外属性MEEP(14493)"},
+    "Mini Bars": {"ChineseName":"【功能】迷你状态栏(8329)"},
+    "MultiSave - Continued": {"ChineseName":"【功能】多存档扩展版(22953)"},
+    "No Pam Enabling": {"ChineseName":"【功能】不让帕姆酗酒(23080)"},
+    "Nora The Herpetologist": {"ChineseName":"【功能】爬虫学家诺拉(18176)"},
+    "NPC Map Locations": {"ChineseName":"【功能】NPC 地图位置(239)"},
+    "Part of the Community": {"ChineseName":"【功能】融入社区(923)"},
+    "PortraitsForAll": {"ChineseName":"【功能】全员头像"},
+    "Redesigned Spouse Rooms": {"ChineseName":"【补丁】重新设计配偶房间(2169)"},
+    "Relocate Buildings And Farm Animals": {"ChineseName":"【功能】建筑物和农场搬迁(20606)"},
+    "Ridgeside Village [Content Patcher component]": {"ChineseName":"【大型拓展包】里奇赛德村(7286)"},
+    "Ridgeside Village [Custom Companions component]": {"ChineseName":"【大型拓展包】里奇赛德村自定义伙伴(7286)"},
+    "Ridgeside Village [Farm Type Manager component]": {"ChineseName":"【大型拓展包】里奇赛德村农场管理器组件(7286)"},
+    "Ridgeside Village [SMAPI component]": {"ChineseName":"【大型拓展包】里奇赛德村SMAPI组件(7286)"},
+    "Ridgeside Village Seasonal Outfits": {"ChineseName":"【美化】里奇赛德村季节性服装(18202)"},
+    "Seasonal Cute Characters": {"ChineseName":"【美化】季节性可爱角色(5450)"},
+    "Seasonal Cute Characters ES": {"ChineseName":"【美化】东斯卡普的季节性可爱角色(16045)"},
+    "Seasonal Cute Characters SVE": {"ChineseName":"【美化】季节性服装-SVE的美感略显可爱(5969)"},
+    "Seasonal Mariner to Mermaid": {"ChineseName":"【美化】季节性水手变美人鱼(22799)"},
+    "Show Item Quality (1.6 Unofficial)": {"ChineseName":"【功能】显示物品质量(22275)"},
+    "Sit For Stamina": {"ChineseName":"【功能】坐下来增强耐力(7334)"},
+    "Social Page Order Redux": {"ChineseName":"【功能】社交页面排序优化(23374)"},
+    "Solarium Spa - Continued": {"ChineseName":"【功能】日光浴场温泉(22997)"},
+    "Spouses React To Player Death": {"ChineseName":"【功能】配偶对玩家死亡的反应(7493)"},
+    "Stardew Valley Expanded": {"ChineseName":"【大型扩展包】星露谷SVE扩展整合包"},
+    "[CP] Stardew Valley Expanded": {"ChineseName":"【大型扩展包】星露谷SVE扩展整合包-CP"},
+    "[FTM] Stardew Valley Expanded": {"ChineseName":"【大型扩展包】星露谷SVE扩展整合包-FTM"},
+    "Stardew Valley Expanded Farm Type Manager": {"ChineseName":"【功能】SVE扩展版农场类型管理器"},
+    "Stardew Valley Expanded Forage Locations - Immersive Farm 2": {"ChineseName":"【功能】SVE扩展版可采集资源点"},
+    "Stardew Valley Expanded Code": {"ChineseName":"【功能】星露谷物语扩展代码"},
+    "TDIT - Portraits for Extras": {"ChineseName":"【功能】临时演员的肖像(35358)"},
+    "TDIT - Portraits for Vendors": {"ChineseName":"【功能】商贩肖像包(20414)"},
+    "Tidy Pam": {"ChineseName":"【内容修补程序】整洁的帕姆(2306)"},
+    "Tiny Totem Statue Obelisks": {"ChineseName":"【美化】小图腾雕像方尖碑(23118)"},
+    "To-Dew": {"ChineseName":"【功能】待办清单(7409)"},
+    "mushymato.TrinketTinker": {"ChineseName":"【功能】饰品修补工匠(29073)"},
+    "UI Info Suite 2": {"ChineseName":"【功能】UI信息套件2(7098)"},
+    "World Maps": {"ChineseName":"【功能】世界地图无处不在(24210)"},
+    "[AT] DustBeauty's Industrial Furniture": {"ChineseName":"【美化】工业风家具(17656)"},
+    "Industrial Furniture Set for CP": {"ChineseName":"【美化】自定义工业风家具套装(17656)"},
+    "[AT] Extendable Windows": {"ChineseName":"【功能】可扩展窗口"},
+    "[AT] Nano's Retro Style Furniture": {"ChineseName":"【美化】复古风格家具(16029)"},
+    "[AT] Shyzie's Rugs": {"ChineseName":"【美化】女巫精灵风格地毯(16726)"},
+    "[AT] Shyzie's Witchy Goblincore Rugs": {"ChineseName":"【美化】哥布林风格地毯(20640)"},
+    "[AT] West Elm Furniture by Atlas": {"ChineseName":"【美化】西榆家具(14644)"},
+    "[CP] Crow Companion": {"ChineseName":"【功能】乌鸦伙伴(22915)"},
+    "[FS] Seasonal Hats": {"ChineseName":"【功能】季节性帽子(13682)"},
+    "Aesthetic Secret Notes": {"ChineseName":"【功能】美学秘密笔记(14955)"},
+    "Aimon's Fancy Greenhouse": {"ChineseName":"【功能】艾蒙的豪华温室(16405)"},
+    "Aimon's Fancy Shed": {"ChineseName":"【功能】艾蒙的精致棚屋(15250)"},
+    "Aimon's Tidy Cozy Cellar": {"ChineseName":"【功能】艾蒙的温馨地窖(17814)"},
+    "Animated Bird Tappers": {"ChineseName":"【美化】动画鸟类采集器"},
+    "Animated Ducky Crab Pot": {"ChineseName":"【美化】动画鸭子捕蟹笼(21810)"},
+    "Animated Frog Pots": {"ChineseName":"【美化】动画青蛙捕蟹笼(21810)"},
+    "AT_Gwen_Paths": {"ChineseName":"【美化】格温的纹理路径(8683)"},
+    "AT_GwenCraft_DNER": {"ChineseName":"【美化】格温的手工艺品(13897)"},
+    "AT_Medieval_Buildings": {"ChineseName":"【美化】中世纪建筑(10567)"},
+    "Bathhouse Hot Spring": {"ChineseName":"【美化】温泉浴场(22565)"},
+    "Brushed Bronze Iridium Sprinkler": {"ChineseName":"【美化】最高级洒水器(4902)"},
+    "Chest Deco : animal products": {"ChineseName":"【美化】储物箱装饰：动物产品系列(20384)"},
+    "Chest Deco : artisan goods": {"ChineseName":"【美化】储物箱装饰：手工制品系列(20384)"},
+    "Chest Deco : fishes": {"ChineseName":"【美化】储物箱装饰：鱼类系列(20384)"},
+    "Chest Deco : misc": {"ChineseName":"【美化】储物箱装饰：杂物系列(20384)"},
+    "Chest Deco : resources": {"ChineseName":"【美化】储物箱装饰：资源系列(20384)"},
+    "Chest Deco : veggies": {"ChineseName":"【美化】储物箱装饰：蔬菜系列(20384)"},
+    "Cottagecore_Fences": {"ChineseName":"【美化】田园风栅栏(8558)"},
+    "Cute and Tidy Coops and Barns": {"ChineseName":"【美化】可爱整洁的鸡舍与谷仓(8558)"},
+    "DNER All in one map fix": {"ChineseName":"【补丁】地图异常整合修复(29941)"},
+    "Earthy Icons for Worldmaps Everywhere": {"ChineseName":"【美化】全域地图自然风格图标(24478)"},
+    "Earthy Interface": {"ChineseName":"【美化】自然风格界面(13658)"},
+    "Earthy Recolour": {"ChineseName":"【美化】自然色系重绘(5255)"},
+    "Earthy Recolour Fix for SVE": {"ChineseName":"【补丁】SVE适配的自然色系重绘修复(7613)"},
+    "Earthy Ridgeside CP Conversion": {"ChineseName":"【美化】自然风格山脊村(17980)"},
+    "Earthy Short Grass": {"ChineseName":"【美化】自然风格短草(30067)"},
+    "Firefly Torch": {"ChineseName":"【美化】萤火虫火把(20333)"},
+    "FS - Lighter Oversized Sleeves": {"ChineseName":"【美化】超大浅色宽松袖(13393)"},
+    "Grandpa's Farm": {"ChineseName":"【美化】爷爷的农场(3753)"},
+    "Grandpa's Farm Forage Locations": {"ChineseName":"【美化】爷爷的农场可觅食地点"},
+    "Guxelbit's Furniture : additional": {"ChineseName":"【美化】家具扩展包(20268)"},
+    "Guxelbit's Furniture : normal": {"ChineseName":"【美化】常规家具扩展包(20268)"},
+    "Gwens_Doghouses": {"ChineseName":"【美化】格温的狗屋(21248)"},
+    "Gwens_paths": {"ChineseName":"【美化】格温的路径(8683)"},
+    "Happy Home Designer": {"ChineseName":"【美化】快乐家居设计师(19675)"},
+    "Kkunma Hairstyle Bundle": {"ChineseName":"【美化】发型合集"},
+    "Luny's Farm Dresses": {"ChineseName":"【美化】露妮的连衣裙(23925)"},
+    "Luny's Plushies": {"ChineseName":"【美化】露妮的毛绒玩具(23925)"},
+    "Luny's Salon": {"ChineseName":"【美化】露妮的美发沙龙(24746)"},
+    "Magical Furniture for Alternative Textures": {"ChineseName":"【美化】替换纹理的魔法家具"},
+    "Medieval_buildings": {"ChineseName":"【美化】中世纪建筑(4542)"},
+    "Medieval_Craftables": {"ChineseName":"【美化】中世纪可制作物品(5513)"},
+    "Medieval_DNT": {"ChineseName":"【美化】中世纪风格DNT纹理(10908)"},
+    "MSVE": {"ChineseName":"【美化】中世纪风格SVE资产重置模组(6086)"},
+    "Nyang Cat Scarecrows for AT": {"ChineseName":"【美化】喵星人稻草人"},
+    "Plain Slime Hutch": {"ChineseName":"【美化】简约风格史莱姆小屋(13154)"},
+    "Precise Furniture": {"ChineseName":"【美化】精准摆家具(23488)"},
+    "Seasonal Hedge Fence": {"ChineseName":"【美化】季节性树篱围栏(21813)"},
+    "Simple Foliage": {"ChineseName":"【美化】简约植物群(20972)"},
+    "SVE Trees Recolored": {"ChineseName":"【美化】SVE树木重绘版(28798)"},
+    "Too Many Swatches - a Furniture Recolor": {"ChineseName":"【美化】超多款式——家具重绘(17031)"},
+    "Universal Recolors": {"ChineseName":"【功能】画面饱和度调整(20749)"},
+    "Way Back PT": {"ChineseName":"【功能】往昔鹈鹕镇(7332)"},
+    "Witchy Decorations for Content Patcher": {"ChineseName":"【补丁】巫术装饰品(23106)"},
+    "Witchy Rustic Looks": {"ChineseName":"【美化】女巫质风格外观(15140)"},
+    "WorldMap for East Scarp": {"ChineseName":"【美化】东斯卡普土色地图(21963)"},
+    "WorldMap for Ginger Island": {"ChineseName":"【美化】姜岛大地地图(21969)"},
+    "WorldMap for Ridgeside Village": {"ChineseName":"【美化】赛德村世界地图(21792)"},
+    "Yomi's Golden Princess Hairstyle": {"ChineseName":"【美化】金色公主发型"},
+    "[CP] Yet Another Cooking Skill": {"ChineseName":"【功能】又一个烹饪技能CP版(22681)"},
+    "AutomaticGates": {"ChineseName":"【功能】自动大门(3109)"},
+    "BirbCore": {"ChineseName":"【功能】Birb 核心(19140)"},
+    "Elle's Seasonal Vanilla Buildings": {"ChineseName":"【功能】Elle 的季节性香草建筑(6330)"},
+    "Experience Updates": {"ChineseName":"【功能】经验提示(7581)"},
+    "Farm Type Manager": {"ChineseName":"【功能】农场类型管理器(3231)"},
+    "Help Wanted Redux For 1.6": {"ChineseName":"【功能】求助任务重制版(21766)"},
+    "Horse Overhaul": {"ChineseName":"【功能】马匹大修(7911)"},
+    "Seasonal Cute Swimwear": {"ChineseName":"【美化】季节性可爱可爱泳衣"},
+    "Skip Intro": {"ChineseName":"【功能】跳过开场动画(533)"},
+    "Yet Another Cooking Skill": {"ChineseName":"【功能】又一个烹饪技能(22681)"},
+    "Experience Bars": {"ChineseName":"【功能】经验条(509)"},
+    "(CP) Birds Didn't Invent Poi": {"ChineseName":"【功能】鸟儿没有Poi(21965)"},
+    "[BBM] Blueberries On Bushes": {"ChineseName":"【功能】灌木上的蓝莓(17772)"},
+    "[CP] Alex's Ice Cream Stand Sells A Few More Items": {"ChineseName":"【功能】亚历克斯的冰淇淋摊增加更多商品(29350)"},
+    "[CP] Atelier Cauldron English Translation Pack": {"ChineseName":"【功能】炼金工坊大锅英文翻译包()"},
+    "[CP] Beach Additional Storage Space Area": {"ChineseName":"【功能】海滩额外储物区(14244)"},
+    "[CP] Beach Extension For Crab Pod": {"ChineseName":"【功能】蟹笼海滩扩展(11594)"},
+    "[CP] Better Honey Mead": {"ChineseName":"【功能】更好的蜂蜜蜜酒(22848)"},
+    "[CP] Blue Eggs and Golden Mayo": {"ChineseName":"【功能】黄金蛋黄酱(20266)"},
+    "[CP] Button's Extra Books": {"ChineseName":"【功能】巴顿的额外书籍(21526)"},
+    "[CP] Camping tent with tarp": {"ChineseName":"【功能】带防水布的露营帐篷(23578)"},
+    "[CP] Full beard for Philip - RSV (seasonal)": {"ChineseName":"【美化】菲利普的胡须造型-RSV季节性(23691)"},
+    "[CP] Pixie's MCM Bedroom Furniture": {"ChineseName":"【美化】小精灵的中世纪现代风格卧室家具(36809)"},
+    "[CP] Pixie's MCM Rug Collection": {"ChineseName":"【美化】小精灵的中世纪现代风格地毯(36256)"},
+    "[CP] Staffy dog": {"ChineseName":"【美化】斯塔福郡斗牛㹴(25783)"},
+    "[FTM] Berry Woods": {"ChineseName":"【美化】浆果森林(25541)"},
+    "[STF] Clint Shop Artifacts": {"ChineseName":"【美化】克林特商店的古物(10529)"},
+    "[STF] Clint Shop Bars": {"ChineseName":"【美化】克林特商店的金属锭(10529)"},
+    "[STF] Clint Shop Geodes": {"ChineseName":"【美化】克林特商店的晶球(10529)"},
+    "[STF] Clint Shop Overhaul": {"ChineseName":"【美化】克林特商店改造(10529)"},
+    "6480's Giant Crops": {"ChineseName":"【美化】巨型农作物(5221)"},
+    "8bit's Hairstyles": {"ChineseName":"【美化】8bit的发型(19141)"},
+    "A Secret Forest Walk": {"ChineseName":"【美化】秘密森林漫步(18929)"},
+    "A Warm Welcome": {"ChineseName":"【美化】热烈欢迎(29400)"},
+    "Additional Hairstyles": {"ChineseName":"【美化】附加42种发型(36243)"},
+    "Adventurer's Guild Expanded for 1.6": {"ChineseName":"【功能】冒险家公会扩展(22591)"},
+    "Aimon's Additional Bus Interior Map": {"ChineseName":"【功能】巴士内部地图(20289)"},
+    "Alecto the Witch": {"ChineseName":"【功能】女巫亚历克托(10671)"},
+    "Alvadeas Tilesheet": {"ChineseName":"【功能】阿尔瓦迪亚的图块(13743)"},
+    "Always Hay": {"ChineseName":"【功能】随时获得干草(20808)"},
+    "Always Raining in the Valley": {"ChineseName":"【功能】山谷中总是下雨(9999)"},
+    "Ancient Seeds in Garden Pots Allowed": {"ChineseName":"【功能】允许古种子种植在花盆中(21603)"},
+    "Animals Don't Remove Grass": {"ChineseName":"【功能】动物不啃草地(21028)"},
+    "Archie's Tilesheets of Miscellaneous Stuff": {"ChineseName":"【美化】各类贴图素材(28480)"},
+    "Artisan Goods Keep Quality": {"ChineseName":"【美化】更精美的手工艺品(21278)"},
+    "ARV- Maximum": {"ChineseName":"【美化】马克西姆"},
+    "Auto-Stack Bait & Ammo": {"ChineseName":"【功能】自动堆叠鱼饵与弹药(23423)"},
+    "AutoAnimalDoors": {"ChineseName":"【功能】动物门自动开关(1019)"},
+    "AutoGate": {"ChineseName":"【功能】自动门(820)"},
+    "Battery Pack From Joja": {"ChineseName":"【功能】乔家超市购买电池组(27674)"},
+    "Beach Farm Redone": {"ChineseName":"【功能】海滩农场重制版(24235)"},
+    "Beach Sounds for Content Patcher": {"ChineseName":"【功能】适用于CP的海滩音效(32469)"},
+    "Bees Plus": {"ChineseName":"【功能】蜜蜂增强版(30597)"},
+    "Berry Season Reminder": {"ChineseName":"【功能】浆果季节提醒(9315)"},
+    "Berry Woods": {"ChineseName":"【功能】浆果森林(25541)"},
+    "Better Beehouses": {"ChineseName":"【功能】更优质的蜂箱(10996)"},
+    "Better Clinic Beds": {"ChineseName":"【功能】更好的诊所床位(13608)"},
+    "Better Festival Notifications": {"ChineseName":"【功能】更好的节日通知(14170)"},
+    "Better Friendship": {"ChineseName":"【功能】更完善的好感度系统(10287)"},
+    "Better Honey Mead": {"ChineseName":"【功能】更好的蜂蜜酒(22848)"},
+    "Better Introduction for Content Patcher": {"ChineseName":"【功能】优化开场动画(6590)"},
+    "Better Meowmere": {"ChineseName":"【功能】优化喵星人之剑(20374)"},
+    "Better Moss Soup": {"ChineseName":"【功能】更好的苔藓汤(25075)"},
+    "Better Ranching": {"ChineseName":"【功能】更完善的畜牧业(859)"},
+    "Better Shipping Bin": {"ChineseName":"【功能】更完善的出货箱(10487)"},
+    "Better Slime Hutch by glymr": {"ChineseName":"【功能】优化版史莱姆屋(19304)"},
+    "Better Special Orders": {"ChineseName":"【功能】更完善的特殊订单(24125)"},
+    "Better Trains": {"ChineseName":"【功能】优化火车掉落物(26439)"},
+    "Better Truffles": {"ChineseName":"【功能】更优质的松露(23228)"},
+    "Better Water": {"ChineseName":"【功能】更真实的水体(15079)"},
+    "Big Crop Bonus": {"ChineseName":"【功能】大丰收奖励(22337)"},
+    "Bigger Fridges": {"ChineseName":"【功能】更大的冰箱(21678)"},
+    "Bigger Silo Size": {"ChineseName":"【功能】更大的筒仓尺寸(21021)"},
+    "Birdie Hut Interior": {"ChineseName":"【美化】伯蒂小屋内饰(11731)"},
+    "BlinkFix": {"ChineseName":"【补丁】眨眼修复(32081)"},
+    "Bush Bloom Mod": {"ChineseName":"【功能】灌自定义木开花时间(15792)"},
+    "But There Were Emergencies": {"ChineseName":"【功能】修改哈维在冬季星节的对话(33213)"},
+    "Button's Extra Trigger Action Stuff": {"ChineseName":"【功能】巴顿的额外触发动作工具集(27100)"},
+    "CakeyBunz Gabriel Retexture": {"ChineseName":"【功能】加布里埃尔重绘(25050)"},
+    "CakeyBunz Zinnia Retexture": {"ChineseName":"【功能】对“zinni” 的纹理重绘(24075)"},
+    "Calling from afar": {"ChineseName":"【功能】远方来电(31011)"},
+    "Canon-Friendly Dialogue Expansion": {"ChineseName":"【功能】贴合原作的对话扩展(2544)"},
+    "Carry Chests": {"ChineseName":"【功能】搬运箱子(30321)"},
+    "Cauldron": {"ChineseName":"【功能】锅(22926)"},
+    "Central Station": {"ChineseName":"【功能】中央车站(8000)"},
+    "Central Station content": {"ChineseName":"【功能】中央车站内容包(8000)"},
+    "Cheaper Saloon Menu": {"ChineseName":"【功能】穷鬼酒馆菜单(20626)"},
+    "CJB Cheats Menu": {"ChineseName":"【功能】简易的游戏内作弊菜单(4)"},
+    "CJB Item Spawner": {"ChineseName":"【功能】CJB物品生成器(93)"},
+    "CJB Show Item Sell Price": {"ChineseName":"【功能】物品售价显示(5)"},
+    "Clint Rewritten": {"ChineseName":"【功能】克林特重塑(15830)"},
+    "Cloudy Skies": {"ChineseName":"【功能】多云的天空(23135)"},
+    "Coin Icon Replacer": {"ChineseName":"【功能】金币图标替换器(19487)"},
+    "Cold Pets": {"ChineseName":"【功能】寒冷天气宠物(14379)"},
+    "Collapse On Farm Fix - CP Component": {"ChineseName":"【补丁】崩溃农场修复(18086)"},
+    "Collapsing On The Farm Fix (Beta)": {"ChineseName":"【补丁】崩溃农场修复-测试版(18086)"},
+    "Go To Work Clint": {"ChineseName":"【补丁】去上班的克林特(4010)"},
+    "Golden Hour Window Light": {"ChineseName":"【美化】黄金时刻窗光(26426)"},
+    "Greenhouse Set": {"ChineseName":"【美化】温室套装(20329)"},
+    "Happy Birthday Content Pack- SVE": {"ChineseName":"【美化】生日快乐 SVE 内容包(19255)"},
+    "Shardust's Hairstyles for Content Patcher": {"ChineseName":"【美化】适配CP的 Shardust 发型包(8138)"},
+    "Spouse Portraits Reworked": {"ChineseName":"【美化】配偶头像重制(22912)"},
+    "Wall-Mounted Shelves": {"ChineseName":"【美化】壁挂式架子(28122)"},
+    "(CP) Demetrius's Tomato Aesthetics": {"ChineseName":"【美化】德米特里厄斯的番茄主题美化(23097)"},
+    "(DDF) Compatibility Patches": {"ChineseName":"【补丁】对话显示框补丁(22678)"},
+    "[AT] Crop Variety": {"ChineseName":"【功能】作物多样性(9930)"},
+    "[CP] Craftable Hardwood": {"ChineseName":"【功能】可制作硬木(15863)"},
+    "[CP] Cuter Mushroom Log": {"ChineseName":"【美化】可爱的蘑菇原木(33667)"},
+    "[CP] Molamole's Farm Kitchen - Colorful": {"ChineseName":"【美化】莫拉莫尔的农场厨房(27617)"},
+    "[CP] Molamole's Floorings ": {"ChineseName":"【美化】莫拉莫尔的婴儿床重新贴图(28380)"},
+    "[CP] Molamole's Floorings": {"ChineseName":"【美化】莫拉莫尔的婴儿床重新贴图(28380)"},
+    "[CP] Molamole's Furniture Catalogue": {"ChineseName":"【美化】莫拉莫尔的家具目录(35213)"},
+    "[CP] Molamole's MailBox": {"ChineseName":"【美化】莫拉莫尔的邮箱(20517)"},
+    "[CP] Molamole's Mini-ShippingBin": {"ChineseName":"【美化】莫拉莫尔的迷你出货箱(31970)"},
+    "[CP] Molamole's Nursery ": {"ChineseName":"【美化】莫拉莫尔的育儿室(28380)"},
+    "[CP] Molamole's Nursery": {"ChineseName":"【美化】莫拉莫尔的育儿室(28380)"},
+    "[CP] Molamole's ShippingBin": {"ChineseName":"【美化】莫拉莫尔的出货箱(23117)"},
+    "[CP] Molamole's Tree Of The Winter Star": {"ChineseName":"【美化】莫拉莫尔的冬星之树重贴图(28667)"},
+    "[CP] Molamole's Wallpaper - Night": {"ChineseName":"【美化】莫拉莫尔的墙纸-夜景款(28380)"},
+    "[CP] Molamole's Wallpapers": {"ChineseName":"【美化】莫拉莫尔的墙纸系列(28380)"},
+    "[CP] Roosters!": {"ChineseName":"【补丁】添加公鸡1.6(21729)"},
+    "AimonsWitchSwampOverhaulPatches": {"ChineseName":"【补丁】女巫沼泽大修补丁(18109)"},
+    "Alternate Dusty Portraits": {"ChineseName":"【美化】Furby的另类尘土肖像(20496)"},
+    "Coii's Hair Sets Pack": {"ChineseName":"【美化】发型套装包(2869)"},
+    "Colorful Fish Ponds": {"ChineseName":"【美化】五颜六色的鱼塘(23615)"},
+    "Combat Controls Redux": {"ChineseName":"【功能】战斗控制优化(10496)"},
+    "Community Center Helper": {"ChineseName":"【功能】社区中心助手(6893)"},
+    "Community Center Icons Redone": {"ChineseName":"【功能】社区中心图标重制(7641)"},
+    "Compatibility Content Pack": {"ChineseName":"【功能】兼容性内容包(22678)"},
+    "Context-Sensitive Gift Cursor for Stardew Valley": {"ChineseName":"【功能】简化送礼流程(6564)"},
+    "Cornucopia - Artisan Machines": {"ChineseName":"【功能】更多工匠机器和商品(24842)"},
+    "Cornucopia - More Crops": {"ChineseName":"【功能】提供额外水果和蔬菜(19508)"},
+    "Cornucopia - More Flowers": {"ChineseName":"【功能】提供额外更多花卉(20290)"},
+    "Cornucopia Flower Trees Retextured": {"ChineseName":"【美化】花卉树外观的优化(23988)"},
+    "Cornucopia Fruit Trees Retextured": {"ChineseName":"【美化】果树外观的优化(23988)"},
+    "Cozy Chocolate Furniture": {"ChineseName":"【美化】温馨巧克力家具(20011)"},
+    "CropGrowthAdjustments": {"ChineseName":"【功能】作物生长调整(18914)"},
+    "Custom Cask Mod": {"ChineseName":"【功能】自定义酒桶模组(2642)"},
+    "Custom Community Center Bundles": {"ChineseName":"【功能】自定义社区中心收集包(21340)"},
+    "Custom Community Center Bundles - Cornucopia RSV SVE Bundle Pack": {"ChineseName":"【功能】自定义社区中心收集包-RSV、SVE定制(21340)"},
+    "Custom Community Center Bundles - Pure Vanilla Bundle Pack": {"ChineseName":"【功能】自定义社区中心收集包-纯原版(21340)"},
+    "Custom Fixed Dialogue": {"ChineseName":"【补丁】自定义修正对话(20938)"},
+    "Custom NPC Exclusions": {"ChineseName":"【功能】自定义NPC排除(7089)"},
+    "Custom Tokens": {"ChineseName":"【功能】自定义令牌(7517)"},
+    "Customize Dresser": {"ChineseName":"【功能】自定义梳妆台(23359)"},
+    "Date Night Redux": {"ChineseName":"【功能】允新增随机事件-约会之夜(22714)"},
+    "Deluxe Grabber Redux 1.6": {"ChineseName":"【功能】豪华自动收集器重制版(20799)"},
+    "Deluxe Journal": {"ChineseName":"【功能】增强日志功能(20799)"},
+    "Desert Festival Foods": {"ChineseName":"【功能】沙漠节日美食(21303)"},
+    "Destroyable Bushes": {"ChineseName":"【功能】可砍伐灌木(6304)"},
+    "Dialogue Display Framework Continued": {"ChineseName":"【前置】对话显示框架(22678)"},
+    "Dialogue to reflect town growing.": {"ChineseName":"【功能】体现小镇发展的对话(29789)"},
+    "Distant Lands - Witch Swamp Overhaul": {"ChineseName":"【功能】一个小型女巫沼泽扩展包(18109)"},
+    "Distant Lands - Witch Swamp Overhaul FTM": {"ChineseName":"【功能】一个小型女巫沼泽扩展包 FTM(18109)"},
+    "Don't Enable Pam": {"ChineseName":"【功能】帕姆口渴了任务需要果汁(6721)"},
+    "Dwarf Portrait Replacement": {"ChineseName":"【功能】矮人肖像替换(14916)"},
+    "Dynamic Shane and Sterling": {"ChineseName":"【功能】动态肖恩和斯特林(10675)"},
+    "DynamicNightTime": {"ChineseName":"【功能】让夜间时间动态变化(2072)"},
+    "Elle's New Coop Animals": {"ChineseName":"【功能】新的鸡舍动物(3168)"},
+    "Elliott's Extensive Marriage Dialogue": {"ChineseName":"【功能】新增了大量婚后对话(27619)"},
+    "Em's Bears": {"ChineseName":"【功能】四种颜色的小熊(36100)"},
+    "Em's Camels": {"ChineseName":"【功能】四种颜色的骆驼(36181)"},
+    "Em's Geese": {"ChineseName":"【功能】四种颜色的鹅(36534)"},
+    "Expanded Storage": {"ChineseName":"【前置】集镇箱子拓展(7431)"},
+    "ExtraAnimalConfig": {"ChineseName":"【功能】为动物设定添加额外功能(25328)"},
+    "ExtraMachineConfig": {"ChineseName":"【功能】额外的机器配置(22256)"},
+    "Farmer Helper": {"ChineseName":"【功能】农场主助手(10179)"},
+    "farmerjack's Dialogue Expansions": {"ChineseName":"【功能】单身男女对话扩展包(9972)"},
+    "Farmhouse Fixes": {"ChineseName":"【前置】农舍修复(16507)"},
+    "Fashinable Hairstyles - Gentlemen Edition": {"ChineseName":"【功能】时尚发型-提供更多发型选择(25056)"},
+    "Fast Animations": {"ChineseName":"【功能】加快游戏中的许多动画(1089)"},
+    "Fern Isle Arch Science Authority Alt": {"ChineseName":"【功能】一个迷你扩展包(33880)"},
+    "Fertilizer Level Up": {"ChineseName":"【功能】肥料升级(31820)"},
+    "Festival Feedback": {"ChineseName":"【功能】为节日活动添加互动内容(31686)"},
+    "Fish Helper UI": {"ChineseName":"【功能】钓鱼助手界面(31686)"},
+    "Fish Info": {"ChineseName":"【功能】提供鱼类相关信息(5452)"},
+    "Fish Pond Aquaponics": {"ChineseName":"【功能】鱼塘鱼菜共生系统(32527)"},
+    "Fishing Made Easy Suite": {"ChineseName":"【功能】简化钓鱼体验的综合工具(3623)"},
+    "Fishing Trawler - Map Patches (New Horizons)": {"ChineseName":"【功能】拖网渔船(15941)"},
+    "Fishing Trawler - New Horizons": {"ChineseName":"【功能】拖网渔船 - 新视野(15941)"},
+    "Fixed Luau Bridge": {"ChineseName":"【功能】宴会上的海滩桥不消失(19264)"},
+    "Flower Dance Shop": {"ChineseName":"【功能】花舞店(25557)"},
+    "Forecaster Text": {"ChineseName":"【功能】天气预报文本(7541)"},
+    "Found Ladder Notification Sound": {"ChineseName":"【功能】发现梯子的提示音(30546)"},
+    "Fresh and Bit": {"ChineseName":"【功能】12种使用香草和聚宝盆的新食谱(25574)"},
+    "Friendship Bars": {"ChineseName":"【功能】显示友谊进度条(34774)"},
+    "Harvey Cares": {"ChineseName":"【功能】增强哈维婚姻对话的模组(35038)"},
+    "Jorts & Jean - SVE Patch": {"ChineseName":"【补丁】SVE节日地点修正(23596)"},
+    "kobaltbleu's Giant Crops for CMC": {"ChineseName":"【功能】为CMC添加更多巨型作物(22927)"},
+    "kobaltbleu's Giant Vanilla Crops": {"ChineseName":"【功能】原版巨型作物(22927)"},
+    "Sunberry NPC - Dao": {"ChineseName":"【功能】太阳莓村添加的Dao(33615)"},
+    "AntiSocial NPCs": {"ChineseName":"【前置】允许创建NPC(5371)"},
+    "Better Butterfly Hutch": {"ChineseName":"【美化】更好的蝴蝶笼子(11166)"},
+    "Bigger Backpack": {"ChineseName":"【功能】更大的背包(1845)"},
+    "Buildings Included": {"ChineseName":"【前置】包括建筑物(27359)"},
+    "Bus Locations (1.6 fix by Sean)": {"ChineseName":"【前置】公交车站台位置(21264)"},
+    "[BL] Desert (1.6 fix by Sean)": {"ChineseName":"【补丁】对 BusLocations 的非官方更新(21264)"},
+    "Crops Anytime Anywhere": {"ChineseName":"【前置】随时随地种植(3000)"},
+    "Crops Survive Season Change": {"ChineseName":"【功能】农作物在季节变化中可以成活(18030)"},
+    "Custom Farm Loader": {"ChineseName":"【功能】农作物在季节变化中可以成活(13804)"},
+    "Custom Kissing Mod": {"ChineseName":"【功能】自定义接吻(4664)"},
+    "[BL] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-BL(8587)"},
+    "[CC] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-CC(8587)"},
+    "[CP] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城(8587)"},
+    "[DLL] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-DLL(8587)"},
+    "[FTM] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-FTM(8587)"},
+    "[MFM] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-MFM(8587)"},
+    "[TS] Downtown Zuzu": {"ChineseName":"【大型拓展包】祖祖城-TS(8587)"},
+    "Easy Farm Switcher": {"ChineseName":"【功能】切换农场(16873)"},
+    "Esca's Modding Plugins": {"ChineseName":"【功能】Esca 的模组插件(9296)"},
+    "Fast Forward": {"ChineseName":"【功能】按~键即可加快游戏速度(28198)"},
+    "Fishing Assistant 2": {"ChineseName":"【功能】钓鱼助手2(5815)"},
+    "Hybrid Crop Engine": {"ChineseName":"【前置】混合剪裁引擎(6577)"},
+    "输入法修复（Input Method Fix）": {"ChineseName":"【功能】游戏内输入法修复(35313)"},
+    "KK_UniformsPack": {"ChineseName":"【功能】JK套装包(9859)"},
+    "Json Assets": {"ChineseName":"【功能】允许向游戏添加自定义内容(1720)"},
+    "*Jumping*": {"ChineseName":"【功能】消耗耐力来跳过某些地形(29794)"},
+    "Let's Move It": {"ChineseName":"【功能】可以移动各种物品(20943)"},
+    "Lumisteria Serene Meadow": {"ChineseName":"【功能】Lumisteria宁静草地(20598)"},
+    "Lumisteria Serene Meadow Spawn": {"ChineseName":"【功能】Lumisteria花卉和农作物(7110)"},
+    "Mobile Phone Continued": {"ChineseName":"【功能】多功能手机(21017)"},
+    "More Grass": {"ChineseName":"【前置】更多土地(5398)"},
+    "Polyamory Sweet Bed": {"ChineseName":"【功能】允许多个配偶或室友(20599)"},
+    "PolyamorySweet Kiss": {"ChineseName":"【功能】多角恋温馨之吻(20599)"},
+    "Polyamory Sweet Love": {"ChineseName":"【功能】多角恋温馨爱恋(20599)"},
+    "PolyamorySweet Rooms": {"ChineseName":"【功能】多角恋温馨房间(20599)"},
+    "Polyamory Sweet Wedding": {"ChineseName":"【功能】多角恋温馨婚礼(20599)"},
+    "[CP] Polyamory Sweet!": {"ChineseName":"【补丁】多角恋相关内容！(20599)"},
+    "Unique Response Core": {"ChineseName":"【功能】科里尔小姐独特的求爱反应(8284)"},
+    "Self Serve": {"ChineseName":"【功能】商店随时可以买东西(20985)"},
+    "SkullCavernElevator": {"ChineseName":"【功能】沙漠电梯(963)"},
+    "Smart Building": {"ChineseName":"【功能】智能建筑(11158)"},
+    "Solid Foundations": {"ChineseName":"【前置】坚实的基础(12311)"},
+    "*SorryLabCore*": {"ChineseName":"【前置】(29793)"},
+    "Yet another dog mod (standalone)": {"ChineseName":"【功能】新增16种宠物狗(1853)"},
+    "SpritesInDetail": {"ChineseName":"【功能】更高分辨率的精灵(14487)"},
+    "StardewDruid": {"ChineseName":"【功能】星露德鲁伊(18465)"},
+    "StardewHack": {"ChineseName":"【功能】星露黑客(3213)"},
+    "[C#] Sunberry Village": {"ChineseName":"【功能】阳莓村的代码部分(3213)"},
+    "Sunberry Village - Custom Companions": {"ChineseName":"【功能】阳莓村 - 自定义伙伴(3213)"},
+    "Sunberry Village - Content Patcher": {"ChineseName":"【功能】阳莓村 - 添加一个新区域(11111)"},
+    "Sunberry Village - Farm Type Manager": {"ChineseName":"【功能】阳莓村 - 农场类型管理器(11111)"},
+    "Swim Mod": {"ChineseName":"【功能】游泳模组(23169)"},
+    "Swim Items": {"ChineseName":"【功能】游泳装备(23169)"},
+    "Swim Mod Dive Maps": {"ChineseName":"【功能】游泳模组潜水地图(23169)"},
+    "The Stardew Squad": {"ChineseName":"【功能】星露小队-招募NPC协助完成任务(35341)"},
+    "Content Addons for The Stardew Squad": {"ChineseName":"【功能】星露小队-添加成员对话(35341)"},
+    "[CP] TheStardewSquad.DefaultDialogue": {"ChineseName":"【功能】星露小队-添加成员对话(35341)"},
+    "TimeSpeed": {"ChineseName":"【功能】控制游戏时间流速(169)"},
+    "TimeWatch": {"ChineseName":"【功能】时间怀表(23725)"},
+    "[CP] Timsanity's Floral Megamix Redux": {"ChineseName":"【功能】花卉大混合重制版(28133)"},
+    "[FTM] Timsanity Forage": {"ChineseName":"【功能】添加可采集植物(28133)"},
+    "[HCE] Timidori Flower Breeding": {"ChineseName":"【功能】180+花卉作物(13327)"},
+    "Ghibli Companions": {"ChineseName":"【功能】添加龙猫作为您的伴侣(30241)"},
+    "Tractor Mod": {"ChineseName":"【功能】拖拉机模组(1401)"},
+    "Train Station": {"ChineseName":"【功能】火车站模组-允许模组制作者添加更多车站(6183)"},
+    "[AT]Elfflower Furniture [Wizard Furniture redraw]": {"ChineseName":"【美化】法师家具美化(29438)"},
+    "[FS]Elegant Vampire Dress": {"ChineseName":"【美化】吸血鬼连衣裙(28013)"},
+    "[FS] Eye Makeup": {"ChineseName":"【美化】眼妆和面膜(20260)"},
+    "Non Destructive NPCs": {"ChineseName":"【前置】非破坏性NPC(5176)"},
+    "ValleyTalk for SVE": {"ChineseName":"【功能】AI无限对话-兼容SVE(34341)"},
+    "Visible Fish": {"ChineseName":"【美化】水中可以看到鱼(8897)"},
+    "VisitMountVapius": {"ChineseName":"【大型拓展包】雾呜山峰(9600)"},
+    "Lumisteria - Visit Mount Vapius": {"ChineseName":"【大型拓展包】雾呜山峰-CP(9600)"},
+    "Lumisteria Mt Vapius Spawn": {"ChineseName":"【大型拓展包】雾呜山峰-FTM(9600)"},
+    "[CP] Walk to the Desert Redux": {"ChineseName":"【前置】步行至沙漠-CP(8630)"},
+    "[FTM] Walk to the Desert Redux": {"ChineseName":"【前置】步行至沙漠-FTM(8630)"},
+    "Wind Effects": {"ChineseName":"【美化】风吹效果(6647)"},
+    "[CP]MouriRan": {"ChineseName":"【功能】新增npc毛利兰(29983)"},
+    "Nyapu-Style Sunberry Village": {"ChineseName":"【美化】尼亚普风格的太阳莓村(29983)"},
+    "[CP] Piano Furniture": {"ChineseName":"【美化】添加6种钢琴(22563)"},
+    "Portraits": {"ChineseName":"【美化】原版角色动漫肖像(1839)"},
+    "Romanceable Rasmodia": {"ChineseName":"【功能】浪漫的Rasmodia女巫师(8265)"},
+    "Romanceable Rasmodius SVE Compatible": {"ChineseName":"【功能】浪漫的Rasmodia女巫师-兼容SVE(7000)"},
+    "Rustic Country Town Interior": {"ChineseName":"【美化】小镇建筑内部美化(6098)"},
+    "Seasonal Fences": {"ChineseName":"【美化】季节性围栏(4870)"},
+    "Seasonal Floorings": {"ChineseName":"【美化】季节性小丑-CP旧版本(4852)"},
+    "SeasonalLeafCursor": {"ChineseName":"【美化】树叶松鼠指针(16760)"},
+    "[CP] Soft Slow Seasons": {"ChineseName":"【美化】慢慢变化的季节(23095)"},
+    "Valley Girls": {"ChineseName":"【美化】山谷女孩(10532)"},
+    "Vintage Interface 2.0 (CP)": {"ChineseName":"【美化】奶油色的复古界面(1244)"},
+    "Vintage Interface v2 - 1.6 fix": {"ChineseName":"【美化】奶油色的复古界面-1.6修复(20754)"},
+    "Big Cat": {"ChineseName":"【美化】巨大橘猫替换原版灰猫(17396)"},
+    "Xtardew Valley - SVE version": {"ChineseName":"【美化】R18(4399)"},
+    "[CP]Yimssi's Pumpkin Carriage": {"ChineseName":"【美化】Yimssi 的南瓜车(28767)"},
+    "Ohodavi's Portraits for Rasmodia": {"ChineseName":"【美化】Rasmodia的肖像画(13765)"},
+    "Backpacks and Baubles": {"ChineseName":"【美化】背包和装饰品合集(10211)"},
+    "BBShirt": {"ChineseName":"【美化】男女通用T恤包(10211)"},
+    "Cozy Scarves": {"ChineseName":"【美化】飘逸的围巾(10102)"},
+    "Katy's Closet No.2": {"ChineseName":"【美化】凯蒂的服装包(32359)"},
+    "[FS] 鹿铮自创": {"ChineseName":"【美化】鹿铮的超大动物背包(18002)"},
+    "[FS] MIA Nanachi Relic Hat Cute": {"ChineseName":"【美化】娜娜奇的帽子(19552)"},
+    "Rino's Suits patch ff14": {"ChineseName":"【美化】FF14主题服装(19552)"},
+    "[FS] Soob's elf ears": {"ChineseName":"【美化】精灵长耳朵(29177)"},
+    "< Sweet Lolita <": {"ChineseName":"【美化】甜美的洛丽塔服装(16449)"},
+    "Traveller's Attire": {"ChineseName":"【美化】旅行者服装(10837)"},
+    "[FS] Usirono Natus Hair and Skirt": {"ChineseName":"【美化】後之夏的女仆装(12379)"},
+    "[FS] Winter Solstice Hats": {"ChineseName":"【美化】冬季圣诞套装包(10137)"},
+    "[FS] Yuriyuri's Hairstyles": {"ChineseName":"【美化】Yuriyuri的发型包(2393)"},
+    "Asta Cute Rainy Season Outfit": {"ChineseName":"【美化】雨季套装包(18249)"},
+    "Asta Slumber Party Outfit": {"ChineseName":"【美化】睡衣派对套装包(18281)"},
+    "Blight's HD Male hair": {"ChineseName":"【美化】11种男性发型包(18281)"},
+    "Eemie's Flowers for Json Assets": {"ChineseName":"【美化】Eemie的花卉Json Assets版(4543)"},
+    "Lavril - East Scarp NPC (King's Raid)": {"ChineseName":"【大型拓展包】东斯卡普-拉薇儿-CP(10016)"},
+    "CustomCompanionVoid": {"ChineseName":"【大型拓展包】东斯卡普-拉薇儿-CC(10016)"},
+    "[SF] HXW's Romantic Fountains and Arches": {"ChineseName":"【美化】HxW 浪漫喷泉和拱门(17606)"}
 }
