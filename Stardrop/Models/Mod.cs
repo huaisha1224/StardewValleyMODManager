@@ -125,6 +125,23 @@ namespace Stardrop.Models
             }
         }
 
+        private string _notes = string.Empty;
+        /// <summary>
+        /// 用户为MOD添加的备注信息
+        /// </summary>
+        public string Notes
+        {
+            get => _notes;
+            set
+            {
+                if (_notes != value)
+                {
+                    _notes = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler? PropertyChanged;
         public Mod(Manifest manifest, FileInfo modFileInfo, string uniqueId, string version, string? name = null, string? description = null, string? author = null)
         {

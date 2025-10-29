@@ -120,6 +120,12 @@
   "ui.window.settings.name": "Einstellungen",
   "ui.window.profiles.name": "Profile",
   "ui.window.profile_naming.name": "Profil Name",
+  
+    // About Window
+  "ui.about_window.title": "关于 星露谷MOD安装器",
+  "ui.about_window.menu_items.about": "关于",
+  "ui.about_window.buttons.close": "关闭",
+  "ui.about_window.description": "星露谷MOD安装器使用Stardrop的开源代码修改而来，新增了MOD中文名称功能，方便中文玩家使用。是一款适用于Stardew Valley的MOD管理器。\n\n功能：\n- 管理模组的启用/禁用功能\n- 创建并在多个模组配置文件间切换\n- 集成Nexus Mods以下载和更新模组\n- 支持通过 NXM 协议安装模组\n- 显示MOD中文名称\n- 直接启动SMAPI运行游戏\n\n星露谷MOD安装器让您轻松管理Stardew Valley模组并保持有序。",
 
   // Internals
   "internal.unknown": "Unbekannt",

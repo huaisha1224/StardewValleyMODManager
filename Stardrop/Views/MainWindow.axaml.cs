@@ -30,7 +30,7 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Stardrop.Models.SMAPI.Web.ModEntryMetadata;
-using System.Reflection; // Ìí¼Ó´ËĞĞ
+using System.Reflection; // é”Ÿæ–¤æ‹·é”Ÿæ¥è¾¾æ‹·é”Ÿæ–¤æ‹·
 
 namespace Stardrop.Views
 {
@@ -38,6 +38,7 @@ namespace Stardrop.Views
     {
         private readonly MainWindowViewModel _viewModel;
         private readonly ProfileEditorViewModel _editorView;
+        private AboutWindow? _aboutWindow;
         private DispatcherTimer _searchBoxTimer;
         private DispatcherTimer _smapiProcessTimer;
         private DispatcherTimer _lockSentinel;
@@ -273,6 +274,32 @@ namespace Stardrop.Views
 
                 File.WriteAllText(Pathing.GetDataCachePath(), JsonSerializer.Serialize(localDataCache, new JsonSerializerOptions() { WriteIndented = true }));
             }
+
+            // éæŠ½æ£´éµâ‚¬éˆå¤Šå½²é‘³ä»‹æ¨†å§ãˆ ç°²é¢ã„§â–¼æ´å¿›â‚¬â‚¬é‘è™¹æ®‘ç€¹æ°­æ¤‚é£ï¿½
+            if (_smapiProcessTimer is not null)
+            {
+                _smapiProcessTimer.Stop();
+                _smapiProcessTimer = null;
+            }
+            
+            if (_lockSentinel is not null)
+            {
+                _lockSentinel.Stop();
+                _lockSentinel = null;
+            }
+            
+            if (_nxmSentinel is not null)
+            {
+                _nxmSentinel.Stop();
+                _nxmSentinel = null;
+            }
+
+            // æ¿¡å‚›ç‰Aboutç»æ¥€å½›å®¸æ’å±å¯¤çŒ´ç´é’æ¬å§é—‚î…ç• 
+            if (_aboutWindow is not null)
+            {
+                _aboutWindow.Close();
+                _aboutWindow = null;
+            }
         }
 
         private async void MainWindow_Opened(object? sender, EventArgs e)
@@ -315,7 +342,7 @@ namespace Stardrop.Views
                 var requestWindow = new MessageWindow(Program.translation.Get("ui.message.stardrop_update_complete"));
                 if (await requestWindow.ShowDialog<bool>(this))
                 {
-/*                    _viewModel.OpenBrowser("https://github.com/Floogen/Stardrop/releases/latest"); Ô­À´µÄ¸üĞÂÁ´½Ó*/ 
+/*                    _viewModel.OpenBrowser("https://github.com/Floogen/Stardrop/releases/latest"); åŸé”Ÿæ–¤æ‹·é”Ÿä¾¥é©æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·*/ 
                     _viewModel.OpenBrowser("hs2049.cn");
                 }
 
@@ -635,6 +662,25 @@ namespace Stardrop.Views
 
             this.FindControl<TextBox>("searchBox").Text = String.Empty;
             _viewModel.FilterText = String.Empty;
+        }
+
+        private async void ModGridMenuRow_EditNotes(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            var selectedMod = (sender as MenuItem)?.DataContext as Mod;
+            if (selectedMod is null)
+            {
+                return;
+            }
+
+            var notesWindow = new ModNotesWindow(selectedMod.Notes);
+            notesWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            var result = await notesWindow.ShowDialog<bool>(this);
+            
+            if (result)
+            {
+                selectedMod.Notes = notesWindow.Notes;
+                _viewModel.SaveModNote(selectedMod);
+            }
         }
 
         private async void ModGridMenuRow_Delete(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -1061,6 +1107,40 @@ namespace Stardrop.Views
             await HandleSMAPIUpdateCheck(true);
         }
 
+        private void About_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            if (_aboutWindow == null)
+            {
+                _aboutWindow = new AboutWindow();
+                _aboutWindow.Closing += AboutWindow_Closing;
+            }
+            
+            _aboutWindow.Show();
+            _aboutWindow.Activate();
+        }
+        
+        private void About_Click(object? sender, EventArgs e)
+        {
+            if (_aboutWindow == null)
+            {
+                _aboutWindow = new AboutWindow();
+                _aboutWindow.Closing += AboutWindow_Closing;
+            }
+            
+            _aboutWindow.Show();
+            _aboutWindow.Activate();
+        }
+
+        private void AboutWindow_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (_aboutWindow != null)
+            {
+                e.Cancel = true;
+                _aboutWindow.Hide();
+            }
+        }
+
+        // End of events
         private async void SMAPIUpdate_Click(object? sender, EventArgs e)
         {
             await HandleSMAPIUpdateCheck(true);
@@ -1240,10 +1320,10 @@ namespace Stardrop.Views
             }
         }
 
-        // ÓÃÔ¶¶Ë½Ó¿ÚÓÅÏÈÅĞ¶ÏÊÇ·ñĞèÒª¸üĞÂ£¬Ê§°ÜÔÙ»ØÍËµ½ GitHub Ô­ÓĞÂß¼­£¨±£ÁôÔ­×¢ÊÍÓëÁ÷³Ì£©
+        // åˆ¤æ–­æ˜¯å¦éœ€è¦æ›´æ–° Stardrop
         private async Task HandleStardropUpdateCheck(bool manualCheck = false)
         {
-            // ÏÈÓÃ API ÅĞ¶Ï¸üĞÂ£¨ÓÅÏÈ FileVersion£¬Ê§°Ü»ØÍË SemVer£©
+            // ä»api.hs2049.cnè·å–æœ€æ–°ç‰ˆæœ¬ä¿¡æ¯
             try
             {
                 using var hc = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
@@ -1268,7 +1348,7 @@ namespace Stardrop.Views
                     catch { return false; }
                 }
 
-                // ·½°¸1£º±È½ÏËÄ¶Î FileVersion£¨À´×Ô .csproj µÄ <FileVersion>£©
+                // åˆ¤æ–­æ˜¯å¦éœ€è¦æ›´æ–°ï¼Œä¼˜å…ˆä½¿ç”¨ FileVersion
                 if (!string.IsNullOrEmpty(remoteFileStr) && !string.IsNullOrEmpty(localFileStr)
                     && VersionTryParse(remoteFileStr, out var rfv) && VersionTryParse(localFileStr, out var lfv))
                 {
@@ -1277,7 +1357,7 @@ namespace Stardrop.Views
                     showRemote = rfv.ToString();
                     Program.helper.Log($"[UpdateCheck/API] FileVersion compare local={showLocal}, remote={showRemote}");
                 }
-                // ·½°¸2£º±È½Ï SemVer£¨À´×Ô Program.ApplicationVersion / <Version>£©
+                // é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·2é”Ÿæ–¤æ‹·é”Ÿé¥ºæ–¤æ‹· SemVeré”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹· Program.ApplicationVersion / <Version>é”Ÿæ–¤æ‹·
                 else if (Semver.SemVersion.TryParse(remoteSemStr?.TrimStart('v','V'), Semver.SemVersionStyles.Any, out var rsv)
                       && Semver.SemVersion.TryParse(_viewModel.Version.Replace("v","").Trim(), Semver.SemVersionStyles.Any, out var lsv))
                 {
@@ -1286,7 +1366,7 @@ namespace Stardrop.Views
                     showRemote = rsv.ToString();
                     Program.helper.Log($"[UpdateCheck/API] SemVer compare local={showLocal}, remote={showRemote}");
                 }
-                // ·½°¸3£¨ĞÂÔö£©£ºµ±Ô¶¶ËÖ»ÓĞ Version ÇÒÎªËÄ¶ÎÊı×Ö£¨Èç 2025.10.05.1£©£¬ÓÃ System.Version »ØÍË±È½Ï
+               
                 else if (VersionTryParse(remoteSemStr, out var rfv2)
                       && VersionTryParse((!string.IsNullOrWhiteSpace(localFileStr) ? localFileStr : _viewModel.Version.Replace("v","").Trim()), out var lfv2))
                 {
@@ -1302,16 +1382,16 @@ namespace Stardrop.Views
 
                 if (updateAvailable)
                 {
-                    var requestWindow = new MessageWindow($"¼ì²âµ½ĞÂ°æ±¾£º{showRemote}\nµ±Ç°°æ±¾£º{showLocal}\nÊÇ·ñÇ°ÍùÏÂÔØ£¿");
+                    var requestWindow = new MessageWindow($"æ£€æµ‹åˆ°æ–°ç‰ˆæœ¬ {showRemote}\nå½“å‰ç‰ˆæœ¬ {showLocal}\næ˜¯å¦å‰å¾€ä¸‹è½½æœ€æ–°ç‰ˆï¼Ÿ");
                     if (await requestWindow.ShowDialog<bool>(this))
                     {
                         if (!string.IsNullOrWhiteSpace(downloadUrl))
                         {
-                            // Ö±½ÓÌø×ªµ½Ô¶¶ËÏÂÔØÒ³
+                            // ç›´æ¥è·³è½¬åˆ°è¿œç¨‹ä¸‹è½½é¡µé¢
                             _viewModel.OpenBrowser(downloadUrl);
                             return;
                         }
-                        // Èô½Ó¿ÚÎ´Ìá¹©ÏÂÔØµØÖ·£¬Ôò»ØÍËµ½Ô­ GitHub ¸üĞÂÁ÷³Ì£¨¼ÌĞøÍùÏÂÖ´ĞĞ£©
+                        // å¦‚æœæœªæä¾›ä¸‹è½½åœ°å€ï¼Œåˆ™å›é€€åˆ° GitHub æ›´æ–°æµç¨‹
                         Program.helper.Log("[UpdateCheck/API] DownloadUrl missing, fallback to GitHub update flow.");
                     }
                     else
@@ -1328,10 +1408,10 @@ namespace Stardrop.Views
             catch (Exception ex)
             {
                 Program.helper.Log($"[UpdateCheck/API] Failed: {ex}", Helper.Status.Warning);
-                // Ê§°ÜÔò»ØÍËµ½Ô­ GitHub Á÷³Ì
+                // å¤±é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·è¯´é”Ÿçš†ï¿½ GitHub é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·
             }
 
-            // ===== ÒÔÏÂ±£ÁôÔ­ GitHub ¸üĞÂ¼ì²éÓë×Ô¶¯¸üĞÂÂß¼­ =====
+            // ===== é”Ÿæ–¤æ‹·é”Ÿé“°æ†‹æ‹·é”Ÿæ–¤æ‹·åŸ GitHub é”Ÿæ–¤æ‹·é”Ÿé“°ç¡·æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·è¿œé”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·å‘’é”Ÿï¿½ =====
 
             Semver.SemVersion? latestVersion = null;
             bool updateAvailableByGitHub = false;
@@ -1351,20 +1431,20 @@ namespace Stardrop.Views
             // If an update is available, notify the user otherwise let them know Stardrop is up-to-date
             if (updateAvailableByGitHub)
             {
-                var requestWindow = new MessageWindow(String.Format(Program.translation.Get("ui.message.stardrop_update_available"), latestVersion));
+                var requestWindow = new MessageWindow(String.Format("æ£€æµ‹åˆ°æ–°ç‰ˆæœ¬ï¼š{0}\nå½“å‰ç‰ˆæœ¬ï¼š{1}\næ˜¯å¦å‰å¾€ä¸‹è½½ï¼Ÿ", latestVersion, _viewModel.Version));
                 if (await requestWindow.ShowDialog<bool>(this))
                 {
-                    SetLockState(true, Program.translation.Get("ui.warning.stardrop_downloading"));
+                    SetLockState(true, "æ­£åœ¨ä¸‹è½½æœ€æ–°ç‰ˆæœ¬");
                     var extractedLatestReleasePath = await GitHub.DownloadLatestStardropRelease(versionToUri?.Value);
                     if (String.IsNullOrEmpty(extractedLatestReleasePath))
                     {
-                        await CreateWarningWindow(String.Format(Program.translation.Get("ui.warning.stardrop_unable_to_download_latest"), _viewModel.Version), Program.translation.Get("internal.ok"));
+                        await CreateWarningWindow(String.Format("æ— æ³•ä¸‹è½½ Stardrop çš„æœ€æ–°ç‰ˆæœ¬ã€‚\n\nè¯·æ‰‹åŠ¨ä¸‹è½½æœ€æ–°ç‰ˆæœ¬ã€‚"), "ç¡®å®š");
                         SetLockState(false);
                         return;
                     }
                     SetLockState(false);
 
-                    await CreateWarningWindow(String.Format(Program.translation.Get("ui.warning.stardrop_update_downloaded"), _viewModel.Version), Program.translation.Get("internal.ok"));
+                    await CreateWarningWindow(String.Format("æˆåŠŸä¸‹è½½äº†æœ€æ–°ç‰ˆæœ¬ã€‚\n\nStardrop ç°åœ¨å°†é‡æ–°å¯åŠ¨ã€‚"), "ç¡®å®š");
                     if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                     {
                         // Prepare the process
@@ -2136,15 +2216,25 @@ namespace Stardrop.Views
                 newClient.DailyRequestLimitsChanged += NexusDailyLimitsChanged;
 
                 // Verify NXM protocol usage
-                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) && NXMProtocol.Validate(Program.executablePath) is false)
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
-                    var requestWindow = new MessageWindow(Program.translation.Get("ui.message.confirm_nxm_association"));
-                    if (await requestWindow.ShowDialog<bool>(this))
+                    // Check if the current executable path matches the registered one
+                    if (NXMProtocol.Validate(Program.executablePath) is false)
                     {
-                        if (NXMProtocol.Register(Program.executablePath) is false)
+                        var requestWindow = new MessageWindow(Program.translation.Get("ui.message.confirm_nxm_association"));
+                        if (await requestWindow.ShowDialog<bool>(this))
                         {
-                            await new WarningWindow(Program.translation.Get("ui.warning.failed_to_set_association"), Program.translation.Get("internal.ok")).ShowDialog(this);
+                            if (NXMProtocol.Register(Program.executablePath) is false)
+                            {
+                                await new WarningWindow(Program.translation.Get("ui.warning.failed_to_set_association"), Program.translation.Get("internal.ok")).ShowDialog(this);
+                            }
                         }
+                    }
+                    // Even if validation passes, re-register to ensure the correct path is used
+                    // This fixes issues with packaged versions (e.g., Enigma Virtual Box)
+                    else
+                    {
+                        NXMProtocol.Register(Program.executablePath);
                     }
                 }
             }

@@ -6,6 +6,8 @@ using Stardrop.Models;
 using Stardrop.Models.Data;
 using Stardrop.Models.Data.Enums;
 using Stardrop.Models.SMAPI;
+using Stardrop.Models.Nexus;
+using Stardrop.Models.Nexus.Web;
 using Stardrop.Utilities;
 using Stardrop.Utilities.External;
 using Stardrop.Utilities.Internal;
@@ -243,25 +245,34 @@ namespace Stardrop.ViewModels
 
         private static readonly HttpClient _httpClient = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
 
-        // 使用不区分大小写字典，避免大小写 / 标记差异导致未命中
+        // ??????????????????????????? / ???????????????
         private Dictionary<string, string> _modChineseNames = new(StringComparer.OrdinalIgnoreCase);
+        private ModNotes _modNotes = new ModNotes();
 
         private string NormalizeModKey(string name)
         {
             if (string.IsNullOrWhiteSpace(name)) return string.Empty;
-            // 去除前缀标签如 [CP] / [JA] / [BFAV] 等
+            // ?????????? [CP] / [JA] / [BFAV] ??
             var n = Regex.Replace(name, @"^\s*\[(CP|JA|BFAV|MFM|QF|PPJA|TMX|PyTK)\]\s*", "", RegexOptions.IgnoreCase);
             return n.Trim();
         }
 
-        // 替换或在原位置更新 LoadModChineseNamesAsync 方法（保留原逻辑，新增完整日志输出）
+        // ??I???????????? LoadModChineseNamesAsync ?????????????????????????????
         private async Task<bool> LoadModChineseNamesAsync()
         {
             const string url = "https://ppcdn.dxinzf.com/ppstatic/tool/StardewValley/StardewModChineseName.json";
             try
             {
                 Program.helper.Log("[ChineseNameDebug] Start downloading Chinese name list...");
-                var json = await _httpClient.GetStringAsync(url).ConfigureAwait(false);
+                // ??HttpClient??UTF-8??
+                using var request = new HttpRequestMessage(HttpMethod.Get, url);
+                request.Headers.Add("Accept-Charset", "UTF-8");
+                
+                var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
+                response.EnsureSuccessStatusCode();
+                
+                // ????UTF-8????????
+                var json = await response.Content.ReadAsStringAsync();
                 var raw = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
                 if (raw == null)
                 {
@@ -293,7 +304,7 @@ namespace Stardrop.ViewModels
 
                 Program.helper.Log($"[ChineseNameDebug] Loaded {inserted} Chinese entries. Dictionary total keys={_modChineseNames.Count}. Preview({preview.Count}): {string.Join(", ", preview)}");
 
-                // 新增：输出完整映射（分批，避免单次日志过长）
+                // ??????????????????????????????????????
                 const int batchSize = 200;
                 var allLines = _modChineseNames.Select(k => $"{k.Key} => {k.Value}").ToList();
                 Program.helper.Log($"[ChineseNameDebug] FULL MAP OUTPUT BEGIN. Total={allLines.Count}");
@@ -319,7 +330,7 @@ namespace Stardrop.ViewModels
             await Task.Delay(3000);
             if (await LoadModChineseNamesAsync().ConfigureAwait(false))
             {
-                // 已经加载成功后刷新现有 Mod 的中文名
+                // ?????????????????? Mod ????????
                 foreach (var mod in Mods)
                 {
                     TryAssignChineseName(mod);
@@ -353,6 +364,51 @@ namespace Stardrop.ViewModels
             }
         }
 
+        /// <summary>
+        /// ????MOD????????????????
+        /// </summary>
+        /// <param name="mod">????漃???MOD</param>
+        public void SaveModNote(Mod mod)
+        {
+            // ????????潩??????
+            _modNotes.SetNotes(mod.UniqueId, mod.Notes);
+            
+            // ???潩???????
+            try
+            {
+                var json = JsonSerializer.Serialize(_modNotes, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(Pathing.GetModNotesPath(), json);
+            }
+            catch (Exception ex)
+            {
+                Program.helper.Log($"Failed to save mod notes: {ex}", Helper.Status.Alert);
+            }
+        }
+
+        /// <summary>
+        /// ????????????MOD??????
+        /// </summary>
+        private void LoadModNotes()
+        {
+            try
+            {
+                if (File.Exists(Pathing.GetModNotesPath()))
+                {
+                    var json = File.ReadAllText(Pathing.GetModNotesPath());
+                    _modNotes = JsonSerializer.Deserialize<ModNotes>(json, new JsonSerializerOptions { AllowTrailingCommas = true }) ?? new ModNotes();
+                }
+                else
+                {
+                    _modNotes = new ModNotes();
+                }
+            }
+            catch (Exception ex)
+            {
+                Program.helper.Log($"Failed to load mod notes: {ex}", Helper.Status.Alert);
+                _modNotes = new ModNotes();
+            }
+        }
+
         public async void DiscoverMods(string modsFilePath)
         {
             if (Mods is null)
@@ -361,11 +417,14 @@ namespace Stardrop.ViewModels
             }
             Mods.Clear();
 
-            // 优先尝试加载中文名；失败则稍后重试
+            // ?????????
+            LoadModNotes();
+            
+            // ????
             var loaded = await LoadModChineseNamesAsync();
             if (!loaded)
             {
-                _ = SafeRetryLoadChineseNamesAsync(); // 后台重试
+                _ = SafeRetryLoadChineseNamesAsync(); // ?
             }
 
             if (modsFilePath is null || !Directory.Exists(modsFilePath))
@@ -419,7 +478,10 @@ namespace Stardrop.ViewModels
 
                     var mod = new Mod(manifest, fileInfo, manifest.UniqueID, manifest.Version, manifest.Name, manifest.Description, manifest.Author);
 
-                    // 改进：多种键匹配
+                    // ?MOD?????????
+                    mod.Notes = _modNotes.GetNotes(mod.UniqueId);
+
+                    // ???
                     TryAssignChineseName(mod);
 
                     if (manifest.ContentPackFor is not null && modKeysCache is not null)

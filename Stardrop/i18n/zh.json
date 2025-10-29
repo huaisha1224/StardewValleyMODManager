@@ -233,6 +233,12 @@
   "ui.window.nexus_login_actual.name": "Nexus Mods API 密钥",
   "ui.window.nexus_user.name": "Nexus Mods 用户信息",
 
+  // About Window
+  "ui.about_window.title": "关于 星露谷MOD安装器",
+  "ui.about_window.menu_items.about": "关于",
+  "ui.about_window.buttons.close": "关闭",
+  "ui.about_window.description": "星露谷MOD安装器使用Stardrop的开源代码修改而来，新增了MOD中文名称功能，方便中文玩家使用，是一款适用于Stardew Valley的MOD管理器。\n\n说明：\n- Stardrop原作者：Floogen\n- 汉化作者：怀沙2049\n- 如果出现链接N网失败请务必加速NexusMods\n- 由于Stardrop使用GPL-3开源协议，所以本汉化版本也会同步在GitHub上开源\n- 本软件使用.net7开发，所以第一次使用时可能需要安装.net7运行环境\n- 执行程序使用Enigma Virtual Box打包，可能会被杀毒软件误报，请自行添加白名单 \n- 使用过程中有问题可在B站留言，或者在GitHub上提交Issues\n\n星露谷MOD安装器让您轻松管理Stardew Valley模组。",
+  
   // Internals
   "internal.connected": "已连接",
   "internal.disconnected": "未连接",

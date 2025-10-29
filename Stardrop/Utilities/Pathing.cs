@@ -105,5 +105,10 @@ namespace Stardrop.Utilities
         {
             return Path.Combine(defaultHomePath, "SMAPI");
         }
+
+        public static string GetModNotesPath()
+        {
+            return Path.Combine(defaultHomePath, "ModNotes.json");
+        }
     }
 }

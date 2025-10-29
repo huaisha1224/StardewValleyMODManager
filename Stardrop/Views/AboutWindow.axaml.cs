@@ -30,7 +30,7 @@ namespace Stardrop.Views
         /// </summary>
         private void TutorialButton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("http://hs2049.cn") { UseShellExecute = true });
+            Process.Start(new ProcessStartInfo("https://www.bilibili.com/video/BV1ig4gz6EbN") { UseShellExecute = true });
         }
 
         /// <summary>

@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Stardrop.Views.ModNotesWindow"
+        Title="编辑备注"
+        Width="450"
+        Height="200"
+        WindowStartupLocation="CenterOwner"
+        FontFamily="Microsoft YaHei, SimHei, sans-serif"
+        Background="{DynamicResource ThemeBackgroundBrush}"
+        Icon="/Assets/icon.ico">
+  <Grid RowDefinitions="Auto,*,Auto">
+    <TextBlock Text="在下面输入MOD备注，备注仅保存到本电脑上。" 
+               FontWeight="Bold" 
+               FontSize="16" 
+               Margin="10"
+               Foreground="{DynamicResource ThemeForegroundBrush}"
+               Grid.Row="0"/>
+    <TextBox Name="notesTextBox"
+             AcceptsReturn="True"
+             TextWrapping="Wrap"
+             Margin="10"
+             FontFamily="Microsoft YaHei, SimHei, sans-serif"
+             Background="{DynamicResource ThemeBackgroundBrush}"
+             Foreground="{DynamicResource ThemeForegroundBrush}"
+             BorderBrush="{DynamicResource HighlightBrush}"
+             Grid.Row="1"/>
+    <StackPanel Orientation="Horizontal" 
+                HorizontalAlignment="Right" 
+                Margin="10" 
+                Grid.Row="2">
+      <Button Name="okButton" 
+              Content="确定" 
+              Margin="0,0,10,0" 
+              Padding="15,5"
+              Foreground="{DynamicResource ThemeForegroundBrush}"
+              Background="{DynamicResource HighlightBrush}"
+              BorderBrush="{DynamicResource HighlightForegroundBrush}"/>
+      <Button Name="cancelButton" 
+              Content="取消" 
+              Padding="15,5"
+              Foreground="{DynamicResource ThemeForegroundBrush}"
+              Background="{DynamicResource HighlightBrush}"
+              BorderBrush="{DynamicResource HighlightForegroundBrush}"/>
+    </StackPanel>
+  </Grid>
+</Window>

@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Reflection;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Avalonia.Controls;
@@ -11,7 +12,7 @@ using Stardrop.Utilities;
 namespace Stardrop.Utilities.Internal
 {
     /// <summary>
-    /// 版本更新检查器：支持优先比较 FileVersion(四段数字)，失败再回退到 SemVer。
+    /// 版本更新检查器，支持比较 FileVersion(读取程序集)与失败回退到 SemVer格式
     /// </summary>
     internal static class UpdateChecker
     {
@@ -22,28 +23,30 @@ namespace Stardrop.Utilities.Internal
         {
             try
             {
+                // 设置HttpClient使用UTF-8编码
+                _hc.DefaultRequestHeaders.Add("Accept-Charset", "UTF-8");
                 var resp = await _hc.GetStringAsync(CheckUrl).ConfigureAwait(false);
                 using var doc = JsonDocument.Parse(resp);
                 var root = doc.RootElement;
 
-                // 优先读取远端 FileVersion，没有则退回到 Version
+                // 首先读取远程 FileVersion，没有则回退到 Version
                 var remoteStr = (root.TryGetProperty("FileVersion", out var fvEl) ? fvEl.GetString() : null)
                                 ?? (root.TryGetProperty("Version", out var vEl) ? vEl.GetString() : null)
                                 ?? string.Empty;
                 var downloadUrl = root.TryGetProperty("DownloadUrl", out var dEl) ? dEl.GetString() : null;
 
-                // 本地：优先使用 AssemblyFileVersion（由 <FileVersion> 控制）
+                // 本地：使用 AssemblyFileVersion作为 <FileVersion> 名称，
                 var localFileStr = Assembly.GetExecutingAssembly()
                     .GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version ?? string.Empty;
 
-                // 备用：信息版本（由 <Version>/<AssemblyInformationalVersion> 控制）
+                // 本地：信息版本作为 <Version>/<AssemblyInformationalVersion> 名称，
                 var localInfoStr = typeof(Program).Assembly
                     .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? string.Empty;
 
                 bool updateAvailable = false;
                 string displayLocal = string.Empty, displayRemote = string.Empty;
 
-                // 方案1：四段数字版本（FileVersion）
+                // 比较1：使用FileVersion版本
                 if (VersionTryParse(remoteStr, out var remoteFileVer) && VersionTryParse(localFileStr, out var localFileVer))
                 {
                     updateAvailable = remoteFileVer > localFileVer;
@@ -51,7 +54,7 @@ namespace Stardrop.Utilities.Internal
                     displayRemote = remoteFileVer.ToString();
                     Program.helper.Log($"[UpdateCheck] FileVersion compare: local={displayLocal}, remote={displayRemote}");
                 }
-                // 方案2：SemVer（例如 2.2.4 或 v2.2.4）
+                // 比较2：SemVer格式比较 2.2.4 或 v2.2.4格式
                 else if (SemVersion.TryParse(remoteStr?.TrimStart('v', 'V'), SemVersionStyles.Any, out var remoteSem)
                       && SemVersion.TryParse(localInfoStr?.TrimStart('v', 'V'), SemVersionStyles.Any, out var localSem))
                 {
