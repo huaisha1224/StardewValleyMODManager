@@ -22,6 +22,9 @@ https://www.nexusmods.com/games/stardewvalley/collections
 - 【2025-10-06】 Aesthetic Valley | Witchcore-86
 - 【2025-10-08】SVE + Grandpa's Farm-25
 - 【2025-10-08】SVE + Immersive Farm 2 Remastered-25
+- 【2025-10-28】汉化700款mod
+- 【2025-10-28】fix 更新提示乱码问题，fix N网不能调用MOD安装器的问题
+- 【2025-10-29】新增MOD备注的功能
 
 ## 下载 Stardrop 中文版
 1. 
