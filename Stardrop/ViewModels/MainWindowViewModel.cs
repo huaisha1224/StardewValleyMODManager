@@ -85,7 +85,9 @@ namespace Stardrop.ViewModels
 
         public MainWindowViewModel(string modsFilePath, string version)
         {
-            DiscoverMods(modsFilePath);
+            // Initialize Mods collection
+            Mods = new ObservableCollection<Mod>();
+            
             Version = $"v{version}";
             SmapiVersion = Program.settings.GameDetails?.SmapiVersion;
 
@@ -367,13 +369,13 @@ namespace Stardrop.ViewModels
         /// <summary>
         /// ????MOD????????????????
         /// </summary>
-        /// <param name="mod">????ùP???MOD</param>
+        /// <param name="mod">?????P???MOD</param>
         public void SaveModNote(Mod mod)
         {
-            // ????????ùù??????
+            // ????????????????
             _modNotes.SetNotes(mod.UniqueId, mod.Notes);
             
-            // ???ùù???????
+            // ????????????
             try
             {
                 var json = JsonSerializer.Serialize(_modNotes, new JsonSerializerOptions { WriteIndented = true });
@@ -409,7 +411,7 @@ namespace Stardrop.ViewModels
             }
         }
 
-        public async void DiscoverMods(string modsFilePath)
+        public async Task DiscoverModsAsync(string modsFilePath)
         {
             if (Mods is null)
             {
@@ -417,14 +419,14 @@ namespace Stardrop.ViewModels
             }
             Mods.Clear();
 
-            // ?????????
+            // Load mod notes
             LoadModNotes();
             
-            // ????
+            // Load Chinese names
             var loaded = await LoadModChineseNamesAsync();
             if (!loaded)
             {
-                _ = SafeRetryLoadChineseNamesAsync(); // ?
+                _ = SafeRetryLoadChineseNamesAsync();
             }
 
             if (modsFilePath is null || !Directory.Exists(modsFilePath))
@@ -478,10 +480,10 @@ namespace Stardrop.ViewModels
 
                     var mod = new Mod(manifest, fileInfo, manifest.UniqueID, manifest.Version, manifest.Name, manifest.Description, manifest.Author);
 
-                    // ?MOD?????????
+                    // Assign notes to the mod
                     mod.Notes = _modNotes.GetNotes(mod.UniqueId);
 
-                    // ???
+                    // Try to assign Chinese name
                     TryAssignChineseName(mod);
 
                     if (manifest.ContentPackFor is not null && modKeysCache is not null)
@@ -560,6 +562,14 @@ namespace Stardrop.ViewModels
             HideRequiredMods();
 
             ActualModCount = Mods.Count(m => !m.IsHidden);
+            
+            // Recreate the DataView to ensure proper binding
+            if (DataView != null)
+            {
+                DataView = new DataGridCollectionView(Mods, isDataSorted: false, isDataInGroupOrder: false);
+                DataView.SortDescriptions.Add(DataGridSortDescription.FromPath(nameof(Mod.Name), ListSortDirection.Ascending));
+                UpdateFilter();
+            }
         }
 
         public void HideRequiredMods()
@@ -822,6 +832,23 @@ namespace Stardrop.ViewModels
 
             // Update the EnabledModCount
             EnabledModCount = Mods.Where(m => m.IsEnabled && !m.IsHidden).Count();
+            
+            // Notify property changes for the mods to update UI
+            foreach (var mod in Mods)
+            {
+                mod.NotifyPropertyChanged("IsEnabled");
+            }
+            
+            // ??DataView???UI??
+            RefreshDataView();
+        }
+        
+        public void RefreshDataView()
+        {
+            if (DataView != null)
+            {
+                DataView.Refresh();
+            }
         }
 
         public void ForceModState(Profile profile, List<Mod> mods, bool modEnableState = false)

@@ -1,4 +1,5 @@
 using Avalonia;
+using Avalonia.Collections;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Markup.Xaml;
@@ -20,6 +21,7 @@ using Stardrop.Utilities.Internal;
 using Stardrop.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -30,6 +32,8 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Stardrop.Models.SMAPI.Web.ModEntryMetadata;
+using System.Reflection; // 锟斤拷锟接达拷锟斤拷
+
 using System.Reflection; // 锟斤拷锟接达拷锟斤拷
 
 namespace Stardrop.Views
@@ -129,20 +133,48 @@ namespace Stardrop.Views
             }
             profileComboBox.SelectionChanged += ProfileComboBox_SelectionChanged;
 
-            // Update selected mods
-            var profile = profileComboBox.SelectedItem as Profile;
-            _viewModel.EnableModsByProfile(profile);
+            // Load mods and then enable them by profile
+            _ = Task.Run(async () =>
+            {
+                // Refresh mod list - similar to HandleModListRefresh
+                await _viewModel.DiscoverModsAsync(Pathing.defaultModPath);
 
-            // Check if we have any cached updates for mods
-            if (_viewModel.IsCheckingForUpdates is false)
-            {
-                _viewModel.UpdateStatusText = Program.translation.Get("ui.main_window.button.update_status.updating");
-                CheckForModUpdates(_viewModel.Mods.ToList(), useCache: true);
-            }
-            else
-            {
-                CheckForModUpdates(_viewModel.Mods.ToList(), probe: true);
-            }
+                await Dispatcher.UIThread.InvokeAsync(async () =>
+                {
+                    // Refresh enabled mods - similar to HandleModListRefresh
+                    var profile = profileComboBox.SelectedItem as Profile;
+                    _viewModel.EnableModsByProfile(profile);
+
+                    // Refresh cached mods - similar to HandleModListRefresh
+                    await GetCachedModUpdates(_viewModel.Mods.ToList(), skipCacheCheck: true);
+
+                    // Evaluate mod requirements - similar to HandleModListRefresh
+                    _viewModel.EvaluateRequirements();
+
+                    // Check for Nexus Mods connection perform related tasks
+                    await CheckForNexusConnection();
+
+                    // Hide the required mods - similar to HandleModListRefresh
+                    _viewModel.HideRequiredMods();
+                    
+                    // Update the EnabledModCount like in ProfileComboBox_SelectionChanged
+                    _viewModel.EnabledModCount = _viewModel.Mods.Where(m => m.IsEnabled && !m.IsHidden).Count();
+
+                    // Check if we have any cached updates for mods
+                    if (_viewModel.IsCheckingForUpdates is false)
+                    {
+                        _viewModel.UpdateStatusText = Program.translation.Get("ui.main_window.button.update_status.updating");
+                        CheckForModUpdates(_viewModel.Mods.ToList(), useCache: true);
+                    }
+                    else
+                    {
+                        CheckForModUpdates(_viewModel.Mods.ToList(), probe: true);
+                    }
+                    
+                    // Force a refresh to ensure the UI updates properly
+                    await HandleModListRefresh();
+                });
+            });
 
             // Start sentinel for watching NXM files
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX) is false)
@@ -275,7 +307,7 @@ namespace Stardrop.Views
                 File.WriteAllText(Pathing.GetDataCachePath(), JsonSerializer.Serialize(localDataCache, new JsonSerializerOptions() { WriteIndented = true }));
             }
 
-            // 鍏抽棴鎵€鏈夊彲鑳介樆姝㈠簲鐢ㄧ▼搴忛€€鍑虹殑瀹氭椂鍣�
+            // 关闭所有可能阻止应用程序退出的定时器
             if (_smapiProcessTimer is not null)
             {
                 _smapiProcessTimer.Stop();
@@ -294,7 +326,7 @@ namespace Stardrop.Views
                 _nxmSentinel = null;
             }
 
-            // 濡傛灉About绐楀彛宸插垱寤猴紝鍒欏叧闂畠
+            // 如果About窗口已创建，则关闭它
             if (_aboutWindow is not null)
             {
                 _aboutWindow.Close();
@@ -373,6 +405,9 @@ namespace Stardrop.Views
 
             // Set up handler for listening to download count
             SetupDownloadCountListener();
+            
+            // Force a refresh to ensure the UI updates properly
+            await HandleModListRefresh();
         }
 
         private async Task CreateWarningWindow(string warningText, string buttonText)
@@ -729,7 +764,7 @@ namespace Stardrop.Views
                     UpdateProfile(GetCurrentProfile());
 
                     // Refresh mod list
-                    _viewModel.DiscoverMods(Pathing.defaultModPath);
+                    await _viewModel.DiscoverModsAsync(Pathing.defaultModPath);
 
                     // Refresh enabled mods
                     _viewModel.EnableModsByProfile(GetCurrentProfile());
@@ -1784,10 +1819,10 @@ namespace Stardrop.Views
 
         private async Task HandleModListRefresh()
         {
-            // Refresh mod list
-            _viewModel.DiscoverMods(Pathing.defaultModPath);
+            // Refresh mod list 刷新模组列表
+            await _viewModel.DiscoverModsAsync(Pathing.defaultModPath);
 
-            // Refresh enabled mods
+            // Refresh enabled mods 刷新已启用的模组
             _viewModel.EnableModsByProfile(GetCurrentProfile());
 
             // Refresh cached mods
@@ -2600,7 +2635,7 @@ namespace Stardrop.Views
             File.WriteAllText(Pathing.GetDataCachePath(), JsonSerializer.Serialize(localDataCache, new JsonSerializerOptions() { WriteIndented = true }));
 
             // Refresh mod list
-            _viewModel.DiscoverMods(Pathing.defaultModPath);
+            await _viewModel.DiscoverModsAsync(Pathing.defaultModPath);
 
             // Refresh enabled mods
             _viewModel.EnableModsByProfile(GetCurrentProfile());

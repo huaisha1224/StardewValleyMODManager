@@ -31,7 +31,8 @@ namespace Stardrop
         internal static bool onBootStartSMAPI = false;
         internal static string? nxmLink = null;
         internal static readonly string defaultProfileName = "Default"; //默认配置文件名称
-        internal static readonly string executablePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Stardrop.exe");
+        internal static readonly string executablePath = Process.GetCurrentProcess().MainModule.FileName;   
+		//获取当前程序路径,而不是固定的stardrop.exe，解决打包改名之后N网安装无法拉起MOD安装器
         internal static readonly Regex gameDetailsPattern = new Regex(@"SMAPI (?<smapiVersion>.+) with Stardew Valley (?<gameVersion>.+) on (?<system>.+)");
 
         public static string ApplicationVersion { get { return $"{_applicationVersion.WithoutMetadata()}"; } }

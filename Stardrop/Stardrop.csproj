@@ -4,7 +4,7 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<Version>2.0.5</Version>
-		<FileVersion>2025.10.28.1</FileVersion>
+		<FileVersion>2025.10.30.1</FileVersion>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 		<ApplicationIcon>Assets\icon.ico</ApplicationIcon>
@@ -22,6 +22,7 @@
 		<Content Include="i18n\*" CopyToOutputDirectory="PreserveNewest" />
 		<None Remove=".gitignore" />
 		<None Remove="Assets\icon.ico" />
+		<None Remove="Assets\Info.plist" />
 		<None Remove="Assets\Info.plist" />
 		<None Remove="Assets\smapi.png" />
 		<None Remove="Assets\Stardrop.icns" />
